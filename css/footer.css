@@ -1,0 +1,27 @@
+.footer {
+  background-color: var(--main-color);
+  padding: 3.2rem 0;
+  z-index: 1000;
+  /* min-height: 10vh; */
+}
+
+.social-icons {
+  list-style: none;
+  display: flex;
+  gap: 2.4rem;
+  justify-content: center;
+}
+
+.footer-text {
+  text-align: center;
+  font-size: 1.6rem;
+}
+
+.copyright-text {
+  text-align: center;
+  font-size: 1.2rem;
+}
+
+.social-link:hover {
+  color: var(--accent-color);
+}

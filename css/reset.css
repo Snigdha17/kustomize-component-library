@@ -1,0 +1,31 @@
+/*
+SPACING SYSTEM (px)
+2 / 4 / 8 / 12 / 16 / 24 / 32 / 48 / 64 / 80 / 96 / 128
+
+FONT SIZE SYSTEM (px)
+10 / 12 / 14 / 16 / 18 / 20 / 24 / 30 / 36 / 44 / 52 / 62 / 74 / 86 / 98
+*/
+
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap");
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+}
+
+html {
+  font-size: 62.5%;
+  scroll-behavior: smooth;
+}
+
+:root {
+  --accent-color: #ff3333;
+  --main-color: #ffb600;
+  --text-color: #191200;
+  --background-color: #fefefa;
+  --white: #fff;
+  --off-white: #f6f9fc;
+  --box-shadow-bottom: 0 0 15px rgba(0, 0, 0, 0.2);
+}
