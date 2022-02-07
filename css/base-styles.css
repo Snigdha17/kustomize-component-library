@@ -1,0 +1,62 @@
+@import url("./reset.css");
+
+body {
+  font-family: "Inter", sans-serif;
+  color: var(--text-color);
+  background-color: var(--background-color);
+}
+
+.accent-text {
+  color: var(--accent-color);
+}
+
+.heading-primary {
+  font-size: 6.2rem;
+  font-weight: 700;
+  line-height: 1.2;
+  letter-spacing: -0.2px;
+  margin-bottom: 3.2rem;
+}
+
+.heading-secondary {
+  font-size: 5.2rem;
+  font-weight: 700;
+  line-height: 1.2;
+  letter-spacing: -0.2px;
+  margin-bottom: 3.2rem;
+}
+
+.code-box {
+  width: 100%;
+  min-height: 10rem;
+  border: none;
+}
+
+.section-margin-sm {
+  margin-bottom: 1.6rem;
+}
+
+.section-margin-md {
+  margin-bottom: 6.4rem;
+}
+
+.margin-right-sm {
+  margin-right: 1.6rem;
+}
+
+.logo {
+  font-size: 3.6rem;
+  font-weight: 700;
+  line-height: 1.2;
+  letter-spacing: -0.2px;
+}
+
+.social-icon {
+  height: 2.4rem;
+  width: 2.4rem;
+}
+
+.social-link {
+  text-decoration: none;
+  color: #191200;
+}

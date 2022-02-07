@@ -1,0 +1,106 @@
+@import url("./base-styles.css");
+@import url("./footer.css");
+
+/******** HERO ********/
+
+.hero-section {
+  background-color: var(--main-color);
+  min-height: 100vh;
+}
+
+.hero {
+  max-width: 130rem;
+  margin: 0 auto;
+  padding: 0 4.8rem;
+  align-items: center;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  height: 9.6rem;
+  padding: 0 4.8rem;
+}
+
+.hero-img {
+  max-width: 100%;
+}
+
+.hero-content {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+}
+
+.hero-text {
+  flex: 0 1 45%;
+}
+
+.hero-img-container {
+  flex: 0 1 55%;
+}
+
+.btn:link,
+.btn:visited {
+  text-decoration: none;
+  border-radius: 100px;
+  display: inline-block;
+  font-weight: 500;
+  font-size: 1.8rem;
+  padding: 1.6rem 3.2rem;
+  transition: all 0.3s;
+  border: 2px solid var(--text-color);
+}
+
+.btn-primary:link,
+.btn-primary:visited {
+  background-color: var(--text-color);
+  color: var(--off-white);
+}
+
+.btn-primary:hover,
+.btn-primary:active {
+  color: var(--accent-color);
+  background-color: var(--main-color);
+}
+
+.btn-secondary:link,
+.btn-secondary:visited {
+  color: var(--text-color);
+}
+
+.btn-secondary:hover,
+.btn-secondary:active {
+  background-color: var(--accent-color);
+  color: var(--off-white);
+}
+
+/******** INSTALLATION SECTION ********/
+
+.installation-section {
+  padding: 4.8rem 3.2rem;
+  max-width: 130rem;
+  margin: 0 auto;
+}
+
+.installation-content {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.installation-text {
+  font-size: 2.4rem;
+  line-height: 2;
+  flex: 0 1 40%;
+}
+
+.example-code {
+  flex: 0 1 55%;
+}
+
+@media screen and (max-width: 1024px) {
+}
