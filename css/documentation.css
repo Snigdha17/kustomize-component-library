@@ -1,0 +1,42 @@
+@import url("./base-styles.css");
+/* @import url("./kustomize-components.css"); */
+@import url("./footer.css");
+@import url("./navbar.css");
+@import url("./sidebar.css");
+
+body {
+  font-family: "Inter", sans-serif;
+  color: var(--text-color);
+  background-color: var(--background-color);
+  margin: 15rem 0 0 0;
+}
+
+.accent-text {
+  color: var(--accent-color);
+}
+
+.container-wrapper {
+  max-width: 90%;
+  margin: 0 auto;
+}
+
+.component-wrapper {
+  max-width: 100%;
+}
+
+.demo-container {
+  padding: 1.6rem;
+  border: 2px solid #e6e6e6;
+  border-radius: 0.5rem;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: start;
+  gap: 1rem;
+}
+
+.demo-alert {
+  flex-direction: column;
+  align-items: start;
+  gap: 2rem;
+}
