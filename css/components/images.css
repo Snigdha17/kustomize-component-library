@@ -1,0 +1,13 @@
+.img-responsive {
+  height: auto;
+  width: 100%;
+  overflow: hidden;
+}
+
+.img-round {
+  border-radius: 50%;
+}
+
+.img-square {
+  border: 0.5rem;
+}
