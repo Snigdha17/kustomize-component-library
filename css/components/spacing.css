@@ -75,57 +75,73 @@
 /******** Padding-Bottom ********/
 
 .pd-bottom-s {
+  padding-bottom: 2.4rem;
 }
 
 .pd-bottom-m {
+  padding-bottom: 3.2rem;
 }
 
 .pd-bottom-l {
+  padding-bottom: 4.8rem;
 }
 
 .pd-bottom-xl {
+  padding-bottom: 6.4rem;
 }
 
 /******** Padding-Top ********/
 
 .pd-top-s {
+  padding-top: 2.4rem;
 }
 
 .pd-top-m {
+  padding-top: 3.2rem;
 }
 
 .pd-top-l {
+  padding-top: 4.8rem;
 }
 
 .pd-top-xl {
+  padding-top: 6.4rem;
 }
 
-/******** Padding-Bottom ********/
+/******** Padding-Left ********/
 
 .pd-left-s {
+  padding-left: 2.4rem;
 }
 
 .pd-left-m {
+  padding-left: 3.2rem;
 }
 
 .pd-left-l {
+  padding-left: 4.8rem;
 }
 
 .pd-left-xl {
+  padding-left: 6.4rem;
 }
 
-/******** Padding-Bottom ********/
+/******** Padding-Right ********/
 
 .pd-right-s {
+  padding-right: 2.4rem;
 }
 
 .pd-right-m {
+  padding-right: 3.2rem;
 }
 
 .pd-right-l {
+  padding-right: 4.8rem;
 }
 
 .pd-right-xl {
+  padding-right: 6.4rem;
 }
 
 /*
