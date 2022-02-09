@@ -1,0 +1,46 @@
+/*
+FONT SIZE SYSTEM (px)
+10 / 12 / 14 / 16 / 18 / 20 / 24 / 30 / 36 / 44 / 52 / 62 / 74 / 86 / 98
+*/
+
+.heading-xl {
+  font-size: 5.2rem;
+  font-weight: 600;
+  margin-bottom: 3.2rem;
+}
+
+.heading-l {
+  font-size: 4.4rem;
+  font-weight: 500;
+  margin-bottom: 2.4rem;
+}
+
+.heading-m {
+  font-size: 3.6rem;
+  font-weight: 400;
+  margin-bottom: 1.8rem;
+}
+
+.heading-s {
+  font-size: 3rem;
+  font-weight: 400;
+  margin-bottom: 1.8rem;
+}
+
+.heading-xs {
+  font-size: 2.4rem;
+  font-weight: 400;
+  margin-bottom: 1.8rem;
+}
+
+.para {
+  font-size: 2rem;
+  font-weight: 300;
+  margin-bottom: 1.8rem;
+}
+
+.para-s {
+  font-size: 1.6rem;
+  font-weight: 300;
+  margin-bottom: 1.8rem;
+}

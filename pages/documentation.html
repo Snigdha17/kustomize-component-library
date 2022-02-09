@@ -4,7 +4,10 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="description" content="A CSS Component Library to create stunning websites" />
+    <meta
+      name="description"
+      content="A CSS Component Library to create stunning websites"
+    />
     <meta name="tags" content="CSS, Components, Websites" />
     <meta name="author" content="Snigdha Kamal" />
     <title>Kustomize</title>
@@ -12,6 +15,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link rel="stylesheet" href="../css/base-styles.css" />
     <link rel="stylesheet" href="../css/documentation.css" />
+    <link rel="stylesheet" href="../css/prism.css" />
   </head>
   <body>
     <div class="grid-container">
@@ -31,7 +35,10 @@
             ><ion-icon class="social-icon" name="home"></ion-icon>Home</a
           >
           <a class="main-nav-link" href="#"
-            ><ion-icon class="social-icon" name="document-text-outline"></ion-icon
+            ><ion-icon
+              class="social-icon"
+              name="document-text-outline"
+            ></ion-icon
             >Documentation</a
           >
           <a class="main-nav-link section-margin-sm" href="#"
@@ -39,30 +46,39 @@
             >Source</a
           >
           <a class="main-nav-link" href="#alerts-section"
-            ><ion-icon class="social-icon" name="warning-outline"></ion-icon>Alerts</a
+            ><ion-icon class="social-icon" name="warning-outline"></ion-icon
+            >Alerts</a
           >
           <a class="main-nav-link" href="#avatar-section"
-            ><ion-icon class="social-icon" name="person-outline"></ion-icon>Avatar</a
+            ><ion-icon class="social-icon" name="person-outline"></ion-icon
+            >Avatar</a
           >
           <a class="main-nav-link" href="#badge-section"
-            ><ion-icon class="social-icon" name="person-circle-outline"></ion-icon
+            ><ion-icon
+              class="social-icon"
+              name="person-circle-outline"
+            ></ion-icon
             >Badge</a
           >
           <a class="main-nav-link" href="#"
-            ><ion-icon class="social-icon" name="card-outline"></ion-icon>Card</a
+            ><ion-icon class="social-icon" name="card-outline"></ion-icon
+            >Card</a
           >
           <a class="main-nav-link" href="#"
-            ><ion-icon class="social-icon" name="laptop-outline"></ion-icon>Form</a
+            ><ion-icon class="social-icon" name="laptop-outline"></ion-icon
+            >Form</a
           >
           <a class="main-nav-link" href="#"
-            ><ion-icon class="social-icon" name="grid-outline"></ion-icon>Grid</a
+            ><ion-icon class="social-icon" name="grid-outline"></ion-icon
+            >Grid</a
           >
           <a class="main-nav-link" href="#"
             ><ion-icon class="social-icon" name="image-outline"></ion-icon
             >Image</a
           >
           <a class="main-nav-link" href="#"
-            ><ion-icon class="social-icon" name="list-outline"></ion-icon>List</a
+            ><ion-icon class="social-icon" name="list-outline"></ion-icon
+            >List</a
           >
           <a class="main-nav-link" href="#"
             ><ion-icon class="social-icon" name="scan-outline"></ion-icon
@@ -77,11 +93,8 @@
             >Rating</a
           >
           <a class="main-nav-link" href="#"
-            ><ion-icon class="social-icon" name="arrow-forward-circle-outline"></ion-icon
-            >Slider</a
-          >
-          <a class="main-nav-link" href="#"
-            ><ion-icon class="social-icon" name="browsers-outline"></ion-icon>Toast</a
+            ><ion-icon class="social-icon" name="browsers-outline"></ion-icon
+            >Toast</a
           >
           <a class="main-nav-link" href="#"
             ><ion-icon class="social-icon" name="pencil"></ion-icon
@@ -90,6 +103,312 @@
         </div>
         <div class="nav-overlay"></div>
       </nav>
+
+      <div class="container-wrapper">
+        <!-- Alerts -->
+
+        <!-- Avatar -->
+        <div class="component-wrapper mg-bottom-xl" id="avatar-section">
+          <h1 class="heading-xl">Avatar</h1>
+          <p class="para mg-bottom-m">
+            Avatars are images used for profile pictures. They could be your own
+            photo, your pet or anything that represents you best
+          </p>
+          <h3 class="heading-xs">Round Avatar</h3>
+          <div class="demo-container demo-avatar">
+            <div class="avatar-xs">
+              <img
+                class="img-responsive avatar-round"
+                src="https://i.pravatar.cc/150?img=68"
+                alt="black and white image of a young man"
+              />
+            </div>
+            <div class="avatar-s">
+              <img
+                class="img-responsive avatar-round"
+                src="https://i.pravatar.cc/150?img=68"
+                alt="black and white image of a young man"
+              />
+            </div>
+            <div class="avatar-m">
+              <img
+                class="img-responsive avatar-round"
+                src="https://i.pravatar.cc/150?img=68"
+                alt="black and white image of a young man"
+              />
+            </div>
+            <div class="avatar-l">
+              <img
+                class="img-responsive avatar-round"
+                src="https://i.pravatar.cc/150?img=68"
+                alt="black and white image of a young man"
+              />
+            </div>
+            <div class="avatar-xl">
+              <img
+                class="img-responsive avatar-round"
+                src="https://i.pravatar.cc/150?img=68"
+                alt="black and white image of a young man"
+              />
+            </div>
+          </div>
+
+          <div class="code-container">
+            <p class="para-s">
+              There are 5 different sizes available for round avatars: xs, s, m,
+              l, xl. Simply copy the below html and choose the size per your
+              requirement
+            </p>
+            <pre>
+              <code class="language-html">
+        &lt;div class="avatar-s"&gt;
+          &lt;img
+            class="img-responsive avatar-round"
+            src="https://i.pravatar.cc/150?img=68"
+            alt="black and white image of a young man"
+          /&gt;
+        &lt;/div&gt;             
+              </code>
+            </pre>
+          </div>
+
+          <h3 class="heading-xs section-margin-sm">Square Avatar</h3>
+          <div class="demo-container demo-avatar">
+            <div class="avatar-xs">
+              <img
+                class="img-responsive avatar-square"
+                src="https://i.pravatar.cc/150?img=47"
+                alt="smiling woman"
+              />
+            </div>
+            <div class="avatar-s">
+              <img
+                class="img-responsive avatar-square"
+                src="https://i.pravatar.cc/150?img=47"
+                alt="smiling woman"
+              />
+            </div>
+            <div class="avatar-m">
+              <img
+                class="img-responsive avatar-square"
+                src="https://i.pravatar.cc/150?img=47"
+                alt="smiling woman"
+              />
+            </div>
+            <div class="avatar-l">
+              <img
+                class="img-responsive avatar-square"
+                src="https://i.pravatar.cc/150?img=47"
+                alt="smiling woman"
+              />
+            </div>
+            <div class="avatar-xl">
+              <img
+                class="img-responsive avatar-square"
+                src="https://i.pravatar.cc/150?img=47"
+                alt="smiling woman"
+              />
+            </div>
+          </div>
+          <div class="code-container">
+            <p class="para-s">
+              There are 5 different sizes available for square avatars: xs, s,
+              m, l, xl. Simply copy the below html and choose the size per your
+              requirement
+            </p>
+            <pre>
+              <code class="language-html">
+        &lt;div class="avatar-s"&gt;
+          &lt;img
+            class="img-responsive avatar-square"
+            src="https://i.pravatar.cc/150?img=47"
+            alt="smiling woman"
+          /&gt;
+        &lt;/div&gt;             
+              </code>
+            </pre>
+          </div>
+
+          <h3 class="heading-xs section-margin-sm">Text Avatar</h3>
+          <div class="demo-container demo-avatar">
+            <div class="avatar-round avatar-text avatar-xs">SK</div>
+            <div class="avatar-round avatar-text avatar-s">SK</div>
+            <div class="avatar-round avatar-text avatar-m">SK</div>
+            <div class="avatar-round avatar-text avatar-l">SK</div>
+            <div class="avatar-round avatar-text avatar-xl">SK</div>
+          </div>
+          <div class="code-container">
+            <p class="para-s">
+              There are 5 different sizes available for text avatars: xs, s, m,
+              l, xl. Simply copy the below html and choose the size per your
+              requirement
+            </p>
+            <pre>
+              <code class="language-html">
+          &lt;div class="avatar-round avatar-text avatar-m">SK&lt;/div&gt;
+              </code>
+            </pre>
+          </div>
+        </div>
+
+        <!-- Badge -->
+        <div class="component-wrapper mg-bottom-xl" id="badge-section">
+          <h1 class="heading-xl">Badge</h1>
+          <h2 class="para mg-bottom-m">
+            Badges can be used as status indicators, display notifications or
+            highlight any textual information
+          </h2>
+          <h3 class="heading-xs section-margin-sm">Status Badge on Avatar</h3>
+          <div class="demo-container demo-badge">
+            <div class="avatar-xs badge-container">
+              <img
+                class="img-responsive avatar-round"
+                src="https://i.pravatar.cc/150?img=68"
+                alt="black and white image of a young man"
+              />
+              <span
+                class="status-badge status-badge_xs status-badge_offline"
+              ></span>
+            </div>
+            <div class="avatar-s badge-container">
+              <img
+                class="img-responsive avatar-round"
+                src="https://i.pravatar.cc/150?img=68"
+                alt="black and white image of a young man"
+              />
+              <span
+                class="status-badge status-badge_s status-badge_away"
+              ></span>
+            </div>
+            <div class="avatar-m badge-container">
+              <img
+                class="img-responsive avatar-round"
+                src="https://i.pravatar.cc/150?img=68"
+                alt="black and white image of a young man"
+              />
+              <span
+                class="status-badge status-badge_m status-badge_busy"
+              ></span>
+            </div>
+            <div class="avatar-l badge-container">
+              <img
+                class="img-responsive avatar-round"
+                src="https://i.pravatar.cc/150?img=68"
+                alt="black and white image of a young man"
+              />
+              <span
+                class="status-badge status-badge_l status-badge_online"
+              ></span>
+            </div>
+            <div class="avatar-xl badge-container">
+              <img
+                class="img-responsive avatar-round"
+                src="https://i.pravatar.cc/150?img=68"
+                alt="black and white image of a young man"
+              />
+              <span
+                class="status-badge status-badge_xl status-badge_offline"
+              ></span>
+            </div>
+          </div>
+
+          <div class="code-container">
+            <p class="para-s">
+              There are 4 different status badges available: online, offline,
+              busy, away. Simply copy the below html and choose the status per
+              your requirement
+            </p>
+            <pre>
+                <code class="language-html">
+      &lt;div class="avatar-xl badge-container"&gt;
+        &lt;img
+          class="img-responsive avatar-round"
+          src="https://i.pravatar.cc/150?img=68"
+          alt="black and white image of a young man"
+        /&gt;
+        &lt;span
+          class="status-badge status-badge_xl status-badge_offline"
+        &gt;&lt;/span&gt;
+      &lt;/div&gt;
+                </code>
+              </pre>
+          </div>
+
+          <!-- Notification Badge on icon -->
+          <h3 class="heading-xs section-margin-sm">
+            Notification Badge on Icons
+          </h3>
+          <div class="demo-container demo-badge">
+            <button class="notif-btn" type="button">
+              <ion-icon class="notif-icon" name="cart-outline"></ion-icon>
+              <span class="notif-badge">2</span>
+            </button>
+
+            <button class="notif-btn" type="button">
+              <ion-icon
+                class="notif-icon"
+                name="notifications-outline"
+              ></ion-icon>
+              <span class="notif-badge">10</span>
+            </button>
+
+            <button class="notif-btn" type="button">
+              <ion-icon class="notif-icon" name="home-outline"></ion-icon>
+              <span class="notif-badge">5</span>
+            </button>
+          </div>
+
+          <div class="code-container">
+            <p class="para-s">
+              Simply copy the below html to style your notification badges
+            </p>
+            <pre>
+                <code class="language-html">
+      &lt;button class="notif-btn" type="button"&gt;
+        &lt;ion-icon class="notif-icon" name="cart-outline"&gt;&lt;/ion-icon&gt;
+        &lt;span class="notif-badge"&gt;2&lt;/span&gt;
+      &lt;/button&gt;
+                </code>
+              </pre>
+          </div>
+
+          <!-- Text Badge -->
+          <h3 class="heading-xs section-margin-sm">Text Badge</h3>
+          <div class="demo-container demo-badge text-badge-container">
+            <div class="badge-container">
+              <p class="para">Release v1.1.2</p>
+              <div class="text-badge text-badge_s text-badge_solid">Beta</div>
+            </div>
+
+            <div class="badge-container">
+              <p class="para">Release v1.1.2</p>
+              <span class="text-badge text-badge_l text-badge_solid">New</span>
+            </div>
+
+            <div class="badge-container">
+              <p class="para">Release v1.1.2</p>
+              <span class="text-badge text-badge_s text-badge_outline"
+                >Beta</span
+              >
+            </div>
+          </div>
+
+          <div class="code-container">
+            <p class="para-s">
+              There are 2 sizes available for solid text badges, and 2 styles -
+              solid, outline. Simply copy the below html and choose the
+              style/size per your requirement
+            </p>
+            <pre>
+                <code class="language-html">
+      &lt;div class="badge-container"&gt;
+        &lt;p class="para">Release v1.1.2&lt;/p&gt;
+        &lt;span class="text-badge text-badge_l text-badge_solid"&gt;New&lt;/span&gt;
+      &lt;/div&gt;
+                </code>
+              </pre>
+          </div>
+        </div>
 
         <div class="component-wrapper"></div>
         <div class="component-wrapper"></div>
@@ -125,6 +444,7 @@
     </footer>
   </body>
   <script src="../assets/scripts/navbar.js"></script>
+  <script src="../assets/scripts/prism.js"></script>
   <script
     type="module"
     src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"

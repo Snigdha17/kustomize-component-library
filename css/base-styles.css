@@ -60,3 +60,16 @@ body {
   text-decoration: none;
   color: #191200;
 }
+
+.code-container {
+  flex: 0 1 55%;
+  max-width: 100%;
+  height: auto;
+  font-size: 1.3rem;
+  margin-bottom: 5.2rem;
+}
+
+code {
+  border-radius: 0.5rem;
+  overflow-x: auto;
+}

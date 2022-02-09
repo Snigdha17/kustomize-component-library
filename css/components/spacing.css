@@ -1,0 +1,150 @@
+.mg-bottom-xs {
+  margin-bottom: 1.6rem;
+}
+
+.mg-bottom-s {
+  margin-bottom: 2.4rem;
+}
+
+.mg-bottom-m {
+  margin-bottom: 4.8rem;
+}
+
+.mg-bottom-l {
+  margin-bottom: 8rem;
+}
+
+.mg-bottom-xl {
+  margin-bottom: 12.8rem;
+}
+
+/******** Margin-Top ********/
+
+.mg-top-s {
+  margin-top: 2.4rem;
+}
+
+.mg-top-s-m {
+  margin-top: 3.2rem;
+}
+
+.mg-top-s-l {
+  margin-top: 4.8rem;
+}
+
+.mg-top-s-xl {
+  margin-top: 6.4rem;
+}
+
+/******** Margin-Left ********/
+
+.mg-left-s {
+  margin-left: 2.4rem;
+}
+
+.mg-left-m {
+  margin-left: 3.2rem;
+}
+
+.mg-left-l {
+  margin-left: 4.8rem;
+}
+
+.mg-left-xl {
+  margin-left: 6.4rem;
+}
+
+/******** Margin-Right ********/
+
+.mg-right-s {
+  margin-right: 2.4rem;
+}
+
+.mg-right-m {
+  margin-right: 3.2rem;
+}
+
+.mg-right-l {
+  margin-right: 4.8rem;
+}
+
+.mg-right-xl {
+  margin-right: 6.4rem;
+}
+
+/******** Padding-Bottom ********/
+
+.pd-bottom-s {
+  padding-bottom: 2.4rem;
+}
+
+.pd-bottom-m {
+  padding-bottom: 3.2rem;
+}
+
+.pd-bottom-l {
+  padding-bottom: 4.8rem;
+}
+
+.pd-bottom-xl {
+  padding-bottom: 6.4rem;
+}
+
+/******** Padding-Top ********/
+
+.pd-top-s {
+  padding-top: 2.4rem;
+}
+
+.pd-top-m {
+  padding-top: 3.2rem;
+}
+
+.pd-top-l {
+  padding-top: 4.8rem;
+}
+
+.pd-top-xl {
+  padding-top: 6.4rem;
+}
+
+/******** Padding-Left ********/
+
+.pd-left-s {
+  padding-left: 2.4rem;
+}
+
+.pd-left-m {
+  padding-left: 3.2rem;
+}
+
+.pd-left-l {
+  padding-left: 4.8rem;
+}
+
+.pd-left-xl {
+  padding-left: 6.4rem;
+}
+
+/******** Padding-Right ********/
+
+.pd-right-s {
+  padding-right: 2.4rem;
+}
+
+.pd-right-m {
+  padding-right: 3.2rem;
+}
+
+.pd-right-l {
+  padding-right: 4.8rem;
+}
+
+.pd-right-xl {
+  padding-right: 6.4rem;
+}
+
+/*
+SPACING SYSTEM (px)
+2 / 4 / 8 / 12 / 16 / 24 / 32 / 48 / 64 / 80 / 96 / 128
+*/

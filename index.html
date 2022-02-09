@@ -15,6 +15,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link rel="stylesheet" href="css/kustomize-components.css" />
     <link rel="stylesheet" href="css/main.css" />
+    <link rel="stylesheet" href="./css/prism.css" />
     <title>Kustomize</title>
   </head>
   <body>
@@ -64,11 +65,12 @@
             <span class="accent-text">&lt;head&gt;</span> of your HTML file and
             start styling your website!
           </p>
-          <div class="example-code">
-            <iframe
-              src="https://www.thiscodeworks.com/embed/61f8c7861e1df40015379355"
-              class="code-box"
-            ></iframe>
+          <div class="code-container">
+            <pre>
+              <code class="language-html">
+  &lt;link rel="stylesheet" href="https://kustomize.netlify.app/css/components.css"&gt;
+              </code>
+            </pre>
           </div>
         </div>
       </section>
@@ -104,5 +106,6 @@
       nomodule
       src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"
     ></script>
+    <script src="./assets/scripts/prism.js"></script>
   </body>
 </html>
