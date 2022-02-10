@@ -1,0 +1,66 @@
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  padding: 2rem;
+  background-color: var(--demo-color-1);
+}
+
+.nav-list {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  list-style-type: none;
+}
+
+.nav-link {
+  display: inline-block;
+  color: var(--white);
+  text-decoration: none;
+  padding: 1.2rem;
+  font-size: 1.8rem;
+  font-weight: 500;
+  transition: all 0.5s;
+}
+
+.nav-list li:hover {
+  background-color: #6e82ee;
+  border-radius: 0.5rem;
+}
+
+.nav-logo {
+  color: var(--white);
+  height: 2.4rem;
+  width: 2.4rem;
+  cursor: pointer;
+}
+
+.nav-menu {
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+  display: none;
+}
+
+.hamburger-icon {
+  color: var(--white);
+  height: 3.2rem;
+  width: 3.2rem;
+}
+
+@media screen and (max-width: 760px) {
+  .nav-list {
+    display: none;
+  }
+
+  .nav-list.display-menu {
+    display: flex;
+    flex: 0 0 100%;
+    flex-direction: column;
+  }
+
+  .nav-menu {
+    display: block;
+  }
+}

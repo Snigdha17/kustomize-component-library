@@ -84,7 +84,7 @@
             ><ion-icon class="social-icon" name="scan-outline"></ion-icon
             >Modal</a
           >
-          <a class="main-nav-link" href="#"
+          <a class="main-nav-link" href="#navbar-section"
             ><ion-icon class="social-icon" name="navigate-outline"></ion-icon
             >Navigation</a
           >
@@ -411,7 +411,71 @@
         </div>
 
         <div class="component-wrapper"></div>
-        <div class="component-wrapper"></div>
+
+        <!-- Navigation -->
+        <div class="component-wrapper" id="navbar-section">
+          <h1 class="heading-xl">Navigation</h1>
+          <p class="para mg-bottom-m">
+            The navigation bar represents the map of a website. All important
+            links within a site are easily accessible within one click from the
+            navigation bar.
+          </p>
+          <h3 class="heading-xs">Responsive Navigation</h3>
+          <div class="demo-container demo-navbar">
+            <nav class="navbar">
+              <span
+                ><ion-icon class="nav-logo" name="logo-buffer"></ion-icon
+              ></span>
+              <button class="nav-menu" id="nav-menu">
+                <ion-icon class="hamburger-icon" name="menu-outline"></ion-icon>
+              </button>
+              <ul class="nav-list" id="nav-list">
+                <li><a class="nav-link" href="#">Features</a></li>
+                <li><a class="nav-link" href="#">Testimonials</a></li>
+                <li><a class="nav-link" href="#">Contact Us</a></li>
+              </ul>
+            </nav>
+          </div>
+
+          <div class="code-container">
+            <p class="para-s">
+              This navbar is responsive and adapts to mobile screens seamlessly.
+              Feel free to adjust the screen-size to see the responsive
+              navigation!
+            </p>
+            <pre>
+                <code class="language-html">
+      &lt;nav class="navbar"&gt;
+        &lt;span&gt;&lt;ion-icon class="nav-logo" name="logo-buffer"&gt;&lt;/ion-icon&gt;&lt;/span&gt;
+        &lt;button class="nav-menu" id="nav-menu"&gt;
+          &lt;ion-icon class="hamburger-icon" name="menu-outline"&gt;&lt;/ion-icon&gt;
+        &lt;/button&gt;
+        &lt;ul class="nav-list" id="nav-list"&gt;
+          &lt;li&gt;&lt;a class="nav-link" href="#"&gt;Features&lt;/a&gt;&lt;/li&gt;
+          &lt;li&gt;&lt;a class="nav-link" href="#"&gt;Testimonials&lt;/a&gt;&lt;/li&gt;
+          &lt;li&gt;&lt;a class="nav-link" href="#"&gt;Contact Us&lt;/a&gt;&lt;/li&gt;
+        &lt;/ul&gt;
+      &lt;/nav&gt;
+                </code>
+              </pre>
+          </div>
+
+          <div class="code-container">
+            <p class="para-s">
+              Don't forget to include the attached javascript file.
+            </p>
+            <pre>
+                <code class="language-javascript">
+      const navMenu = document.querySelector("#nav-menu");
+      const navList = document.querySelector("#nav-list");
+      
+      navMenu.addEventListener("click", () => {
+        navList.classList.toggle("display-menu");
+      });
+                </code>
+              </pre>
+          </div>
+        </div>
         <div class="component-wrapper"></div>
         <div class="component-wrapper"></div>
         <div class="component-wrapper"></div>
@@ -443,7 +507,8 @@
       <p class="copyright-text">| &copy;2022 Kustomize |</p>
     </footer>
   </body>
-  <script src="../assets/scripts/navbar.js"></script>
+  <script src="../assets/scripts/main-navbar.js"></script>
+  <script src="../assets/scripts/components/navbar.js"></script>
   <script src="../assets/scripts/prism.js"></script>
   <script
     type="module"
