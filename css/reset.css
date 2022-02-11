@@ -31,6 +31,8 @@ html {
   --medium-gray: #bbb;
   --dark-gray: #333;
   --demo-color-1: #3f51b5;
+  --demo-color-1-shade: #2e3c8a;
+  --demo-color-1-tint: #949fdf;
   --status-busy-color: #c4314b;
   --status-away-color: #fdc63f;
   --status-offline-color: #d3d3d3;
