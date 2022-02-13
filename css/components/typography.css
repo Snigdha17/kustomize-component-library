@@ -44,3 +44,11 @@ FONT SIZE SYSTEM (px)
   font-weight: 300;
   margin-bottom: 1.8rem;
 }
+
+.grey-text {
+  color: var(--medium-gray);
+}
+
+.centered-text {
+  text-align: center;
+}
