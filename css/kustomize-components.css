@@ -4,8 +4,8 @@
 /*************** Component Imports ***************/
 /* @import url("./base-styles.css"); */
 @import url("./components/avatar.css");
-@import url("./components/alerts.css");
 @import url("./components/typography.css");
 @import url("./components/spacing.css");
 @import url("./components/images.css");
 @import url("./components/badge.css");
+@import url("./components/button.css");
