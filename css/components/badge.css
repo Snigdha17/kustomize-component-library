@@ -60,6 +60,8 @@
   justify-content: center;
   color: var(--white);
   background-color: var(--demo-color-1);
+  width: 4.2rem;
+  height: 2.4rem;
 }
 
 .text-badge_s {
