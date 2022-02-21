@@ -1,0 +1,100 @@
+.alert-container {
+  position: fixed;
+  top: 1rem;
+  right: 0;
+  z-index: 7;
+}
+
+.alert-container.hide-display {
+  display: none;
+}
+
+.alert-icon {
+  width: 2.4rem;
+  height: 2.4rem;
+}
+
+.alert {
+  border-radius: 0.5rem;
+  max-width: 60rem;
+  width: 100%;
+  font-size: 1.8rem;
+  display: flex;
+  align-items: center;
+  justify-content: start;
+  padding: 2rem 4rem;
+  gap: 1rem;
+  color: white;
+  border-radius: 0.5rem;
+  box-shadow: var(--box-shadow-bottom);
+}
+
+.alert-info {
+  background-color: var(--info-color-tint);
+  border-left: 6px solid var(--info-color);
+  color: var(--info-color);
+}
+
+.alert-info .close-btn-icon {
+  color: var(--info-color);
+}
+
+.alert-warning {
+  background-color: var(--warning-color-tint);
+  border-left: 6px solid var(--warning-color);
+  color: var(--warning-color);
+}
+
+.alert-warning .close-btn-icon {
+  color: var(--warning-color);
+}
+
+.alert-success {
+  background-color: var(--success-color-tint);
+  border-left: 6px solid var(--success-color);
+  color: var(--success-color);
+}
+
+.alert-success .close-btn-icon {
+  color: var(--success-color);
+}
+
+.alert-error {
+  background-color: var(--error-color-tint);
+  border-left: 6px solid var(--error-color);
+  color: var(--error-color);
+}
+
+.alert-error .close-btn-icon {
+  color: var(--error-color);
+}
+
+.close-btn {
+  background: none;
+  outline: none;
+  border: none;
+  cursor: pointer;
+  flex-shrink: 0;
+  align-self: end;
+  margin-left: auto;
+  color: var(--white);
+}
+
+.close-btn:hover {
+  transform: scale(1.5);
+}
+
+.close-btn-icon {
+  height: 2rem;
+  width: 2rem;
+}
+
+.alert-display-btn {
+  padding: 1.2rem 2.4rem;
+  color: var(--white);
+  background-color: var(--demo-color-1);
+  cursor: pointer;
+  border-radius: 0.5rem;
+  display: inline-block;
+  border: none;
+}
