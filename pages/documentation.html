@@ -101,7 +101,7 @@
             ><ion-icon class="social-icon" name="star-half-outline"></ion-icon
             >Rating</a
           >
-          <a class="main-nav-link" href="#"
+          <a class="main-nav-link" href="#toast-section"
             ><ion-icon class="social-icon" name="browsers-outline"></ion-icon
             >Toast</a
           >
@@ -625,9 +625,218 @@
         <div class="component-wrapper"></div>
         <div class="component-wrapper"></div>
         <div class="component-wrapper"></div>
-        <div class="component-wrapper"></div>
-      </div>
+
+        <!-- Toast -->
+        <div class="component-wrapper mg-bottom-xl" id="toast-section">
+
+          <h1 class="heading-xl mg-bottom-xs">Toast</h1>
+          <h2 class="para mg-bottom-s">
+            Toast help display time-sensitive, real-time updates to users
+          </h2>
+          <h3 class="heading-xs section-margin-sm">
+            Example of Simple Toast
+          </h3>
+          <div class="demo-container demo-toast">
+            <div class="toast toast-info">
+              Please click on 'I agree' to continue
+            </div>
+            <div class="toast toast-warning">Incorrect Password. Try again</div>
+            <div class="toast toast-error">Login error</div>
+            <div class="toast toast-success">Successfully uploaded</div>
+          </div>
+
+          <div class="code-container">
+            <p class = "para-s">Simply copy the below HTML according to your desired style</p>
+            <pre>
+              <code class = "language-html">
+      &lt;div class="toast toast-info"&gt;Please click on 'I agree' to continue&lt;/div&gt;
+      &lt;div class="toast toast-warning"&gt;Incorrect Password. Try again&lt;/div&gt;
+      &lt;div class="toast toast-error"&gt;Login error&lt;/div&gt;
+      &lt;div class="toast toast-success"&gt;Successfully uploaded&lt;/div&gt;
+              </code>
+            </pre>
+          </div>
+
+          <h3 class="heading-xs section-margin-sm">
+            Example of Toast with Icon
+          </h3>
+          <div class="demo-container demo-toast">
+            <div class="toast toast-info">
+              <ion-icon name="information-circle-outline" class="toast-icon"></ion-icon>
+                Please click on 'I agree' to proceed
+            </div>
+            <div class="toast toast-warning">
+              <ion-icon name="warning-outline" class="toast-icon"></ion-icon></i>
+              Incorrect Password. Try again
+            </div>
+            <div class="toast toast-error">
+              <ion-icon name="bug-outline" class="toast-icon"></ion-icon>
+              Login error
+            </div>
+            <div class="toast toast-success">
+              <ion-icon name="checkmark-circle-outline" class="toast-icon"></ion-icon>
+              Successfully uploaded
+            </div>
+          </div>
+
+          <div class="code-container">
+            <p class = "para-s">Simply copy the below HTML according to your desired style</p>
+            <pre>
+              <code class = "language-html">
+        &lt;div class="toast toast-info"&gt;
+          &lt;ion-icon name="information-circle-outline" class="toast-icon"&gt;&lt;/ion-icon&gt;
+          Please click on 'I agree' to proceed
+        &lt;/div&gt;
+
+        &lt;div class="toast toast-warning"&gt;
+          &lt;ion-icon name="warning-outline" class="toast-icon"&gt;&lt;/ion-icon&gt;&lt;/i&gt;
+          Incorrect Password. Try again
+        &lt;/div&gt;
+
+        &lt;div class="toast toast-error"&gt;
+          &lt;ion-icon name="bug-outline" class="toast-icon"&gt;&lt;/ion-icon&gt;
+          Login error
+        &lt;/div&gt;
+
+        &lt;div class="toast toast-success"&gt;
+          &lt;ion-icon name="checkmark-circle-outline" class="toast-icon"&gt;&lt;/ion-icon&gt;
+          Successfully uploaded
+        &lt;/div&gt;
+              </code>
+            </pre>
+          </div>
+
+          <h3 class="heading-xs section-margin-sm">
+            Example of Toast Bar with Icon and Dismiss
+          </h3>
+          <div class="demo-container demo-toast">
+            <div class="toast toast-info">
+              <ion-icon name="information-circle-outline" class="toast-icon"></ion-icon>
+                <span>Please click on 'I agree' to proceed</span>
+              <button class="toast-close-btn" type="button">
+                <ion-icon name="close-outline" class="toast-close-btn-icon"></ion-icon
+                >
+              </button>
+            </div>
+            <div class="toast toast-warning">
+              <ion-icon name="warning-outline" class="toast-icon"></ion-icon></i>
+              Incorrect Password. Try again
+              <button class="toast-close-btn" type="button">
+                <ion-icon name="close-outline" class="toast-close-btn-icon"></ion-icon
+                >
+              </button>            
+            </div>
+            <div class="toast toast-error">
+              <ion-icon name="bug-outline" class="toast-icon"></ion-icon>              
+              Login error
+              <button class="toast-close-btn" type="button">
+                <ion-icon name="close-outline" class="toast-close-btn-icon"></ion-icon
+                >
+              </button>            
+            </div>
+            <div class="toast toast-success">
+              <ion-icon name="checkmark-circle-outline" class="toast-icon"></ion-icon>
+              Successfully uploaded
+              <button class="toast-close-btn" type="button">
+                <ion-icon name="close-outline" class="toast-close-btn-icon"></ion-icon
+                >
+              </button>            
+            </div>
+          </div>
+          <div class="code-container">
+            <p class = "para-s">Simply copy the below HTML according to your desired style</p>
+            <pre>
+              <code class = "language-html">
+        &lt;div class="toast toast-info"&gt;
+          &lt;ion-icon name="information-circle-outline" class="toast-icon"&gt;&lt;/ion-icon&gt;
+          &lt;span&gt;Please click on 'I agree' to proceed&lt;/span&gt;
+          &lt;button class="toast-close-btn" type="button"&gt;
+            &lt;ion-icon name="close-outline" class="toast-close-btn-icon"&gt;&lt;/ion-icon&gt;
+        &lt;/button&gt;
+      &lt;/div&gt;
+
+      &lt;div class="toast toast-warning"&gt;
+        &lt;ion-icon name="warning-outline" class="toast-icon"&gt;&lt;/ion-icon&gt;&lt;/i&gt;
+        Incorrect Password. Try again
+        &lt;button class="toast-close-btn" type="button"&gt;
+          &lt;ion-icon name="close-outline" class="toast-close-btn-icon"&gt;&lt;/ion-icon&gt;
+        &lt;/button&gt;            
+      &lt;/div&gt;
+
+      &lt;div class="toast toast-error"&gt;
+        &lt;ion-icon name="bug-outline" class="toast-icon"&gt;&lt;/ion-icon&gt;              
+        Login error
+        &lt;button class="toast-close-btn" type="button"&gt;
+          &lt;ion-icon name="close-outline" class="toast-close-btn-icon"&gt;&lt;/ion-icon&gt;
+        &lt;/button&gt;            
+      &lt;/div&gt;
+
+      &lt;div class="toast toast-success"&gt;
+        &lt;ion-icon name="checkmark-circle-outline" class="toast-icon"&gt;&lt;/ion-icon&gt;
+        Successfully uploaded
+        &lt;button class="toast-close-btn" type="button"&gt;
+          &lt;ion-icon name="close-outline" class="toast-close-btn-icon"&gt;&lt;/ion-icon&gt;
+        &lt;/button&gt;            
+      &lt;/div&gt;
+              </code>
+            </pre>
+          </div>
+
+          <h3 class="heading-xs section-margin-sm">
+            Demo of toast with Close Button
+          </h3>
+          <div class="demo-container demo-toast">
+            <div class = "toast-container hide-display">
+            <div class="toast toast-success">
+              <ion-icon name="checkmark-circle-outline" class="toast-icon"></ion-icon>
+              Successfully uploaded
+              <button class="toast-close-btn" id="toast-close-btn" type="button">
+                <ion-icon name="close-outline" class="toast-close-btn-icon"></ion-icon
+                >
+              </button>            
+            </div>
+          </div>
+            <button class="toast-display-btn" id = "toast-display-btn">Demo</button>
+        </div>
+
+        <div class="code-container">
+          <p class = "para-s">To create a dismissable toast, simply pick your toast style and wrap it in the toast container like below. Don't forget to include the script!</p>
+        <pre>
+          <code class="language-html">
+      &lt;div class = "toast-container hide-display"&gt;
+        &lt;div class="toast toast-success"&gt;
+          &lt;ion-icon name="checkmark-circle-outline" class="toast-icon"&gt;&lt;/ion-icon&gt;
+          Successfully uploaded
+          &lt;button class="toast-close-btn" id="toast-close-btn" type="button"&gt;
+            &lt;ion-icon name="close-outline" class="toast-close-btn-icon"&gt;&lt;/ion-icon&gt;
+          &lt;/button&gt;            
+          &lt;/div&gt;
+        &lt;/div&gt;
+        &lt;button class="toast-display-btn" id = "toast-display-btn"&gt;Demo&lt;/button&gt;
+      &lt;/div&gt;
+          </code>
+        </pre>
+        </div>
+
+        <div class="code-container">
+          <pre>
+          <code class="language-javascript">
+      const closeButton = document.querySelector("#toast-close-btn");
+      const toastContainer = document.querySelector(".toast-container");
+      const toastDisplayButton = document.querySelector("#toast-display-btn");
+
+      toastDisplayButton.addEventListener("click", () => {
+        toastContainer.classList.remove("hide-display");
+      });
+      toastCloseButton.addEventListener("click", () => {
+        toastContainer.classList.add("hide-display");
+      });
+          </code>
+        </pre>
+        </div>
+        </div>
     </div>
+  </div>
 
     <footer class="footer">
       <p class="footer-text section-margin-sm">
@@ -655,6 +864,7 @@
   </body>
   <script src="../assets/scripts/navbar.js"></script>
   <script src="../assets/scripts/prism.js"></script>
+  <script src = "../assets/scripts/toast.js"></script>
   <script
     type="module"
     src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"
