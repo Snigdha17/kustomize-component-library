@@ -261,10 +261,10 @@
         <!-- Badge -->
         <div class="component-wrapper mg-bottom-xl" id="badge-section">
           <h1 class="heading-xl">Badge</h1>
-          <h2 class="para mg-bottom-m">
+          <p class="para mg-bottom-m">
             Badges can be used as status indicators, display notifications or
             highlight any textual information
-          </h2>
+          </p>
           <h3 class="heading-xs section-margin-sm">Status Badge on Avatar</h3>
           <div class="demo-container demo-badge">
             <div class="avatar-xs badge-container">
@@ -1022,91 +1022,95 @@
       &lt;/div&gt;
     </code>
   </pre>
-</div>
-        <div class="component-wrapper"></div>
-        <div class="component-wrapper mg-bottom-xl" id="inputs-section">
-          <h1 class="heading-xl">Inputs</h1>
-          <p class="para mg-bottom-m">
-            Input Forms are used to gather user details and/or feedback. The
-            below form contains validation checks for incorrect user inputs
-          </p>
-          <h3 class="heading-xs">Responsive Input Form with Validation</h3>
-          <div class="demo-container">
-            <div class="form-container">
-              <div class="form-header">
-                <h2 class="heading-xs">Create Account</h2>
-              </div>
-              <form class="form" id="form">
-                <div class="form-control">
-                  <label>Username</label>
-                  <input type="text" placeholder="Username" id="username" />
-                  <ion-icon
-                    class="form-icon form-icon-success"
-                    name="checkmark-circle"
-                  ></ion-icon>
-                  <ion-icon
-                    class="form-icon form-icon-error"
-                    name="alert-circle"
-                  ></ion-icon>
-                  <p class="form-message">Error message</p>
-                </div>
-
-                <div class="form-control">
-                  <label>Email</label>
-                  <input type="email" placeholder="Email" id="email" />
-                  <ion-icon
-                    class="form-icon form-icon-success"
-                    name="checkmark-circle"
-                  ></ion-icon>
-                  <ion-icon
-                    class="form-icon form-icon-error"
-                    name="alert-circle-outline"
-                  ></ion-icon>
-                  <p class="form-message">Error message</p>
-                </div>
-
-                <div class="form-control">
-                  <label>Password</label>
-                  <input type="password" placeholder="Password" id="password" />
-                  <ion-icon
-                    class="form-icon form-icon-success"
-                    name="checkmark-circle"
-                  ></ion-icon>
-                  <ion-icon
-                    class="form-icon form-icon-error"
-                    name="alert-circle-outline"
-                  ></ion-icon>
-                  <p class="form-message">Error message</p>
-                </div>
-
-                <div class="form-control">
-                  <label>Confirm Password</label>
-                  <input
-                    type="password"
-                    placeholder="Confirm password"
-                    id="password2"
-                  />
-                  <ion-icon
-                    class="form-icon form-icon-success"
-                    name="checkmark-circle"
-                  ></ion-icon>
-                  <ion-icon
-                    class="form-icon form-icon-error"
-                    name="alert-circle-outline"
-                  ></ion-icon>
-                  <p class="form-message">Error message</p>
-                </div>
-
-                <button class="form-button">Submit</button>
-              </form>
-            </div>
           </div>
-          <div class="code-container">
-            <p class="para-s">
-              Simply Copy and below HTML code and don't forget to include the
-              inputs script which is part of the library source code
+          <div class="component-wrapper"></div>
+          <div class="component-wrapper mg-bottom-xl" id="inputs-section">
+            <h1 class="heading-xl">Inputs</h1>
+            <p class="para mg-bottom-m">
+              Input Forms are used to gather user details and/or feedback. The
+              below form contains validation checks for incorrect user inputs
             </p>
-            <pre>
+            <h3 class="heading-xs">Responsive Input Form with Validation</h3>
+            <div class="demo-container">
+              <div class="form-container">
+                <div class="form-header">
+                  <h2 class="heading-xs">Create Account</h2>
+                </div>
+                <form class="form" id="form">
+                  <div class="form-control">
+                    <label>Username</label>
+                    <input type="text" placeholder="Username" id="username" />
+                    <ion-icon
+                      class="form-icon form-icon-success"
+                      name="checkmark-circle"
+                    ></ion-icon>
+                    <ion-icon
+                      class="form-icon form-icon-error"
+                      name="alert-circle"
+                    ></ion-icon>
+                    <p class="form-message">Error message</p>
+                  </div>
+
+                  <div class="form-control">
+                    <label>Email</label>
+                    <input type="email" placeholder="Email" id="email" />
+                    <ion-icon
+                      class="form-icon form-icon-success"
+                      name="checkmark-circle"
+                    ></ion-icon>
+                    <ion-icon
+                      class="form-icon form-icon-error"
+                      name="alert-circle-outline"
+                    ></ion-icon>
+                    <p class="form-message">Error message</p>
+                  </div>
+
+                  <div class="form-control">
+                    <label>Password</label>
+                    <input
+                      type="password"
+                      placeholder="Password"
+                      id="password"
+                    />
+                    <ion-icon
+                      class="form-icon form-icon-success"
+                      name="checkmark-circle"
+                    ></ion-icon>
+                    <ion-icon
+                      class="form-icon form-icon-error"
+                      name="alert-circle-outline"
+                    ></ion-icon>
+                    <p class="form-message">Error message</p>
+                  </div>
+
+                  <div class="form-control">
+                    <label>Confirm Password</label>
+                    <input
+                      type="password"
+                      placeholder="Confirm password"
+                      id="password2"
+                    />
+                    <ion-icon
+                      class="form-icon form-icon-success"
+                      name="checkmark-circle"
+                    ></ion-icon>
+                    <ion-icon
+                      class="form-icon form-icon-error"
+                      name="alert-circle-outline"
+                    ></ion-icon>
+                    <p class="form-message">Error message</p>
+                  </div>
+
+                  <button class="form-button">Submit</button>
+                </form>
+              </div>
+            </div>
+            <div class="code-container">
+              <p class="para-s">
+                Simply Copy and below HTML code and don't forget to include the
+                inputs script which is part of the library source code
+              </p>
+              <pre>
               <code class="language-html">
       &lt;div class="form-container"&gt;
       &lt;div class="form-header"&gt;
@@ -1178,11 +1182,93 @@
     &lt;/div&gt;
                 </code>
               </pre>
+            </div>
+          </div>
+          <div class="component-wrapper"></div>
+          <div class="component-wrapper"></div>
+          <div class="component-wrapper"></div>
+          <!-- Modal -->
+          <div class="component-wrapper">
+            <h1 class="heading-xl">Modal</h1>
+            <p class="para mg-bottom-m">
+              A modal prompts your user to take an action before anything else
+              can be done. It disables the rest of the screen, and the call to
+              action pops out.
+            </p>
+            <h3 class="heading-xs section-margin-sm">Clean, Minimal Modal</h3>
+            <div class="demo-container">
+              <div class="modal">
+                <h1 class="heading-m">Modal</h1>
+                <p class="para">
+                  Simple Modal which pops out of the page to attract the user's
+                  attention. Replace it with your content.
+                </p>
+                <button class="hide-modal">Close</button>
+              </div>
+            </div>
+
+            <div class="demo-container demo-modal">
+              <h1 class="heading-s">Demo</h1>
+              <button class="display-modal" id="display-modal-btn">
+                View Modal
+              </button>
+              <div class="modal-container" id="modal-container">
+                <div class="modal">
+                  <h1 class="heading-m">Modal</h1>
+                  <p class="para">
+                    Simple Modal which pops out of the page to attract the
+                    user's attention. Replace it with your content.
+                  </p>
+                  <button class="hide-modal" id="close-modal-btn">Close</button>
+                </div>
+              </div>
+            </div>
+
+            <div class="code-container">
+              <p class="para-s">
+                Simple copy paste the below HTML and Javascript and you will
+                have a clean modal in no time!
+              </p>
+              <pre>
+                <code class="language-html">
+      &lt;div class="demo-container demo-modal"&gt;
+        &lt;h1 class="heading-s"&gt;Demo&lt;/h1&gt;
+        &lt;button class="display-modal" id="display-modal-btn"&gt;
+          View Modal
+        &lt;/button&gt;
+        &lt;div class="modal-container" id="modal-container"&gt;
+          &lt;div class="modal"&gt;
+          &lt;h1 class="heading-m"&gt;Modal&lt;/h1&gt;
+          &lt;p class="para"&gt;
+            Simple Modal which pops out of the page to attract the user's
+            attention. Replace it with your content.
+          &lt;/p&gt;
+          &lt;button class="hide-modal" id="close-modal-btn"&gt;Close&lt;/button&gt;
+        &lt;/div&gt;
+        &lt;/div&gt;
+    &lt;/div&gt;
+                </code>
+              </pre>
+            </div>
+
+            <div class="code-container">
+              <pre>
+                <code class="language-javascript">
+      const displayModalButton = document.querySelector("#display-modal-btn");
+      const hideModalButton = document.querySelector("#close-modal-btn");
+      const modalContainer = document.querySelector("#modal-container");
+      
+      displayModalButton.addEventListener("click", () => {
+        modalContainer.classList.add("show");
+      });
+      
+      hideModalButton.addEventListener("click", () => {
+        modalContainer.classList.remove("show");
+            </code>
+              </pre>
+            </div>
           </div>
         </div>
-        <div class="component-wrapper"></div>
-        <div class="component-wrapper"></div>
-        <div class="component-wrapper"></div>
 
         <!-- Grid -->
         <div class="component-wrapper mg-bottom-xl" id="grid-section">
@@ -1839,6 +1925,7 @@
   </body>
   <script src="../assets/scripts/navbar.js"></script>
   <script src="../assets/scripts/prism.js"></script>
+  <script src="../assets/scripts/modal.js"></script>
   <script src="../assets/scripts/inputs.js"></script>
   <script src="../assets/scripts/toast.js"></script>
   <script

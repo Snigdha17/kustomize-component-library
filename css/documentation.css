@@ -64,3 +64,7 @@ body {
   align-items: start;
   gap: 2rem;
 }
+
+.demo-modal {
+  display: block;
+}
