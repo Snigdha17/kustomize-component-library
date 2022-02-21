@@ -42,6 +42,10 @@ body {
   gap: 2rem;
 }
 
+.demo-typography {
+  display: block;
+}
+
 .demo-lists {
   gap: 3rem;
 }

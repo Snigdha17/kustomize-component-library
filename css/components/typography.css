@@ -45,6 +45,13 @@ FONT SIZE SYSTEM (px)
   margin-bottom: 1.8rem;
 }
 
+.grey-text {
+  color: var(--medium-gray);
+}
+
+.centered-text {
+  text-align: center;
+  
 .para-xs {
   font-size: 1.4rem;
   font-weight: 300;
