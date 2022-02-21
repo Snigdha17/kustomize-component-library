@@ -1,0 +1,99 @@
+.form-container {
+  border-radius: 0.5rem;
+  box-shadow: var(--box-shadow-bottom);
+  width: 40rem;
+  max-width: 100%;
+  overflow: hidden;
+}
+
+.form-header {
+  padding: 2rem 4rem;
+  background-color: var(--off-white);
+  border-bottom: 1px solid var(--light-gray);
+}
+
+.form {
+  padding: 3rem 4rem;
+}
+
+.form-control {
+  margin-bottom: 1rem;
+  padding-bottom: 2rem;
+  position: relative;
+}
+
+.form-control label {
+  display: inline-block;
+  margin-bottom: 0.5rem;
+  font-size: 1.6rem;
+}
+
+.form-control input {
+  display: block;
+  border-radius: 0.2rem;
+  font-size: 1.4rem;
+  border: 2px solid var(--light-gray);
+  padding: 1rem;
+  width: 100%;
+  font-family: inherit;
+}
+
+.form-control.success input {
+  border-color: var(--status-available-color);
+}
+
+.form-control.error input {
+  border-color: var(--status-busy-color);
+}
+
+.form-control .form-icon {
+  position: absolute;
+  top: 3.5rem;
+  right: 1rem;
+  visibility: hidden;
+  width: 2rem;
+  height: 2rem;
+}
+
+.form-control.success .form-icon-success {
+  visibility: visible;
+  color: var(--status-available-color);
+}
+
+.form-control.error .form-icon-error {
+  visibility: visible;
+  color: var(--status-busy-color);
+}
+
+.form-control .form-message {
+  font-size: 1.2rem;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  visibility: hidden;
+}
+
+.form-control.error .form-message {
+  visibility: visible;
+  color: var(--status-busy-color);
+}
+
+.form-button {
+  background-color: var(--demo-color-1);
+  border: 2px solid var(--demo-color-1);
+  border-radius: 0.5rem;
+  color: var(--white);
+  display: block;
+  padding: 1rem;
+  width: 100%;
+  font-size: 1.6rem;
+  font-family: inherit;
+  box-shadow: var(--box-shadow-bottom);
+  cursor: pointer;
+}
+
+.form-button:hover {
+  background-color: var(--medium-gray);
+  color: var(--dark-gray);
+  border-color: var(--medium-gray);
+}
