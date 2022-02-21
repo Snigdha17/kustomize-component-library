@@ -73,7 +73,7 @@
             ><ion-icon class="social-icon" name="card-outline"></ion-icon
             >Card</a
           >
-          <a class="main-nav-link" href="#"
+          <a class="main-nav-link" href="#inputs-section"
             ><ion-icon class="social-icon" name="laptop-outline"></ion-icon
             >Form</a
           >
@@ -622,7 +622,162 @@
           </div>
         </div>
         <div class="component-wrapper"></div>
-        <div class="component-wrapper"></div>
+        <div class="component-wrapper" id="inputs-section">
+          <h1 class="heading-xl">Inputs</h1>
+          <p class="para mg-bottom-m">
+            Input Forms are used to gather user details and/or feedback. The
+            below form contains validation checks for incorrect user inputs
+          </p>
+          <h3 class="heading-xs">Responsive Input Form with Validation</h3>
+          <div class="demo-container">
+            <div class="form-container">
+              <div class="form-header">
+                <h2 class="heading-xs">Create Account</h2>
+              </div>
+              <form class="form" id="form">
+                <div class="form-control">
+                  <label>Username</label>
+                  <input type="text" placeholder="Username" id="username" />
+                  <ion-icon
+                    class="form-icon form-icon-success"
+                    name="checkmark-circle"
+                  ></ion-icon>
+                  <ion-icon
+                    class="form-icon form-icon-error"
+                    name="alert-circle"
+                  ></ion-icon>
+                  <p class="form-message">Error message</p>
+                </div>
+
+                <div class="form-control">
+                  <label>Email</label>
+                  <input type="email" placeholder="Email" id="email" />
+                  <ion-icon
+                    class="form-icon form-icon-success"
+                    name="checkmark-circle"
+                  ></ion-icon>
+                  <ion-icon
+                    class="form-icon form-icon-error"
+                    name="alert-circle-outline"
+                  ></ion-icon>
+                  <p class="form-message">Error message</p>
+                </div>
+
+                <div class="form-control">
+                  <label>Password</label>
+                  <input type="password" placeholder="Password" id="password" />
+                  <ion-icon
+                    class="form-icon form-icon-success"
+                    name="checkmark-circle"
+                  ></ion-icon>
+                  <ion-icon
+                    class="form-icon form-icon-error"
+                    name="alert-circle-outline"
+                  ></ion-icon>
+                  <p class="form-message">Error message</p>
+                </div>
+
+                <div class="form-control">
+                  <label>Confirm Password</label>
+                  <input
+                    type="password"
+                    placeholder="Confirm password"
+                    id="password2"
+                  />
+                  <ion-icon
+                    class="form-icon form-icon-success"
+                    name="checkmark-circle"
+                  ></ion-icon>
+                  <ion-icon
+                    class="form-icon form-icon-error"
+                    name="alert-circle-outline"
+                  ></ion-icon>
+                  <p class="form-message">Error message</p>
+                </div>
+
+                <button class="form-button">Submit</button>
+              </form>
+            </div>
+          </div>
+          <div class="code-container">
+            <p class="para-s">
+              Simply Copy and below HTML code and don't forget to include the
+              inputs script which is part of the library source code
+            </p>
+            <pre>
+                <code class="language-html">
+      &lt;div class="form-container"&gt;
+      &lt;div class="form-header"&gt;
+        &lt;h2 class="heading-xs"&gt;Create Account&lt;/h2&gt;
+      &lt;/div&gt;
+      &lt;form class="form" id="form"&gt;
+        &lt;div class="form-control"&gt;
+          &lt;label&gt;Username&lt;/label&gt;
+          &lt;input type="text" placeholder="Username" id="username" /&gt;
+          &lt;ion-icon
+            class="form-icon form-icon-success"
+            name="checkmark-circle"
+          &gt;&lt;/ion-icon&gt;
+          &lt;ion-icon
+            class="form-icon form-icon-error"
+            name="alert-circle"
+          &gt;&lt;/ion-icon&gt;
+          &lt;p class="form-message"&gt;Error message&lt;/p&gt;
+        &lt;/div&gt;
+
+        &lt;div class="form-control"&gt;
+          &lt;label&gt;Email&lt;/label&gt;
+          &lt;input type="email" placeholder="Email" id="email" /&gt;
+          &lt;ion-icon
+            class="form-icon form-icon-success"
+            name="checkmark-circle"
+          &gt;&lt;/ion-icon&gt;
+          &lt;ion-icon
+            class="form-icon form-icon-error"
+            name="alert-circle-outline"
+          &gt;&lt;/ion-icon&gt;
+          &lt;p class="form-message"&gt;Error message&lt;/p&gt;
+        &lt;/div&gt;
+
+        &lt;div class="form-control"&gt;
+          &lt;label&gt;Password&lt;/label&gt;
+          &lt;input type="password" placeholder="Password" id="password" /&gt;
+          &lt;ion-icon
+            class="form-icon form-icon-success"
+            name="checkmark-circle"
+          &gt;&lt;/ion-icon&gt;
+          &lt;ion-icon
+            class="form-icon form-icon-error"
+            name="alert-circle-outline"
+          &gt;&lt;/ion-icon&gt;
+          &lt;p class="form-message"&gt;Error message&lt;/p&gt;
+        &lt;/div&gt;
+
+        &lt;div class="form-control"&gt;
+          &lt;label&gt;Confirm Password&lt;/label&gt;
+          &lt;input
+            type="password"
+            placeholder="Confirm password"
+            id="password2"
+          /&gt;
+          &lt;ion-icon
+            class="form-icon form-icon-success"
+            name="checkmark-circle"
+          &gt;&lt;/ion-icon&gt;
+          &lt;ion-icon
+            class="form-icon form-icon-error"
+            name="alert-circle-outline"
+          &gt;&lt;/ion-icon&gt;
+          &lt;p class="form-message"&gt;Error message&lt;/p&gt;
+        &lt;/div&gt;
+
+        &lt;button class="form-button"&gt;Submit&lt;/button&gt;
+      &lt;/form&gt;
+    &lt;/div&gt;
+                </code>
+              </pre>
+          </div>
+        </div>
         <div class="component-wrapper"></div>
         <div class="component-wrapper"></div>
 
@@ -864,6 +1019,7 @@
   </body>
   <script src="../assets/scripts/navbar.js"></script>
   <script src="../assets/scripts/prism.js"></script>
+  <script src="../assets/scripts/inputs.js"></script>
   <script src = "../assets/scripts/toast.js"></script>
   <script
     type="module"
