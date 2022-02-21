@@ -1,7 +1,7 @@
 @import url("./base-styles.css");
 @import url("./kustomize-components.css");
 @import url("./footer.css");
-@import url("./navbar.css");
+@import url("./main-navbar.css");
 
 body {
   font-family: "Inter", sans-serif;
@@ -35,14 +35,41 @@ body {
   margin-bottom: 3.2rem;
 }
 
-.demo-alert {
+.demo-alert,
+.demo-toast {
   flex-direction: column;
   align-items: start;
   gap: 2rem;
+}
+
+.demo-typography {
+  display: block;
+}
+
+.demo-lists {
+  gap: 3rem;
+}
+
+.demo-list {
+  padding: 1.6rem;
+  border: 2px solid #e6e6e6;
+  border-radius: 0.5rem;
+}
+
+.demo-list ul,
+.demo-list ol {
+  list-style-position: inside;
+  color: var(--dark-gray);
+  font-size: 1.6rem;
 }
 
 .text-badge-container {
   flex-direction: column;
   align-items: start;
   gap: 2rem;
+}
+
+.demo-navbar,
+.demo-modal {
+  display: block;
 }

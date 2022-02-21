@@ -1,0 +1,52 @@
+.display-modal,
+.hide-modal {
+  background-color: var(--demo-color-1);
+  color: var(--white);
+  border: 0;
+  border-radius: 0.5rem;
+  padding: 1rem 2.5rem;
+  box-shadow: var(--box-shadow-bottom);
+  cursor: pointer;
+  font-size: 1.4rem;
+  display: inline-block;
+  transition: hover 0.1s;
+}
+
+.display-modal:hover,
+.hide-modal:hover {
+  background-color: var(--demo-color-1-shade);
+}
+
+.modal-container {
+  width: 100vw;
+  height: 100vh;
+  position: fixed;
+  top: 0;
+  left: 0;
+  background-color: rgba(0, 0, 0, 0.3);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity 0.3s ease;
+  z-index: 1;
+}
+
+.modal-container.show {
+  opacity: 1;
+  visibility: visible;
+}
+
+.modal {
+  background-color: var(--off-white);
+  width: 60rem;
+  max-width: 100%;
+  padding: 3rem 5rem;
+  border-radius: 0.5rem;
+  text-align: center;
+}
+
+.modal .para {
+  opacity: 70%;
+}
