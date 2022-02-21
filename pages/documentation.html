@@ -85,7 +85,7 @@
             ><ion-icon class="social-icon" name="image-outline"></ion-icon
             >Image</a
           >
-          <a class="main-nav-link" href="#"
+          <a class="main-nav-link" href="#lists-section"
             ><ion-icon class="social-icon" name="list-outline"></ion-icon
             >List</a
           >
@@ -947,14 +947,11 @@
 
         <!-- Toast -->
         <div class="component-wrapper mg-bottom-xl" id="toast-section">
-
           <h1 class="heading-xl mg-bottom-xs">Toast</h1>
-          <h2 class="para mg-bottom-s">
+          <div class="para mg-bottom-s">
             Toast help display time-sensitive, real-time updates to users
-          </h2>
-          <h3 class="heading-xs section-margin-sm">
-            Example of Simple Toast
-          </h3>
+          </div>
+          <h3 class="heading-xs section-margin-sm">Example of Simple Toast</h3>
           <div class="demo-container demo-toast">
             <div class="toast toast-info">
               Please click on 'I agree' to continue
@@ -965,7 +962,9 @@
           </div>
 
           <div class="code-container">
-            <p class = "para-s">Simply copy the below HTML according to your desired style</p>
+            <p class="para-s">
+              Simply copy the below HTML according to your desired style
+            </p>
             <pre>
               <code class = "language-html">
       &lt;div class="toast toast-info"&gt;Please click on 'I agree' to continue&lt;/div&gt;
@@ -981,11 +980,14 @@
           </h3>
           <div class="demo-container demo-toast">
             <div class="toast toast-info">
-              <ion-icon name="information-circle-outline" class="toast-icon"></ion-icon>
-                Please click on 'I agree' to proceed
+              <ion-icon
+                name="information-circle-outline"
+                class="toast-icon"
+              ></ion-icon>
+              Please click on 'I agree' to proceed
             </div>
             <div class="toast toast-warning">
-              <ion-icon name="warning-outline" class="toast-icon"></ion-icon></i>
+              <ion-icon name="warning-outline" class="toast-icon"></ion-icon>
               Incorrect Password. Try again
             </div>
             <div class="toast toast-error">
@@ -993,13 +995,18 @@
               Login error
             </div>
             <div class="toast toast-success">
-              <ion-icon name="checkmark-circle-outline" class="toast-icon"></ion-icon>
+              <ion-icon
+                name="checkmark-circle-outline"
+                class="toast-icon"
+              ></ion-icon>
               Successfully uploaded
             </div>
           </div>
 
           <div class="code-container">
-            <p class = "para-s">Simply copy the below HTML according to your desired style</p>
+            <p class="para-s">
+              Simply copy the below HTML according to your desired style
+            </p>
             <pre>
               <code class = "language-html">
         &lt;div class="toast toast-info"&gt;
@@ -1030,40 +1037,56 @@
           </h3>
           <div class="demo-container demo-toast">
             <div class="toast toast-info">
-              <ion-icon name="information-circle-outline" class="toast-icon"></ion-icon>
-                <span>Please click on 'I agree' to proceed</span>
+              <ion-icon
+                name="information-circle-outline"
+                class="toast-icon"
+              ></ion-icon>
+              <span>Please click on 'I agree' to proceed</span>
               <button class="toast-close-btn" type="button">
-                <ion-icon name="close-outline" class="toast-close-btn-icon"></ion-icon
-                >
+                <ion-icon
+                  name="close-outline"
+                  class="toast-close-btn-icon"
+                ></ion-icon>
               </button>
             </div>
             <div class="toast toast-warning">
-              <ion-icon name="warning-outline" class="toast-icon"></ion-icon></i>
+              <ion-icon name="warning-outline" class="toast-icon"></ion-icon>
               Incorrect Password. Try again
               <button class="toast-close-btn" type="button">
-                <ion-icon name="close-outline" class="toast-close-btn-icon"></ion-icon
-                >
-              </button>            
+                <ion-icon
+                  name="close-outline"
+                  class="toast-close-btn-icon"
+                ></ion-icon>
+              </button>
             </div>
             <div class="toast toast-error">
-              <ion-icon name="bug-outline" class="toast-icon"></ion-icon>              
+              <ion-icon name="bug-outline" class="toast-icon"></ion-icon>
               Login error
               <button class="toast-close-btn" type="button">
-                <ion-icon name="close-outline" class="toast-close-btn-icon"></ion-icon
-                >
-              </button>            
+                <ion-icon
+                  name="close-outline"
+                  class="toast-close-btn-icon"
+                ></ion-icon>
+              </button>
             </div>
             <div class="toast toast-success">
-              <ion-icon name="checkmark-circle-outline" class="toast-icon"></ion-icon>
+              <ion-icon
+                name="checkmark-circle-outline"
+                class="toast-icon"
+              ></ion-icon>
               Successfully uploaded
               <button class="toast-close-btn" type="button">
-                <ion-icon name="close-outline" class="toast-close-btn-icon"></ion-icon
-                >
-              </button>            
+                <ion-icon
+                  name="close-outline"
+                  class="toast-close-btn-icon"
+                ></ion-icon>
+              </button>
             </div>
           </div>
           <div class="code-container">
-            <p class = "para-s">Simply copy the below HTML according to your desired style</p>
+            <p class="para-s">
+              Simply copy the below HTML according to your desired style
+            </p>
             <pre>
               <code class = "language-html">
         &lt;div class="toast toast-info"&gt;
@@ -1105,22 +1128,37 @@
             Demo of toast with Close Button
           </h3>
           <div class="demo-container demo-toast">
-            <div class = "toast-container hide-display">
-            <div class="toast toast-success">
-              <ion-icon name="checkmark-circle-outline" class="toast-icon"></ion-icon>
-              Successfully uploaded
-              <button class="toast-close-btn" id="toast-close-btn" type="button">
-                <ion-icon name="close-outline" class="toast-close-btn-icon"></ion-icon
+            <div class="toast-container hide-display">
+              <div class="toast toast-success">
+                <ion-icon
+                  name="checkmark-circle-outline"
+                  class="toast-icon"
+                ></ion-icon>
+                Successfully uploaded
+                <button
+                  class="toast-close-btn"
+                  id="toast-close-btn"
+                  type="button"
                 >
-              </button>            
+                  <ion-icon
+                    name="close-outline"
+                    class="toast-close-btn-icon"
+                  ></ion-icon>
+                </button>
+              </div>
             </div>
+            <button class="toast-display-btn" id="toast-display-btn">
+              Demo
+            </button>
           </div>
-            <button class="toast-display-btn" id = "toast-display-btn">Demo</button>
-        </div>
 
-        <div class="code-container">
-          <p class = "para-s">To create a dismissable toast, simply pick your toast style and wrap it in the toast container like below. Don't forget to include the script!</p>
-        <pre>
+          <div class="code-container">
+            <p class="para-s">
+              To create a dismissable toast, simply pick your toast style and
+              wrap it in the toast container like below. Don't forget to include
+              the script!
+            </p>
+            <pre>
           <code class="language-html">
       &lt;div class = "toast-container hide-display"&gt;
         &lt;div class="toast toast-success"&gt;
@@ -1135,10 +1173,10 @@
       &lt;/div&gt;
           </code>
         </pre>
-        </div>
+          </div>
 
-        <div class="code-container">
-          <pre>
+          <div class="code-container">
+            <pre>
           <code class="language-javascript">
       const closeButton = document.querySelector("#toast-close-btn");
       const toastContainer = document.querySelector(".toast-container");
@@ -1152,10 +1190,226 @@
       });
           </code>
         </pre>
+          </div>
         </div>
+
+        <div class="component-wrapper mg-bottom-xl" id="lists-section">
+          <h1 class="heading-xl mg-bottom-xs">Lists</h1>
+          <div class="para mg-bottom-s">
+            Lists help display related information together, ordered or
+            unordered
+          </div>
+          <h3 class="heading-xs section-margin-sm">Unordered List styles</h3>
+          <div class="demo-container demo-lists">
+            <div class="demo-list">
+              <ul class="unordered-list list-style-bullet">
+                <li>Todo Item-1</li>
+                <li>Todo Item-2</li>
+                <li>Todo Item-3</li>
+              </ul>
+            </div>
+
+            <div class="demo-list list-style-square">
+              <ul class="unordered-list list-style-square">
+                <li>Todo Item-1</li>
+                <li>Todo Item-2</li>
+                <li>Todo Item-3</li>
+              </ul>
+            </div>
+
+            <div class="demo-list list-style-disc">
+              <ul class="unordered-list list-style-disc">
+                <li>Todo Item-1</li>
+                <li>Todo Item-2</li>
+                <li>Todo Item-3</li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="code-container">
+            <p class="para-s">
+              Simply copy the below HTML according to your desired list style
+            </p>
+            <pre>
+              <code class = "language-html">
+        &lt;div class="demo-list"&gt;
+        &lt;ul class="unordered-list list-style-bullet"&gt;
+          &lt;li&gt;Todo Item-1&lt;/li&gt;
+          &lt;li&gt;Todo Item-2&lt;/li&gt;
+          &lt;li&gt;Todo Item-3&lt;/li&gt;
+        &lt;/ul&gt;
+      &lt;/div&gt;
+
+      &lt;div class="demo-list list-style-square"&gt;
+        &lt;ul class="unordered-list list-style-square"&gt;
+          &lt;li&gt;Todo Item-1&lt;/li&gt;
+          &lt;li&gt;Todo Item-2&lt;/li&gt;
+          &lt;li&gt;Todo Item-3&lt;/li&gt;
+        &lt;/ul&gt;
+      &lt;/div&gt;
+
+      &lt;div class="demo-list list-style-disc"&gt;
+        &lt;ul class="unordered-list list-style-disc"&gt;
+          &lt;li&gt;Todo Item-1&lt;/li&gt;
+          &lt;li&gt;Todo Item-2&lt;/li&gt;
+          &lt;li&gt;Todo Item-3&lt;/li&gt;
+        &lt;/ul&gt;
+      &lt;/div&gt;
+              </code>
+            </pre>
+          </div>
+
+          <h3 class="heading-xs section-margin-sm">Ordered List styles</h3>
+          <div class="demo-container">
+            <div class="demo-list">
+              <ol class="ordered-list list-style-alphabet">
+                <li>First, mix all the dry ingredients</li>
+                <li>Then, add the wet ingredients</li>
+                <li>Finally, bake the cake</li>
+              </ol>
+            </div>
+
+            <div class="demo-list">
+              <ol class="ordered-list list-style-number">
+                <li>First, mix all the dry ingredients</li>
+                <li>Then, add the wet ingredients</li>
+                <li>Finally, bake the cake</li>
+              </ol>
+            </div>
+
+            <div class="demo-list list-style-roman-number">
+              <ol class="ordered-list list-style-roman-number">
+                <li>First, mix all the dry ingredients</li>
+                <li>Then, add the wet ingredients</li>
+                <li>Finally, bake the cake</li>
+              </ol>
+            </div>
+          </div>
+
+          <div class="code-container">
+            <p class="para-s">
+              Simply copy the below HTML according to your desired ordered list
+              style
+            </p>
+            <pre>
+              <code class = "language-html">
+      &lt;div class="demo-list"&gt;
+      &lt;ol class="ordered-list list-style-alphabet"&gt;
+        &lt;li&gt;First, mix all the dry ingredients&lt;/li&gt;
+        &lt;li&gt;Then, add the wet ingredients&lt;/li&gt;
+        &lt;li&gt;Finally, bake the cake&lt;/li&gt;
+      &lt;/ol&gt;
+    &lt;/div&gt;
+
+    &lt;div class="demo-list"&gt;
+      &lt;ol class="ordered-list list-style-number"&gt;
+        &lt;li&gt;First, mix all the dry ingredients&lt;/li&gt;
+        &lt;li&gt;Then, add the wet ingredients&lt;/li&gt;
+        &lt;li&gt;Finally, bake the cake&lt;/li&gt;
+      &lt;/ol&gt;
+    &lt;/div&gt;
+
+    &lt;div class="demo-list list-style-roman-number"&gt;
+      &lt;ol class="ordered-list list-style-roman-number"&gt;
+        &lt;li&gt;First, mix all the dry ingredients&lt;/li&gt;
+        &lt;li&gt;Then, add the wet ingredients&lt;/li&gt;
+        &lt;li&gt;Finally, bake the cake&lt;/li&gt;
+      &lt;/ol&gt;
+    &lt;/div&gt;
+              </code>
+            </pre>
+          </div>
+
+          <h3 class="heading-xs section-margin-sm">Inline List styles</h3>
+          <div class="demo-container">
+            <div class="demo-list">
+              <ul class="list-inline">
+                <li>Home</li>
+                <li>Login</li>
+                <li>Contact</li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="code-container">
+            <p class="para-s">Simply copy the below HTML to get inline list</p>
+            <pre>
+              <code class = "language-html">
+      &lt;div class="demo-list"&gt;
+      &lt;ul class="list-inline"&gt;
+        &lt;li&gt;Home&lt;/li&gt;
+        &lt;li&gt;Login&lt;/li&gt;
+        &lt;li&gt;Contact&lt;/li&gt;
+      &lt;/ul&gt;
+    &lt;/div&gt;
+              </code>
+            </pre>
+          </div>
+
+          <h3 class="heading-xs section-margin-sm">Stacked Lists</h3>
+          <div class="demo-container">
+            <div class="demo-list">
+              <ul class="list-stacked">
+                <li>
+                  <div class="avatar-s">
+                    <img
+                      class="img-responsive avatar-square"
+                      src="https://i.pravatar.cc/150?img=47"
+                      alt="smiling woman"
+                    />
+                  </div>
+                  <div>Read this article by Susan Doe</div>
+                </li>
+                <li>
+                  <div class="avatar-s">
+                    <img
+                      class="img-responsive avatar-square"
+                      src="https://i.pravatar.cc/150?img=47"
+                      alt="smiling woman"
+                    />
+                  </div>
+                  <div>Read this article by Susan Doe</div>
+                </li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="code-container">
+            <p class="para-s">
+              Simply copy the below HTML if you like the stacked list style
+            </p>
+            <pre>
+              <code class = "language-html">
+      &lt;div class="demo-list"&gt;
+      &lt;ul class="list-stacked"&gt;
+        &lt;li&gt;
+          &lt;div class="avatar-s"&gt;
+            &lt;img
+              class="img-responsive avatar-square"
+              src="https://i.pravatar.cc/150?img=47"
+              alt="smiling woman"
+            /&gt;
+          &lt;/div&gt;
+          &lt;div&gt;Read this article by Susan Doe&lt;/div&gt;
+        &lt;/li&gt;
+        &lt;li&gt;
+          &lt;div class="avatar-s"&gt;
+            &lt;img
+              class="img-responsive avatar-square"
+              src="https://i.pravatar.cc/150?img=47"
+              alt="smiling woman"
+            /&gt;
+          &lt;/div&gt;
+          &lt;div&gt;Read this article by Susan Doe&lt;/div&gt;
+        &lt;/li&gt;
+      &lt;/ul&gt;
+    &lt;/div&gt;
+              </code>
+            </pre>
+          </div>
         </div>
+      </div>
     </div>
-  </div>
 
     <footer class="footer">
       <p class="footer-text section-margin-sm">
@@ -1184,7 +1438,7 @@
   <script src="../assets/scripts/navbar.js"></script>
   <script src="../assets/scripts/prism.js"></script>
   <script src="../assets/scripts/inputs.js"></script>
-  <script src = "../assets/scripts/toast.js"></script>
+  <script src="../assets/scripts/toast.js"></script>
   <script
     type="module"
     src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"
