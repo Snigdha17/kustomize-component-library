@@ -60,6 +60,15 @@
             ></ion-icon
             >Badge</a
           >
+
+          <a class="main-nav-link" href="#button-section"
+            ><ion-icon
+              name="radio-button-off-outline"
+              class="social-icon"
+            ></ion-icon>
+            Button</a
+          >
+
           <a class="main-nav-link" href="#"
             ><ion-icon class="social-icon" name="card-outline"></ion-icon
             >Card</a
@@ -72,7 +81,7 @@
             ><ion-icon class="social-icon" name="grid-outline"></ion-icon
             >Grid</a
           >
-          <a class="main-nav-link" href="#"
+          <a class="main-nav-link" href="#image-section"
             ><ion-icon class="social-icon" name="image-outline"></ion-icon
             >Image</a
           >
@@ -92,7 +101,7 @@
             ><ion-icon class="social-icon" name="star-half-outline"></ion-icon
             >Rating</a
           >
-          <a class="main-nav-link" href="#"
+          <a class="main-nav-link" href="#toast-section"
             ><ion-icon class="social-icon" name="browsers-outline"></ion-icon
             >Toast</a
           >
@@ -411,6 +420,207 @@
         </div>
 
         <div class="component-wrapper"></div>
+        <!-- Button -->
+        <div class="component-wrapper mg-bottom-xl" id="button-section">
+          <h1 class="heading-xl">Button</h1>
+          <h2 class="para mg-bottom-m">
+            Buttons are webpage-elements which encourage the user to take
+            specific actions. Primary buttons also serve as Call-To-Action(CTA)
+            buttons
+          </h2>
+          <h3 class="heading-xs section-margin-sm">Button Styles</h3>
+          <div class="demo-container demo-badge">
+            <button class="btn btn-medium btn-primary">Primary Button</button>
+            <button class="btn btn-medium btn-secondary">
+              Secondary Button
+            </button>
+            <button class="btn btn-medium btn-link">
+              <a href="#">Link Button</a>
+            </button>
+            <button class="icon-btn">
+              <a href="#"
+                ><ion-icon class="btn-icon" name="cart-outline"></ion-icon
+              ></a>
+            </button>
+          </div>
+
+          <div class="code-container">
+            <p class="para-s">
+              Simply pick your style of button from the code below
+            </p>
+            <pre>
+                <code class="language-html">
+      &lt;button class="btn btn-medium btn-primary"&gt;Primary Button&lt;/button&gt;
+      
+      &lt;button class="btn btn-medium btn-secondary"&gt;Secondary Button&lt;/button&gt;
+      
+      &lt;button class="btn btn-medium btn-link"&gt;&lt;a href="#"&gt;Link Button&lt;/a&gt;&lt;/button&gt;
+      
+      &lt;button class="icon-btn"&gt;
+        &lt;a href="#"&gt;&lt;ion-icon class="btn-icon" name="cart-outline"&gt;&lt;/ion-icon&gt;&lt;/a&gt;
+      &lt;/button&gt;
+        </code>
+        </pre>
+          </div>
+
+          <h3 class="heading-xs section-margin-sm">Button Sizes</h3>
+          <div class="demo-container">
+            <button class="btn btn-small btn-primary">Primary Button</button>
+            <button class="btn btn-medium btn-primary">Primary Button</button>
+            <button class="btn btn-large btn-primary">Primary Button</button>
+          </div>
+
+          <div class="code-container">
+            <p class="para-s">
+              Each button style comes in 3 sizes - small, medium, large
+            </p>
+            <pre>
+                <code class="language-html">
+        &lt;button class="btn btn-small btn-primary"&gt;Primary Button&lt;/button&gt;
+        &lt;button class="btn btn-medium btn-primary"&gt;Primary Button&lt;/button&gt;
+        &lt;button class="btn btn-large btn-primary"&gt;Primary Button&lt;/button&gt;
+                </code>
+              </pre>
+          </div>
+
+          <h3 class="heading-xs section-margin-sm">Floating Buttons</h3>
+          <div class="demo-container">
+            <button class="btn btn-floating-demo">
+              <a href="#"
+                ><ion-icon class="btn-icon" name="arrow-up-outline"></ion-icon
+              ></a>
+            </button>
+
+            <button class="btn btn-floating-demo">
+              <a href="#"
+                ><ion-icon
+                  class="btn-icon"
+                  name="arrow-forward-outline"
+                ></ion-icon
+              ></a>
+            </button>
+
+            <button class="btn btn-floating-demo">
+              <a href="#"
+                ><ion-icon class="btn-icon" name="arrow-back-outline"></ion-icon
+              ></a>
+            </button>
+
+            <button class="btn btn-floating-demo">
+              <a href="#"
+                ><ion-icon class="btn-icon" name="arrow-down-outline"></ion-icon
+              ></a>
+            </button>
+          </div>
+
+          <div class="code-container">
+            <p class="para-s">
+              For a floating icon button, choose your icon and apply to the HTML
+              below
+            </p>
+            <pre>
+                <code class="language-html">
+      &lt;button class="btn btn-floating-demo"&gt;
+        &lt;a href="#"&gt;&lt;ion-icon class="btn-icon" name="arrow-up-outline"&gt;&lt;/ion-icon&gt;&lt;/a&gt;
+      &lt;/button&gt;
+      </code>
+    </pre>
+          </div>
+        </div>
+
+        <!-- Images -->
+        <div class="component-wrapper mg-bottom-xl" id="image-section">
+          <h1 class="heading-xl">Images</h1>
+          <h2 class="para mg-bottom-m">
+            Images are the backbone of any good website. Choose from responsive,
+            round and square styles to add images to your webpages.
+          </h2>
+          <h3 class="heading-xs section-margin-sm">Responsive Image</h3>
+          <div class="demo-container">
+            <div class="responsive-image">
+              <img
+                class="img-responsive"
+                src="https://picsum.photos/id/1082/1400/500"
+                alt="hands on piano"
+              />
+            </div>
+          </div>
+
+          <div class="code-container">
+            <p class="para-s">
+              Simply copy the below html to apply a responsive image which will
+              fill up its parent container
+            </p>
+            <pre>
+                <code class="language-html">
+      &lt;div class="responsive-image"&gt;
+        &lt;img
+          class="img-responsive"
+          src="https://picsum.photos/id/1082/1400/500"
+          alt="hands on piano"
+          /&gt;
+      &lt;/div&gt;
+                </code>
+              </pre>
+          </div>
+
+          <h3 class="heading-xs section-margin-sm">Round Image</h3>
+          <div class="demo-container">
+            <div>
+              <img
+                class="img-responsive img-round"
+                src="https://i.pravatar.cc/150?img=10"
+                alt="smiling woman"
+              />
+            </div>
+          </div>
+
+          <div class="code-container">
+            <p class="para-s">
+              Simply copy the below html to use the round image. For best
+              results, use images with same height and width
+            </p>
+            <pre>
+                <code class="language-html">
+      &lt;div class="responsive-image"&gt;
+      &lt;img
+        class="img-responsive img-round"
+        src="https://i.pravatar.cc/150?img=10"
+        alt="smiling woman"
+        /&gt;
+    &lt;/div&gt;
+                </code>
+              </pre>
+          </div>
+
+          <h3 class="heading-xs section-margin-sm">Square Image</h3>
+          <div class="demo-container demo-image">
+            <div>
+              <img
+                class="img-responsive img-square"
+                src="https://i.pravatar.cc/150?img=10"
+                alt="smiling woman"
+              />
+            </div>
+          </div>
+
+          <div class="code-container">
+            <p class="para-s">
+              Simply copy the below html to use the square image
+            </p>
+            <pre>
+                <code class="language-html">
+      &lt;div class="responsive-image"&gt;
+      &lt;img
+        class="img-responsive img-square"
+        src="https://i.pravatar.cc/150?img=10"
+        alt="smiling woman"
+        /&gt;
+    &lt;/div&gt;
+                </code>
+              </pre>
+          </div>
+        </div>
         <div class="component-wrapper"></div>
         <div class="component-wrapper" id="inputs-section">
           <h1 class="heading-xl">Inputs</h1>
@@ -570,9 +780,218 @@
         </div>
         <div class="component-wrapper"></div>
         <div class="component-wrapper"></div>
-        <div class="component-wrapper"></div>
-      </div>
+
+        <!-- Toast -->
+        <div class="component-wrapper mg-bottom-xl" id="toast-section">
+
+          <h1 class="heading-xl mg-bottom-xs">Toast</h1>
+          <h2 class="para mg-bottom-s">
+            Toast help display time-sensitive, real-time updates to users
+          </h2>
+          <h3 class="heading-xs section-margin-sm">
+            Example of Simple Toast
+          </h3>
+          <div class="demo-container demo-toast">
+            <div class="toast toast-info">
+              Please click on 'I agree' to continue
+            </div>
+            <div class="toast toast-warning">Incorrect Password. Try again</div>
+            <div class="toast toast-error">Login error</div>
+            <div class="toast toast-success">Successfully uploaded</div>
+          </div>
+
+          <div class="code-container">
+            <p class = "para-s">Simply copy the below HTML according to your desired style</p>
+            <pre>
+              <code class = "language-html">
+      &lt;div class="toast toast-info"&gt;Please click on 'I agree' to continue&lt;/div&gt;
+      &lt;div class="toast toast-warning"&gt;Incorrect Password. Try again&lt;/div&gt;
+      &lt;div class="toast toast-error"&gt;Login error&lt;/div&gt;
+      &lt;div class="toast toast-success"&gt;Successfully uploaded&lt;/div&gt;
+              </code>
+            </pre>
+          </div>
+
+          <h3 class="heading-xs section-margin-sm">
+            Example of Toast with Icon
+          </h3>
+          <div class="demo-container demo-toast">
+            <div class="toast toast-info">
+              <ion-icon name="information-circle-outline" class="toast-icon"></ion-icon>
+                Please click on 'I agree' to proceed
+            </div>
+            <div class="toast toast-warning">
+              <ion-icon name="warning-outline" class="toast-icon"></ion-icon></i>
+              Incorrect Password. Try again
+            </div>
+            <div class="toast toast-error">
+              <ion-icon name="bug-outline" class="toast-icon"></ion-icon>
+              Login error
+            </div>
+            <div class="toast toast-success">
+              <ion-icon name="checkmark-circle-outline" class="toast-icon"></ion-icon>
+              Successfully uploaded
+            </div>
+          </div>
+
+          <div class="code-container">
+            <p class = "para-s">Simply copy the below HTML according to your desired style</p>
+            <pre>
+              <code class = "language-html">
+        &lt;div class="toast toast-info"&gt;
+          &lt;ion-icon name="information-circle-outline" class="toast-icon"&gt;&lt;/ion-icon&gt;
+          Please click on 'I agree' to proceed
+        &lt;/div&gt;
+
+        &lt;div class="toast toast-warning"&gt;
+          &lt;ion-icon name="warning-outline" class="toast-icon"&gt;&lt;/ion-icon&gt;&lt;/i&gt;
+          Incorrect Password. Try again
+        &lt;/div&gt;
+
+        &lt;div class="toast toast-error"&gt;
+          &lt;ion-icon name="bug-outline" class="toast-icon"&gt;&lt;/ion-icon&gt;
+          Login error
+        &lt;/div&gt;
+
+        &lt;div class="toast toast-success"&gt;
+          &lt;ion-icon name="checkmark-circle-outline" class="toast-icon"&gt;&lt;/ion-icon&gt;
+          Successfully uploaded
+        &lt;/div&gt;
+              </code>
+            </pre>
+          </div>
+
+          <h3 class="heading-xs section-margin-sm">
+            Example of Toast Bar with Icon and Dismiss
+          </h3>
+          <div class="demo-container demo-toast">
+            <div class="toast toast-info">
+              <ion-icon name="information-circle-outline" class="toast-icon"></ion-icon>
+                <span>Please click on 'I agree' to proceed</span>
+              <button class="toast-close-btn" type="button">
+                <ion-icon name="close-outline" class="toast-close-btn-icon"></ion-icon
+                >
+              </button>
+            </div>
+            <div class="toast toast-warning">
+              <ion-icon name="warning-outline" class="toast-icon"></ion-icon></i>
+              Incorrect Password. Try again
+              <button class="toast-close-btn" type="button">
+                <ion-icon name="close-outline" class="toast-close-btn-icon"></ion-icon
+                >
+              </button>            
+            </div>
+            <div class="toast toast-error">
+              <ion-icon name="bug-outline" class="toast-icon"></ion-icon>              
+              Login error
+              <button class="toast-close-btn" type="button">
+                <ion-icon name="close-outline" class="toast-close-btn-icon"></ion-icon
+                >
+              </button>            
+            </div>
+            <div class="toast toast-success">
+              <ion-icon name="checkmark-circle-outline" class="toast-icon"></ion-icon>
+              Successfully uploaded
+              <button class="toast-close-btn" type="button">
+                <ion-icon name="close-outline" class="toast-close-btn-icon"></ion-icon
+                >
+              </button>            
+            </div>
+          </div>
+          <div class="code-container">
+            <p class = "para-s">Simply copy the below HTML according to your desired style</p>
+            <pre>
+              <code class = "language-html">
+        &lt;div class="toast toast-info"&gt;
+          &lt;ion-icon name="information-circle-outline" class="toast-icon"&gt;&lt;/ion-icon&gt;
+          &lt;span&gt;Please click on 'I agree' to proceed&lt;/span&gt;
+          &lt;button class="toast-close-btn" type="button"&gt;
+            &lt;ion-icon name="close-outline" class="toast-close-btn-icon"&gt;&lt;/ion-icon&gt;
+        &lt;/button&gt;
+      &lt;/div&gt;
+
+      &lt;div class="toast toast-warning"&gt;
+        &lt;ion-icon name="warning-outline" class="toast-icon"&gt;&lt;/ion-icon&gt;&lt;/i&gt;
+        Incorrect Password. Try again
+        &lt;button class="toast-close-btn" type="button"&gt;
+          &lt;ion-icon name="close-outline" class="toast-close-btn-icon"&gt;&lt;/ion-icon&gt;
+        &lt;/button&gt;            
+      &lt;/div&gt;
+
+      &lt;div class="toast toast-error"&gt;
+        &lt;ion-icon name="bug-outline" class="toast-icon"&gt;&lt;/ion-icon&gt;              
+        Login error
+        &lt;button class="toast-close-btn" type="button"&gt;
+          &lt;ion-icon name="close-outline" class="toast-close-btn-icon"&gt;&lt;/ion-icon&gt;
+        &lt;/button&gt;            
+      &lt;/div&gt;
+
+      &lt;div class="toast toast-success"&gt;
+        &lt;ion-icon name="checkmark-circle-outline" class="toast-icon"&gt;&lt;/ion-icon&gt;
+        Successfully uploaded
+        &lt;button class="toast-close-btn" type="button"&gt;
+          &lt;ion-icon name="close-outline" class="toast-close-btn-icon"&gt;&lt;/ion-icon&gt;
+        &lt;/button&gt;            
+      &lt;/div&gt;
+              </code>
+            </pre>
+          </div>
+
+          <h3 class="heading-xs section-margin-sm">
+            Demo of toast with Close Button
+          </h3>
+          <div class="demo-container demo-toast">
+            <div class = "toast-container hide-display">
+            <div class="toast toast-success">
+              <ion-icon name="checkmark-circle-outline" class="toast-icon"></ion-icon>
+              Successfully uploaded
+              <button class="toast-close-btn" id="toast-close-btn" type="button">
+                <ion-icon name="close-outline" class="toast-close-btn-icon"></ion-icon
+                >
+              </button>            
+            </div>
+          </div>
+            <button class="toast-display-btn" id = "toast-display-btn">Demo</button>
+        </div>
+
+        <div class="code-container">
+          <p class = "para-s">To create a dismissable toast, simply pick your toast style and wrap it in the toast container like below. Don't forget to include the script!</p>
+        <pre>
+          <code class="language-html">
+      &lt;div class = "toast-container hide-display"&gt;
+        &lt;div class="toast toast-success"&gt;
+          &lt;ion-icon name="checkmark-circle-outline" class="toast-icon"&gt;&lt;/ion-icon&gt;
+          Successfully uploaded
+          &lt;button class="toast-close-btn" id="toast-close-btn" type="button"&gt;
+            &lt;ion-icon name="close-outline" class="toast-close-btn-icon"&gt;&lt;/ion-icon&gt;
+          &lt;/button&gt;            
+          &lt;/div&gt;
+        &lt;/div&gt;
+        &lt;button class="toast-display-btn" id = "toast-display-btn"&gt;Demo&lt;/button&gt;
+      &lt;/div&gt;
+          </code>
+        </pre>
+        </div>
+
+        <div class="code-container">
+          <pre>
+          <code class="language-javascript">
+      const closeButton = document.querySelector("#toast-close-btn");
+      const toastContainer = document.querySelector(".toast-container");
+      const toastDisplayButton = document.querySelector("#toast-display-btn");
+
+      toastDisplayButton.addEventListener("click", () => {
+        toastContainer.classList.remove("hide-display");
+      });
+      toastCloseButton.addEventListener("click", () => {
+        toastContainer.classList.add("hide-display");
+      });
+          </code>
+        </pre>
+        </div>
+        </div>
     </div>
+  </div>
 
     <footer class="footer">
       <p class="footer-text section-margin-sm">
@@ -601,6 +1020,7 @@
   <script src="../assets/scripts/navbar.js"></script>
   <script src="../assets/scripts/prism.js"></script>
   <script src="../assets/scripts/inputs.js"></script>
+  <script src = "../assets/scripts/toast.js"></script>
   <script
     type="module"
     src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"
