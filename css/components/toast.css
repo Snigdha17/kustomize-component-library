@@ -21,7 +21,6 @@
   font-size: 1.8rem;
   display: flex;
   align-items: center;
-  justify-content: start;
   padding: 2rem 4rem;
   gap: 1rem;
   color: var(--dark-gray);
