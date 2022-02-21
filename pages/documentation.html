@@ -112,8 +112,6 @@
       </nav>
 
       <div class="container-wrapper">
-        <!-- Alerts -->
-
         <!-- Avatar -->
         <div class="component-wrapper mg-bottom-xl" id="avatar-section">
           <h1 class="heading-xl">Avatar</h1>
@@ -417,29 +415,293 @@
           </div>
         </div>
 
-        <!-- Typography -->
-          <div class="component-wrapper mg-bottom-xl" id="typography-section">
-            <h1 class="heading-xl">Typography</h1>
-            <p class="para mg-bottom-m">
-              Typography helps give appropriate emphasis to your website elements and builds the written content on your website. 
-              Choose from the below styles to give your website a polished look!
-            </p>
-            <h3 class="heading-xs">Sample Styles</h3>
-            <div class="demo-container demo-typography">
-              <div class="heading-xl">This is an Extra Large Heading</div>
-              <div class="heading-l">This is a Large Heading</div>
-              <div class="heading-m">This is a Medium Heading</div>
-              <div class="heading-s">This is a Small Heading</div>
-              <div class="heading-xs">This is an Extra Small Heading</div>
-              <div class="para">This is a paragraph</div>
-              <div class="para-s">This is a small paragraph</div>
-            </div>
+        <div class="component-wrapper"></div>
+        <div class="component-wrapper"></div>
+        <div class="component-wrapper"></div>
+        <div class="component-wrapper"></div>
+        <div class="component-wrapper"></div>
+        <div class="component-wrapper"></div>
 
-            <div class="code-container">
-              <p class="para-s">
-                Simply copy the below html and choose the style/size per your requirement
-              </p>
-              <pre>
+        <!-- Alerts -->
+        <div class="component-wrapper mg-bottom-xl" id="alerts-section">
+          <h1 class="heading-xl mg-bottom-xs">Alerts</h1>
+          <h2 class="para mg-bottom-s">
+            Alerts are used to attract user's attention for important
+            information without interrupting the user's flow
+          </h2>
+          <h3 class="heading-xs section-margin-sm">
+            Example of Simple Alert Bar
+          </h3>
+          <div class="demo-container demo-alert">
+            <div class="alert alert-info">
+              Please click on 'I agree' to continue
+            </div>
+            <div class="alert alert-warning">Incorrect Password. Try again</div>
+            <div class="alert alert-error">Login error</div>
+            <div class="alert alert-success">Successfully uploaded</div>
+          </div>
+
+          <div class="code-container">
+            <p class="para-s">
+              Simply copy the below HTML according to your desired style
+            </p>
+            <pre>
+              <code class = "language-html">
+      &lt;div class="alert alert-info"&gt;Please click on 'I agree' to continue &lt;/div&gt;
+
+      &lt;div class="alert alert-warning"&gt;Incorrect Password. Try again&lt;/div&gt;
+    
+      &lt;div class="alert alert-error"&gt;Login error&lt;/div&gt;
+    
+      &lt;div class="alert alert-success"&gt;Successfully uploaded&lt;/div&gt;
+               </code>
+            </pre>
+          </div>
+
+          <h3 class="heading-xs section-margin-sm">
+            Example of Alert Bar with Icon
+          </h3>
+          <div class="demo-container demo-alert">
+            <div class="alert alert-info">
+              <ion-icon
+                name="information-circle-outline"
+                class="alert-icon"
+              ></ion-icon>
+              Please click on 'I agree' to proceed
+            </div>
+            <div class="alert alert-warning">
+              <ion-icon name="warning-outline" class="alert-icon"></ion-icon>
+              Incorrect Password. Try again
+            </div>
+            <div class="alert alert-error">
+              <ion-icon name="bug-outline" class="alert-icon"></ion-icon>
+              Login error
+            </div>
+            <div class="alert alert-success">
+              <ion-icon
+                name="checkmark-circle-outline"
+                class="alert-icon"
+              ></ion-icon>
+              Successfully uploaded
+            </div>
+          </div>
+
+          <div class="code-container">
+            <p class="para-s">
+              Simply copy the below HTML according to your desired style
+            </p>
+            <pre>
+              <code class = "language-html">
+      &lt;div class="demo-container demo-alert"&gt;
+      &lt;div class="alert alert-info"&gt;
+      &lt;ion-icon name="information-circle-outline" class="alert-icon"&gt;&lt;/ion-icon&gt;
+      Please click on 'I agree' to proceed
+      &lt;/div&gt;
+
+      &lt;div class="alert alert-warning"&gt;
+      &lt;ion-icon name="warning-outline" class="alert-icon"&gt;&lt;/ion-icon&gt;&lt;/i&gt;
+      Incorrect Password. Try again
+      &lt;/div&gt;
+
+      &lt;div class="alert alert-error"&gt;
+      &lt;ion-icon name="bug-outline" class="alert-icon"&gt;&lt;/ion-icon&gt;
+      Login error
+      &lt;/div&gt;
+
+      &lt;div class="alert alert-success"&gt;
+      &lt;ion-icon name="checkmark-circle-outline" class="alert-icon"&gt;&lt;/ion-icon&gt;
+      Successfully uploaded
+      &lt;/div&gt;
+
+                </code>
+                </pre>
+          </div>
+
+          <h3 class="heading-xs section-margin-sm">
+            Example of Alert Bar with Icon and Dismiss
+          </h3>
+          <div class="demo-container demo-alert">
+            <div class="alert alert-info">
+              <ion-icon
+                name="information-circle-outline"
+                class="alert-icon"
+              ></ion-icon>
+              <span>Please click on 'I agree' to proceed</span>
+              <button class="close-btn" type="button">
+                <ion-icon
+                  name="close-outline"
+                  class="close-btn-icon"
+                ></ion-icon>
+              </button>
+            </div>
+            <div class="alert alert-warning">
+              <ion-icon name="warning-outline" class="alert-icon"></ion-icon>
+              Incorrect Password. Try again
+              <button class="close-btn" type="button">
+                <ion-icon
+                  name="close-outline"
+                  class="close-btn-icon"
+                ></ion-icon>
+              </button>
+            </div>
+            <div class="alert alert-error">
+              <ion-icon name="bug-outline" class="alert-icon"></ion-icon>
+              Login error
+              <button class="close-btn" type="button">
+                <ion-icon
+                  name="close-outline"
+                  class="close-btn-icon"
+                ></ion-icon>
+              </button>
+            </div>
+            <div class="alert alert-success">
+              <ion-icon
+                name="checkmark-circle-outline"
+                class="alert-icon"
+              ></ion-icon>
+              Successfully uploaded
+              <button class="close-btn" type="button">
+                <ion-icon
+                  name="close-outline"
+                  class="close-btn-icon"
+                ></ion-icon>
+              </button>
+            </div>
+          </div>
+          <div class="code-container">
+            <p class="para-s">
+              Simply copy the below HTML according to your desired style
+            </p>
+            <pre>
+    <code class = "language-html">
+      &lt;div class="alert alert-info"&gt;
+      &lt;ion-icon name="information-circle-outline" class="alert-icon"&gt;&lt;/ion-icon&gt;
+      &lt;span&gt;Please click on 'I agree' to proceed&lt;/span&gt;
+      &lt;button class="close-btn" type="button"&gt;
+      &lt;ion-icon name="close-outline" class="close-btn-icon"&gt;&lt;/ion-icon&gt;
+      &lt;/button&gt;
+      &lt;/div&gt;
+
+
+      &lt;div class="alert alert-warning"&gt;
+      &lt;ion-icon name="warning-outline" class="alert-icon"&gt;&lt;/ion-icon&gt;&lt;/i&gt;
+      Incorrect Password. Try again
+      &lt;button class="close-btn" type="button"&gt;
+      &lt;ion-icon name="close-outline" class="close-btn-icon"&gt;&lt;/ion-icon&gt;
+      &lt;/button&gt;            
+      &lt;/div&gt;
+
+
+      &lt;div class="alert alert-error"&gt;
+      &lt;ion-icon name="bug-outline" class="alert-icon"&gt;&lt;/ion-icon&gt;              
+      Login error
+      &lt;button class="close-btn" type="button"&gt;
+      &lt;ion-icon name="close-outline" class="close-btn-icon"&gt;&lt;/ion-icon&gt;
+      &lt;/button&gt;            
+      &lt;/div&gt;
+
+
+      &lt;div class="alert alert-success"&gt;
+      &lt;ion-icon name="checkmark-circle-outline" class="alert-icon"&gt;&lt;/ion-icon&gt;
+      Successfully uploaded
+      &lt;button class="close-btn" type="button"&gt;
+      &lt;ion-icon name="close-outline" class="close-btn-icon"&gt;&lt;/ion-icon&gt;
+      &lt;/button&gt;            
+      &lt;/div&gt;
+    </code>
+  </pre>
+          </div>
+
+          <h3 class="heading-xs section-margin-sm">
+            Demo of Alert with Close Button
+          </h3>
+          <div class="demo-container demo-alert">
+            <div class="alert-container hide-display">
+              <div class="alert alert-success">
+                <ion-icon
+                  name="checkmark-circle-outline"
+                  class="alert-icon"
+                ></ion-icon>
+                Successfully uploaded
+                <button class="close-btn" id="alert-close-btn" type="button">
+                  <ion-icon
+                    name="close-outline"
+                    class="close-btn-icon"
+                  ></ion-icon>
+                </button>
+              </div>
+            </div>
+            <button class="alert-display-btn" id="alert-display-btn">
+              Demo
+            </button>
+          </div>
+
+          <div class="code-container">
+            <p class="para-s">
+              To create a dismissable alert, simply pick your alert style and
+              wrap it in the alert container like below. Don't forget to include
+              the script!
+            </p>
+            <pre>
+<code class="language-html">
+      &lt;div class = "alert-container hide-display"&gt;
+      &lt;div class="alert alert-success"&gt;
+      &lt;ion-icon name="checkmark-circle-outline" class="alert-icon"&gt;&lt;/ion-icon&gt;
+      Successfully uploaded
+      &lt;button class="close-btn" id="alert-close-btn" type="button"&gt;
+        &lt;ion-icon name="close-outline" class="close-btn-icon"&gt;&lt;/ion-icon&gt;
+      &lt;/button&gt;            
+      &lt;/div&gt;
+      &lt;/div&gt;
+      &lt;button class="alert-display-btn" id = "alert-display-btn"&gt;Demo&lt;/button&gt;
+      &lt;/div&gt;
+</code>
+</pre>
+          </div>
+
+          <div class="code-container">
+            <pre>
+              <code class="language-javascript">
+      const closeButton = document.querySelector("#alert-close-btn");
+      const alertContainer = document.querySelector(".alert-container");
+      const alertDisplayButton = document.querySelector("#alert-display-btn");
+
+      alertDisplayButton.addEventListener("click", () => {
+      alertContainer.classList.remove("hide-display");
+      });
+      closeButton.addEventListener("click", () => {
+      alertContainer.classList.add("hide-display");
+      });
+              </code>
+              </pre>
+          </div>
+        </div>
+
+        <!-- Typography -->
+        <div class="component-wrapper mg-bottom-xl" id="typography-section">
+          <h1 class="heading-xl">Typography</h1>
+          <p class="para mg-bottom-m">
+            Typography helps give appropriate emphasis to your website elements
+            and builds the written content on your website. Choose from the
+            below styles to give your website a polished look!
+          </p>
+          <h3 class="heading-xs">Sample Styles</h3>
+          <div class="demo-container demo-typography">
+            <div class="heading-xl">This is an Extra Large Heading</div>
+            <div class="heading-l">This is a Large Heading</div>
+            <div class="heading-m">This is a Medium Heading</div>
+            <div class="heading-s">This is a Small Heading</div>
+            <div class="heading-xs">This is an Extra Small Heading</div>
+            <div class="para">This is a paragraph</div>
+            <div class="para-s">This is a small paragraph</div>
+          </div>
+
+          <div class="code-container">
+            <p class="para-s">
+              Simply copy the below html and choose the style/size per your
+              requirement
+            </p>
+            <pre>
                   <code class="language-html">
         &lt;div class="heading-xl"&gt;This is an Extra Large Heading&lt;/div&gt;
         &lt;div class="heading-l"&gt;This is a Large Heading&lt;/div&gt;
@@ -450,37 +712,39 @@
         &lt;div class="para-s"&gt;This is a small paragraph&lt;/div&gt;
                   </code>
                 </pre>
-            </div>
+          </div>
 
-            <div class="demo-container demo-typography">
-              <div class="heading-s grey-text">This is grey text</div>
-            </div>
+          <div class="demo-container demo-typography">
+            <div class="heading-s grey-text">This is grey text</div>
+          </div>
 
-            <div class="code-container">
-              <p class="para-s">
-                Simply copy the below html and choose the style/size per your requirement
-              </p>
-              <pre>
+          <div class="code-container">
+            <p class="para-s">
+              Simply copy the below html and choose the style/size per your
+              requirement
+            </p>
+            <pre>
                   <code class="language-html">
         &lt;div class="heading-s grey-text"&gt;This is grey text&lt;/div&gt;
                   </code>
                 </pre>
-            </div>
+          </div>
 
-            <div class="demo-container demo-typography">
-              <div class="heading-s centered-text">This is centered text</div>
-            </div>
+          <div class="demo-container demo-typography">
+            <div class="heading-s centered-text">This is centered text</div>
+          </div>
 
-            <div class="code-container">
-              <p class="para-s">
-                Simply copy the below html and choose the style/size per your requirement
-              </p>
-              <pre>
+          <div class="code-container">
+            <p class="para-s">
+              Simply copy the below html and choose the style/size per your
+              requirement
+            </p>
+            <pre>
                   <code class="language-html">
         &lt;div class="heading-s centered-text">This is centered text&lt;/div&gt;
                   </code>
                 </pre>
-            </div>
+          </div>
         </div>
 
         <!-- Button -->
@@ -1991,6 +2255,7 @@
   </body>
   <script src="../assets/scripts/navbar.js"></script>
   <script src="../assets/scripts/prism.js"></script>
+  <script src="../assets/scripts/alerts.js"></script>
   <script src="../assets/scripts/modal.js"></script>
   <script src="../assets/scripts/inputs.js"></script>
   <script src="../assets/scripts/toast.js"></script>
