@@ -1,7 +1,7 @@
 @import url("./base-styles.css");
 @import url("./kustomize-components.css");
 @import url("./footer.css");
-@import url("./navbar.css");
+@import url("./main-navbar.css");
 
 body {
   font-family: "Inter", sans-serif;
@@ -69,6 +69,7 @@ body {
   gap: 2rem;
 }
 
+.demo-navbar,
 .demo-modal {
   display: block;
 }

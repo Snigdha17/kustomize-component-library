@@ -2,7 +2,7 @@
   position: fixed;
   top: 1rem;
   right: 0;
-  z-index: 4;
+  z-index: 7;
 }
 
 .toast-container.hide-display {
