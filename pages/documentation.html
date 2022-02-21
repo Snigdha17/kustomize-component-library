@@ -60,11 +60,20 @@
             ></ion-icon
             >Badge</a
           >
+
+          <a class="main-nav-link" href="#button-section"
+            ><ion-icon
+              name="radio-button-off-outline"
+              class="social-icon"
+            ></ion-icon>
+            Button</a
+          >
+
           <a class="main-nav-link" href="#"
             ><ion-icon class="social-icon" name="card-outline"></ion-icon
             >Card</a
           >
-          <a class="main-nav-link" href="#"
+          <a class="main-nav-link" href="#inputs-section"
             ><ion-icon class="social-icon" name="laptop-outline"></ion-icon
             >Form</a
           >
@@ -92,7 +101,7 @@
             ><ion-icon class="social-icon" name="star-half-outline"></ion-icon
             >Rating</a
           >
-          <a class="main-nav-link" href="#"
+          <a class="main-nav-link" href="#toast-section"
             ><ion-icon class="social-icon" name="browsers-outline"></ion-icon
             >Toast</a
           >
@@ -410,6 +419,115 @@
           </div>
         </div>
 
+        <div class="component-wrapper"></div>
+        <!-- Button -->
+        <div class="component-wrapper mg-bottom-xl" id="button-section">
+          <h1 class="heading-xl">Button</h1>
+          <h2 class="para mg-bottom-m">
+            Buttons are webpage-elements which encourage the user to take
+            specific actions. Primary buttons also serve as Call-To-Action(CTA)
+            buttons
+          </h2>
+          <h3 class="heading-xs section-margin-sm">Button Styles</h3>
+          <div class="demo-container demo-badge">
+            <button class="btn btn-medium btn-primary">Primary Button</button>
+            <button class="btn btn-medium btn-secondary">
+              Secondary Button
+            </button>
+            <button class="btn btn-medium btn-link">
+              <a href="#">Link Button</a>
+            </button>
+            <button class="icon-btn">
+              <a href="#"
+                ><ion-icon class="btn-icon" name="cart-outline"></ion-icon
+              ></a>
+            </button>
+          </div>
+
+          <div class="code-container">
+            <p class="para-s">
+              Simply pick your style of button from the code below
+            </p>
+            <pre>
+                <code class="language-html">
+      &lt;button class="btn btn-medium btn-primary"&gt;Primary Button&lt;/button&gt;
+      
+      &lt;button class="btn btn-medium btn-secondary"&gt;Secondary Button&lt;/button&gt;
+      
+      &lt;button class="btn btn-medium btn-link"&gt;&lt;a href="#"&gt;Link Button&lt;/a&gt;&lt;/button&gt;
+      
+      &lt;button class="icon-btn"&gt;
+        &lt;a href="#"&gt;&lt;ion-icon class="btn-icon" name="cart-outline"&gt;&lt;/ion-icon&gt;&lt;/a&gt;
+      &lt;/button&gt;
+        </code>
+        </pre>
+          </div>
+
+          <h3 class="heading-xs section-margin-sm">Button Sizes</h3>
+          <div class="demo-container">
+            <button class="btn btn-small btn-primary">Primary Button</button>
+            <button class="btn btn-medium btn-primary">Primary Button</button>
+            <button class="btn btn-large btn-primary">Primary Button</button>
+          </div>
+
+          <div class="code-container">
+            <p class="para-s">
+              Each button style comes in 3 sizes - small, medium, large
+            </p>
+            <pre>
+                <code class="language-html">
+        &lt;button class="btn btn-small btn-primary"&gt;Primary Button&lt;/button&gt;
+        &lt;button class="btn btn-medium btn-primary"&gt;Primary Button&lt;/button&gt;
+        &lt;button class="btn btn-large btn-primary"&gt;Primary Button&lt;/button&gt;
+                </code>
+              </pre>
+          </div>
+
+          <h3 class="heading-xs section-margin-sm">Floating Buttons</h3>
+          <div class="demo-container">
+            <button class="btn btn-floating-demo">
+              <a href="#"
+                ><ion-icon class="btn-icon" name="arrow-up-outline"></ion-icon
+              ></a>
+            </button>
+
+            <button class="btn btn-floating-demo">
+              <a href="#"
+                ><ion-icon
+                  class="btn-icon"
+                  name="arrow-forward-outline"
+                ></ion-icon
+              ></a>
+            </button>
+
+            <button class="btn btn-floating-demo">
+              <a href="#"
+                ><ion-icon class="btn-icon" name="arrow-back-outline"></ion-icon
+              ></a>
+            </button>
+
+            <button class="btn btn-floating-demo">
+              <a href="#"
+                ><ion-icon class="btn-icon" name="arrow-down-outline"></ion-icon
+              ></a>
+            </button>
+          </div>
+
+          <div class="code-container">
+            <p class="para-s">
+              For a floating icon button, choose your icon and apply to the HTML
+              below
+            </p>
+            <pre>
+                <code class="language-html">
+      &lt;button class="btn btn-floating-demo"&gt;
+        &lt;a href="#"&gt;&lt;ion-icon class="btn-icon" name="arrow-up-outline"&gt;&lt;/ion-icon&gt;&lt;/a&gt;
+      &lt;/button&gt;
+      </code>
+    </pre>
+          </div>
+        </div>
+
         <!-- Images -->
         <div class="component-wrapper mg-bottom-xl" id="image-section">
           <h1 class="heading-xl">Images</h1>
@@ -504,12 +622,168 @@
           </div>
         </div>
         <div class="component-wrapper"></div>
+        <div class="component-wrapper mg-bottom-xl" id="inputs-section">
+          <h1 class="heading-xl">Inputs</h1>
+          <p class="para mg-bottom-m">
+            Input Forms are used to gather user details and/or feedback. The
+            below form contains validation checks for incorrect user inputs
+          </p>
+          <h3 class="heading-xs">Responsive Input Form with Validation</h3>
+          <div class="demo-container">
+            <div class="form-container">
+              <div class="form-header">
+                <h2 class="heading-xs">Create Account</h2>
+              </div>
+              <form class="form" id="form">
+                <div class="form-control">
+                  <label>Username</label>
+                  <input type="text" placeholder="Username" id="username" />
+                  <ion-icon
+                    class="form-icon form-icon-success"
+                    name="checkmark-circle"
+                  ></ion-icon>
+                  <ion-icon
+                    class="form-icon form-icon-error"
+                    name="alert-circle"
+                  ></ion-icon>
+                  <p class="form-message">Error message</p>
+                </div>
+
+                <div class="form-control">
+                  <label>Email</label>
+                  <input type="email" placeholder="Email" id="email" />
+                  <ion-icon
+                    class="form-icon form-icon-success"
+                    name="checkmark-circle"
+                  ></ion-icon>
+                  <ion-icon
+                    class="form-icon form-icon-error"
+                    name="alert-circle-outline"
+                  ></ion-icon>
+                  <p class="form-message">Error message</p>
+                </div>
+
+                <div class="form-control">
+                  <label>Password</label>
+                  <input type="password" placeholder="Password" id="password" />
+                  <ion-icon
+                    class="form-icon form-icon-success"
+                    name="checkmark-circle"
+                  ></ion-icon>
+                  <ion-icon
+                    class="form-icon form-icon-error"
+                    name="alert-circle-outline"
+                  ></ion-icon>
+                  <p class="form-message">Error message</p>
+                </div>
+
+                <div class="form-control">
+                  <label>Confirm Password</label>
+                  <input
+                    type="password"
+                    placeholder="Confirm password"
+                    id="password2"
+                  />
+                  <ion-icon
+                    class="form-icon form-icon-success"
+                    name="checkmark-circle"
+                  ></ion-icon>
+                  <ion-icon
+                    class="form-icon form-icon-error"
+                    name="alert-circle-outline"
+                  ></ion-icon>
+                  <p class="form-message">Error message</p>
+                </div>
+
+                <button class="form-button">Submit</button>
+              </form>
+            </div>
+          </div>
+          <div class="code-container">
+            <p class="para-s">
+              Simply Copy and below HTML code and don't forget to include the
+              inputs script which is part of the library source code
+            </p>
+            <pre>
+                <code class="language-html">
+      &lt;div class="form-container"&gt;
+      &lt;div class="form-header"&gt;
+        &lt;h2 class="heading-xs"&gt;Create Account&lt;/h2&gt;
+      &lt;/div&gt;
+      &lt;form class="form" id="form"&gt;
+        &lt;div class="form-control"&gt;
+          &lt;label&gt;Username&lt;/label&gt;
+          &lt;input type="text" placeholder="Username" id="username" /&gt;
+          &lt;ion-icon
+            class="form-icon form-icon-success"
+            name="checkmark-circle"
+          &gt;&lt;/ion-icon&gt;
+          &lt;ion-icon
+            class="form-icon form-icon-error"
+            name="alert-circle"
+          &gt;&lt;/ion-icon&gt;
+          &lt;p class="form-message"&gt;Error message&lt;/p&gt;
+        &lt;/div&gt;
+
+        &lt;div class="form-control"&gt;
+          &lt;label&gt;Email&lt;/label&gt;
+          &lt;input type="email" placeholder="Email" id="email" /&gt;
+          &lt;ion-icon
+            class="form-icon form-icon-success"
+            name="checkmark-circle"
+          &gt;&lt;/ion-icon&gt;
+          &lt;ion-icon
+            class="form-icon form-icon-error"
+            name="alert-circle-outline"
+          &gt;&lt;/ion-icon&gt;
+          &lt;p class="form-message"&gt;Error message&lt;/p&gt;
+        &lt;/div&gt;
+
+        &lt;div class="form-control"&gt;
+          &lt;label&gt;Password&lt;/label&gt;
+          &lt;input type="password" placeholder="Password" id="password" /&gt;
+          &lt;ion-icon
+            class="form-icon form-icon-success"
+            name="checkmark-circle"
+          &gt;&lt;/ion-icon&gt;
+          &lt;ion-icon
+            class="form-icon form-icon-error"
+            name="alert-circle-outline"
+          &gt;&lt;/ion-icon&gt;
+          &lt;p class="form-message"&gt;Error message&lt;/p&gt;
+        &lt;/div&gt;
+
+        &lt;div class="form-control"&gt;
+          &lt;label&gt;Confirm Password&lt;/label&gt;
+          &lt;input
+            type="password"
+            placeholder="Confirm password"
+            id="password2"
+          /&gt;
+          &lt;ion-icon
+            class="form-icon form-icon-success"
+            name="checkmark-circle"
+          &gt;&lt;/ion-icon&gt;
+          &lt;ion-icon
+            class="form-icon form-icon-error"
+            name="alert-circle-outline"
+          &gt;&lt;/ion-icon&gt;
+          &lt;p class="form-message"&gt;Error message&lt;/p&gt;
+        &lt;/div&gt;
+
+        &lt;button class="form-button"&gt;Submit&lt;/button&gt;
+      &lt;/form&gt;
+    &lt;/div&gt;
+                </code>
+              </pre>
+          </div>
+        </div>
         <div class="component-wrapper"></div>
         <div class="component-wrapper"></div>
         <div class="component-wrapper"></div>
 
         <!-- Grid -->
-        <div class="component-wrapper" id="grid-section">
+        <div class="component-wrapper mg-bottom-xl" id="grid-section">
           <h1 class="heading-xl">Grid</h1>
           <h2 class="para mg-bottom-m">
             Grids help in designing visually and functionally aesthetic webpage
@@ -670,8 +944,218 @@
               </pre>
           </div>
         </div>
-      </div>
+
+        <!-- Toast -->
+        <div class="component-wrapper mg-bottom-xl" id="toast-section">
+
+          <h1 class="heading-xl mg-bottom-xs">Toast</h1>
+          <h2 class="para mg-bottom-s">
+            Toast help display time-sensitive, real-time updates to users
+          </h2>
+          <h3 class="heading-xs section-margin-sm">
+            Example of Simple Toast
+          </h3>
+          <div class="demo-container demo-toast">
+            <div class="toast toast-info">
+              Please click on 'I agree' to continue
+            </div>
+            <div class="toast toast-warning">Incorrect Password. Try again</div>
+            <div class="toast toast-error">Login error</div>
+            <div class="toast toast-success">Successfully uploaded</div>
+          </div>
+
+          <div class="code-container">
+            <p class = "para-s">Simply copy the below HTML according to your desired style</p>
+            <pre>
+              <code class = "language-html">
+      &lt;div class="toast toast-info"&gt;Please click on 'I agree' to continue&lt;/div&gt;
+      &lt;div class="toast toast-warning"&gt;Incorrect Password. Try again&lt;/div&gt;
+      &lt;div class="toast toast-error"&gt;Login error&lt;/div&gt;
+      &lt;div class="toast toast-success"&gt;Successfully uploaded&lt;/div&gt;
+              </code>
+            </pre>
+          </div>
+
+          <h3 class="heading-xs section-margin-sm">
+            Example of Toast with Icon
+          </h3>
+          <div class="demo-container demo-toast">
+            <div class="toast toast-info">
+              <ion-icon name="information-circle-outline" class="toast-icon"></ion-icon>
+                Please click on 'I agree' to proceed
+            </div>
+            <div class="toast toast-warning">
+              <ion-icon name="warning-outline" class="toast-icon"></ion-icon></i>
+              Incorrect Password. Try again
+            </div>
+            <div class="toast toast-error">
+              <ion-icon name="bug-outline" class="toast-icon"></ion-icon>
+              Login error
+            </div>
+            <div class="toast toast-success">
+              <ion-icon name="checkmark-circle-outline" class="toast-icon"></ion-icon>
+              Successfully uploaded
+            </div>
+          </div>
+
+          <div class="code-container">
+            <p class = "para-s">Simply copy the below HTML according to your desired style</p>
+            <pre>
+              <code class = "language-html">
+        &lt;div class="toast toast-info"&gt;
+          &lt;ion-icon name="information-circle-outline" class="toast-icon"&gt;&lt;/ion-icon&gt;
+          Please click on 'I agree' to proceed
+        &lt;/div&gt;
+
+        &lt;div class="toast toast-warning"&gt;
+          &lt;ion-icon name="warning-outline" class="toast-icon"&gt;&lt;/ion-icon&gt;&lt;/i&gt;
+          Incorrect Password. Try again
+        &lt;/div&gt;
+
+        &lt;div class="toast toast-error"&gt;
+          &lt;ion-icon name="bug-outline" class="toast-icon"&gt;&lt;/ion-icon&gt;
+          Login error
+        &lt;/div&gt;
+
+        &lt;div class="toast toast-success"&gt;
+          &lt;ion-icon name="checkmark-circle-outline" class="toast-icon"&gt;&lt;/ion-icon&gt;
+          Successfully uploaded
+        &lt;/div&gt;
+              </code>
+            </pre>
+          </div>
+
+          <h3 class="heading-xs section-margin-sm">
+            Example of Toast Bar with Icon and Dismiss
+          </h3>
+          <div class="demo-container demo-toast">
+            <div class="toast toast-info">
+              <ion-icon name="information-circle-outline" class="toast-icon"></ion-icon>
+                <span>Please click on 'I agree' to proceed</span>
+              <button class="toast-close-btn" type="button">
+                <ion-icon name="close-outline" class="toast-close-btn-icon"></ion-icon
+                >
+              </button>
+            </div>
+            <div class="toast toast-warning">
+              <ion-icon name="warning-outline" class="toast-icon"></ion-icon></i>
+              Incorrect Password. Try again
+              <button class="toast-close-btn" type="button">
+                <ion-icon name="close-outline" class="toast-close-btn-icon"></ion-icon
+                >
+              </button>            
+            </div>
+            <div class="toast toast-error">
+              <ion-icon name="bug-outline" class="toast-icon"></ion-icon>              
+              Login error
+              <button class="toast-close-btn" type="button">
+                <ion-icon name="close-outline" class="toast-close-btn-icon"></ion-icon
+                >
+              </button>            
+            </div>
+            <div class="toast toast-success">
+              <ion-icon name="checkmark-circle-outline" class="toast-icon"></ion-icon>
+              Successfully uploaded
+              <button class="toast-close-btn" type="button">
+                <ion-icon name="close-outline" class="toast-close-btn-icon"></ion-icon
+                >
+              </button>            
+            </div>
+          </div>
+          <div class="code-container">
+            <p class = "para-s">Simply copy the below HTML according to your desired style</p>
+            <pre>
+              <code class = "language-html">
+        &lt;div class="toast toast-info"&gt;
+          &lt;ion-icon name="information-circle-outline" class="toast-icon"&gt;&lt;/ion-icon&gt;
+          &lt;span&gt;Please click on 'I agree' to proceed&lt;/span&gt;
+          &lt;button class="toast-close-btn" type="button"&gt;
+            &lt;ion-icon name="close-outline" class="toast-close-btn-icon"&gt;&lt;/ion-icon&gt;
+        &lt;/button&gt;
+      &lt;/div&gt;
+
+      &lt;div class="toast toast-warning"&gt;
+        &lt;ion-icon name="warning-outline" class="toast-icon"&gt;&lt;/ion-icon&gt;&lt;/i&gt;
+        Incorrect Password. Try again
+        &lt;button class="toast-close-btn" type="button"&gt;
+          &lt;ion-icon name="close-outline" class="toast-close-btn-icon"&gt;&lt;/ion-icon&gt;
+        &lt;/button&gt;            
+      &lt;/div&gt;
+
+      &lt;div class="toast toast-error"&gt;
+        &lt;ion-icon name="bug-outline" class="toast-icon"&gt;&lt;/ion-icon&gt;              
+        Login error
+        &lt;button class="toast-close-btn" type="button"&gt;
+          &lt;ion-icon name="close-outline" class="toast-close-btn-icon"&gt;&lt;/ion-icon&gt;
+        &lt;/button&gt;            
+      &lt;/div&gt;
+
+      &lt;div class="toast toast-success"&gt;
+        &lt;ion-icon name="checkmark-circle-outline" class="toast-icon"&gt;&lt;/ion-icon&gt;
+        Successfully uploaded
+        &lt;button class="toast-close-btn" type="button"&gt;
+          &lt;ion-icon name="close-outline" class="toast-close-btn-icon"&gt;&lt;/ion-icon&gt;
+        &lt;/button&gt;            
+      &lt;/div&gt;
+              </code>
+            </pre>
+          </div>
+
+          <h3 class="heading-xs section-margin-sm">
+            Demo of toast with Close Button
+          </h3>
+          <div class="demo-container demo-toast">
+            <div class = "toast-container hide-display">
+            <div class="toast toast-success">
+              <ion-icon name="checkmark-circle-outline" class="toast-icon"></ion-icon>
+              Successfully uploaded
+              <button class="toast-close-btn" id="toast-close-btn" type="button">
+                <ion-icon name="close-outline" class="toast-close-btn-icon"></ion-icon
+                >
+              </button>            
+            </div>
+          </div>
+            <button class="toast-display-btn" id = "toast-display-btn">Demo</button>
+        </div>
+
+        <div class="code-container">
+          <p class = "para-s">To create a dismissable toast, simply pick your toast style and wrap it in the toast container like below. Don't forget to include the script!</p>
+        <pre>
+          <code class="language-html">
+      &lt;div class = "toast-container hide-display"&gt;
+        &lt;div class="toast toast-success"&gt;
+          &lt;ion-icon name="checkmark-circle-outline" class="toast-icon"&gt;&lt;/ion-icon&gt;
+          Successfully uploaded
+          &lt;button class="toast-close-btn" id="toast-close-btn" type="button"&gt;
+            &lt;ion-icon name="close-outline" class="toast-close-btn-icon"&gt;&lt;/ion-icon&gt;
+          &lt;/button&gt;            
+          &lt;/div&gt;
+        &lt;/div&gt;
+        &lt;button class="toast-display-btn" id = "toast-display-btn"&gt;Demo&lt;/button&gt;
+      &lt;/div&gt;
+          </code>
+        </pre>
+        </div>
+
+        <div class="code-container">
+          <pre>
+          <code class="language-javascript">
+      const closeButton = document.querySelector("#toast-close-btn");
+      const toastContainer = document.querySelector(".toast-container");
+      const toastDisplayButton = document.querySelector("#toast-display-btn");
+
+      toastDisplayButton.addEventListener("click", () => {
+        toastContainer.classList.remove("hide-display");
+      });
+      toastCloseButton.addEventListener("click", () => {
+        toastContainer.classList.add("hide-display");
+      });
+          </code>
+        </pre>
+        </div>
+        </div>
     </div>
+  </div>
 
     <footer class="footer">
       <p class="footer-text section-margin-sm">
@@ -699,6 +1183,8 @@
   </body>
   <script src="../assets/scripts/navbar.js"></script>
   <script src="../assets/scripts/prism.js"></script>
+  <script src="../assets/scripts/inputs.js"></script>
+  <script src = "../assets/scripts/toast.js"></script>
   <script
     type="module"
     src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"
