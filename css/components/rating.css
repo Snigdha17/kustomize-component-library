@@ -1,0 +1,27 @@
+.stars-rating {
+  display: flex;
+  gap: 0.5rem;
+}
+
+.stars-rating .rating {
+  opacity: 40%;
+  cursor: pointer;
+  font-size: 1.6rem;
+}
+
+.stars-rating:hover .rating {
+  opacity: 100%;
+}
+
+.stars-rating .rating:hover {
+  opacity: 100%;
+}
+
+/* make all sibling stars which come after the clicked star inactive */
+.stars-rating .rating:hover ~ .rating {
+  opacity: 40%;
+}
+
+.stars-rating.active {
+  opacity: 100%;
+}

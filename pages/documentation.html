@@ -483,7 +483,64 @@
         </div>
         <div class="component-wrapper"></div>
         <div class="component-wrapper"></div>
-        <div class="component-wrapper"></div>
+        <!-- Rating -->
+
+        <div class="component-wrapper" id="badge-section">
+          <h1 class="heading-xl">Rating</h1>
+          <h2 class="para mg-bottom-m">
+            Ratings are an interactive way to gather feedback from the user
+            regarding a product or service
+          </h2>
+          <h3 class="heading-xs section-margin-sm">Standard 5-star rating</h3>
+          <div class="demo-container demo-badge">
+            <div class="stars-rating">
+              <a class="rating">⭐</a>
+              <a class="rating">⭐</a>
+              <a class="rating">⭐</a>
+              <a class="rating">⭐</a>
+              <a class="rating">⭐</a>
+            </div>
+          </div>
+
+          <div class="code-container">
+            <p class="para-s">
+              Simply add the below HTML to get a flexible rating system
+            </p>
+            <pre><code class="language-html">
+      &lt;div class="stars-rating"&gt;
+        &lt;a class="rating"&gt;⭐&lt;/a&gt;
+        &lt;a class="rating"&gt;⭐&lt;/a&gt;
+        &lt;a class="rating"&gt;⭐&lt;/a&gt;
+        &lt;a class="rating"&gt;⭐&lt;/a&gt;
+        &lt;a class="rating"&gt;⭐&lt;/a&gt;
+      &lt;/div&gt;
+                </code>
+              </pre>
+          </div>
+
+          <div class="code-container">
+            <p class="para-s">
+              The script below allows you to record the rating the user provided
+            </p>
+            <pre><code class="language-javascript">
+      const ratingStars = document.querySelectorAll(".rating");
+      const rating = document.querySelector(".stars-rating");
+      
+      ratingStars.forEach((star, index) => {
+        star.addEventListener("click", () => {
+          let clickedIndex = index;
+          console.log(`User gave ${clickedIndex + 1} rating`);
+          ratingStars.forEach((otherStar, otherIndex) => {
+            if (otherIndex <= clickedIndex) {
+              otherStar.classList.add("active");
+            }
+          });
+        });
+      });
+                </code>
+              </pre>
+          </div>
+        </div>
         <div class="component-wrapper"></div>
 
         <!-- Alerts -->
@@ -2315,6 +2372,7 @@
   <script src="../assets/scripts/main-navbar.js"></script>
   <script src="../assets/scripts/components/navbar.js"></script>
   <script src="../assets/scripts/prism.js"></script>
+  <script src="../assets/scripts/rating.js"></script>
   <script src="../assets/scripts/alerts.js"></script>
   <script src="../assets/scripts/modal.js"></script>
   <script src="../assets/scripts/inputs.js"></script>
