@@ -1,0 +1,115 @@
+.btn {
+  border: none;
+  border-radius: 0.5rem;
+  cursor: pointer;
+  padding: 1.2rem 2.4rem;
+  font-size: 1.6rem;
+}
+
+.btn:hover {
+  background-color: var(--light-gray);
+  color: var(--dark-gray);
+}
+
+.btn-medium {
+  padding: 1.2rem 2.4rem;
+  font-size: 1.6rem;
+}
+
+.btn-large {
+  padding: 2.4rem 3.2rem;
+  font-size: 2rem;
+}
+
+.btn-small {
+  padding: 0.8rem 1.2rem;
+  font-size: 1.2rem;
+}
+
+.btn-primary {
+  color: var(--white);
+  background-color: var(--demo-color-1);
+}
+
+.btn-primary-with-icon {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  justify-content: end;
+}
+
+.btn-primary-with-icon .btn-icon {
+  color: var(--white);
+}
+
+.btn-secondary {
+  color: var(--demo-color-1);
+  border: 1px solid var(--demo-color-1);
+}
+
+.btn-primary:hover {
+  background-color: var(--light-gray);
+  color: var(--dark-gray);
+}
+
+.btn-secondary:hover {
+  background-color: var(--demo-color-1);
+  color: var(--white);
+}
+
+.btn-link a {
+  color: var(--demo-color-1);
+}
+
+.btn-link:hover {
+  background-color: var(--light-gray);
+}
+
+.btn-icon {
+  height: 2.4rem;
+  width: 2.4rem;
+  color: var(--demo-color-1);
+}
+
+.icon-btn {
+  border: 0;
+  background-color: transparent;
+  cursor: pointer;
+}
+
+.icon-btn:hover .btn-icon {
+  color: var(--dark-gray);
+}
+
+.btn-floating {
+  position: fixed;
+  bottom: 2.5rem;
+  right: 2.5rem;
+  padding: 1rem;
+  background-color: var(--demo-color-1);
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+.btn-floating,
+.btn-floating-demo .btn-icon {
+  color: var(--white);
+}
+
+.btn-floating:hover,
+.btn-floating-demo:hover .btn-icon {
+  color: var(--dark-gray);
+  background-color: var(--light-gray);
+}
+
+.btn-floating-demo {
+  background-color: var(--demo-color-1);
+  border-radius: 50%;
+  cursor: pointer;
+  padding: 1.2rem;
+}
+
+.btn-close-icon {
+  height: 2.4rem;
+  width: 2.4rem;
+}

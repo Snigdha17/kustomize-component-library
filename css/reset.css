@@ -38,4 +38,12 @@ html {
   --status-offline-color: #d3d3d3;
   --status-available-color: #9ac860;
   --box-shadow-bottom: 0 0 15px rgba(0, 0, 0, 0.2);
+  --warning-color: #ffa502;
+  --warning-color-tint: #ffdb9b;
+  --success-color: #84c495;
+  --success-color-tint: #dafbe1;
+  --error-color: #e98e92;
+  --error-color-tint: #ffebe9;
+  --info-color: #3f8de3;
+  --info-color-tint: #ddf4ff;
 }
