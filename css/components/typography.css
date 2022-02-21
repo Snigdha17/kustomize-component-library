@@ -44,3 +44,13 @@ FONT SIZE SYSTEM (px)
   font-weight: 300;
   margin-bottom: 1.8rem;
 }
+
+.para-xs {
+  font-size: 1.4rem;
+  font-weight: 300;
+  margin-bottom: 1.8rem;
+}
+
+del {
+  text-decoration: line-through;
+}

@@ -60,7 +60,6 @@
             ></ion-icon
             >Badge</a
           >
-
           <a class="main-nav-link" href="#button-section"
             ><ion-icon
               name="radio-button-off-outline"
@@ -68,8 +67,7 @@
             ></ion-icon>
             Button</a
           >
-
-          <a class="main-nav-link" href="#"
+          <a class="main-nav-link" href="#card-section"
             ><ion-icon class="social-icon" name="card-outline"></ion-icon
             >Card</a
           >
@@ -442,6 +440,10 @@
                 ><ion-icon class="btn-icon" name="cart-outline"></ion-icon
               ></a>
             </button>
+            <button class="btn btn-primary btn-primary-with-icon">
+              <ion-icon class="btn-icon" name="cart"></ion-icon>
+              Button with Icon
+            </button>
           </div>
 
           <div class="code-container">
@@ -621,7 +623,407 @@
               </pre>
           </div>
         </div>
-        <div class="component-wrapper"></div>
+
+        <!-- Cards -->
+        <div class="component-wrapper mg-bottom-xl" id="cards-section">
+          <h1 class="heading-xl">Cards</h1>
+          <div class="para mg-bottom-m">
+            Cards club related information together and are primarily used to
+            display products on a webpage
+          </div>
+          <h3 class="heading-xs section-margin-sm">Vertical Card</h3>
+          <div class="para">
+            There are three vertical cards: simple, card with badge and card
+            with badge+dismiss
+          </div>
+          <div class="demo-container">
+            <!-- Simple Product Card -->
+            <div class="card-vertical">
+              <div class="card-image-container">
+                <img
+                  class="card-image img-responsive"
+                  src="../assets/images/product-7.jpeg"
+                  alt="woman in red dress"
+                />
+              </div>
+              <div class="card-content">
+                <h2 class="heading-xs">Floral Red Dress</h2>
+                <p class="para-s"><strong>$24.99</strong> <del>$28.99</del></p>
+                <div class="card-buttons">
+                  <button class="btn btn-primary btn-primary-with-icon">
+                    <ion-icon class="btn-icon" name="cart"></ion-icon>
+                    Add To Cart
+                  </button>
+                  <button class="icon-btn">
+                    <a href="#"
+                      ><ion-icon
+                        class="btn-icon"
+                        name="heart-outline"
+                      ></ion-icon
+                    ></a>
+                  </button>
+                  <button class="icon-btn">
+                    <a href="#"
+                      ><ion-icon
+                        class="btn-icon"
+                        name="share-social-outline"
+                      ></ion-icon
+                    ></a>
+                  </button>
+                </div>
+              </div>
+            </div>
+
+            <!-- Card with Badge -->
+            <div class="card-vertical">
+              <div class="card-image-container">
+                <img
+                  class="card-image img-responsive"
+                  src="../assets/images/product-7.jpeg"
+                  alt="woman in red dress"
+                />
+              </div>
+              <div class="card-content">
+                <h2 class="heading-xs">Floral Red Dress</h2>
+                <p class="para-s"><strong>$24.99</strong> <del>$28.99</del></p>
+                <div class="card-buttons">
+                  <button class="btn btn-primary btn-primary-with-icon">
+                    <ion-icon class="btn-icon" name="cart"></ion-icon>
+                    Add To Cart
+                  </button>
+                  <button class="icon-btn">
+                    <a href="#"
+                      ><ion-icon
+                        class="btn-icon"
+                        name="heart-outline"
+                      ></ion-icon
+                    ></a>
+                  </button>
+                  <button class="icon-btn">
+                    <a href="#"
+                      ><ion-icon
+                        class="btn-icon"
+                        name="share-social-outline"
+                      ></ion-icon
+                    ></a>
+                  </button>
+                </div>
+                <div class="text-badge card-badge">NEW</div>
+              </div>
+            </div>
+
+            <!-- Card with Badge and Dismiss -->
+            <div class="card-vertical">
+              <div class="card-image-container">
+                <img
+                  class="card-image img-responsive"
+                  src="../assets/images/product-7.jpeg"
+                  alt="woman in red dress"
+                />
+              </div>
+              <div class="card-content">
+                <h2 class="heading-xs">Floral Red Dress</h2>
+                <p class="para-s"><strong>$24.99</strong> <del>$28.99</del></p>
+                <div class="card-buttons">
+                  <button class="btn btn-primary btn-primary-with-icon">
+                    <ion-icon class="btn-icon" name="cart"></ion-icon>
+                    Add To Cart
+                  </button>
+                  <button class="icon-btn">
+                    <a href="#"
+                      ><ion-icon
+                        class="btn-icon"
+                        name="heart-outline"
+                      ></ion-icon
+                    ></a>
+                  </button>
+                  <button class="icon-btn">
+                    <a href="#"
+                      ><ion-icon
+                        class="btn-icon"
+                        name="share-social-outline"
+                      ></ion-icon
+                    ></a>
+                  </button>
+                </div>
+                <div class="text-badge card-badge">NEW</div>
+                <button class="card-btn-close" type="button">
+                  <ion-icon
+                    name="close-outline"
+                    class="btn-close-icon"
+                  ></ion-icon>
+                </button>
+              </div>
+            </div>
+          </div>
+
+          <div class="code-container">
+            <p class="para-s">
+              Simply copy the below html to create a vertical card with badge
+              and dismiss
+            </p>
+            <pre>
+                <code class="language-html">
+        &lt;div class="card-vertical"&gt;
+        &lt;div class="card-image-container"&gt;
+          &lt;img
+            class="card-image img-responsive"
+            src="../assets/images/product-7.jpeg"
+            alt="woman in red dress"
+          /&gt;
+        &lt;/div&gt;
+        &lt;div class="card-content"&gt;
+          &lt;h2 class="heading-xs"&gt;Floral Red Dress&lt;/h2&gt;
+          &lt;p class="para-s"&gt;&lt;strong&gt;$24.99&lt;/strong&gt; &lt;del&gt;$28.99&lt;/del&gt;&lt;/p&gt;
+          &lt;div class="card-buttons"&gt;
+            &lt;button class="btn btn-primary btn-primary-with-icon"&gt;
+              &lt;ion-icon class="btn-icon" name="cart"&gt;&lt;/ion-icon&gt;
+              Add To Cart
+            &lt;/button&gt;
+            &lt;button class="icon-btn"&gt;
+              &lt;a href="#"
+                &gt;&lt;ion-icon
+                  class="btn-icon"
+                  name="heart-outline"
+                &gt;&lt;/ion-icon
+              &gt;&lt;/a&gt;
+            &lt;/button&gt;
+            &lt;button class="icon-btn"&gt;
+              &lt;a href="#"
+                &gt;&lt;ion-icon
+                  class="btn-icon"
+                  name="share-social-outline"
+                &gt;&lt;/ion-icon
+              &gt;&lt;/a&gt;
+            &lt;/button&gt;
+          &lt;/div&gt;
+        &lt;/div&gt;
+      &lt;/div&gt;
+                </code>
+              </pre>
+          </div>
+
+          <!-- Vertical Card with Overlay -->
+          <h3 class="heading-xs section-margin-sm">
+            Vertical Card with Overlay
+          </h3>
+          <div class="demo-container">
+            <div class="card-overlay">
+              <div class="card-vertical">
+                <div class="card-image-container">
+                  <img
+                    class="card-image img-responsive"
+                    src="../assets/images/product-7.jpeg"
+                    alt="woman in red dress"
+                  />
+                </div>
+                <div class="card-content">
+                  <h2 class="heading-xs">Floral Red Dress</h2>
+                  <p class="para-s">
+                    <strong>$24.99</strong> <del>$28.99</del>
+                  </p>
+                  <div class="card-buttons">
+                    <button class="btn btn-primary btn-primary-with-icon">
+                      <ion-icon class="btn-icon" name="cart"></ion-icon>
+                      Add To Cart
+                    </button>
+                    <button class="icon-btn">
+                      <a href="#"
+                        ><ion-icon
+                          class="btn-icon"
+                          name="heart-outline"
+                        ></ion-icon
+                      ></a>
+                    </button>
+                    <button class="icon-btn">
+                      <a href="#"
+                        ><ion-icon
+                          class="btn-icon"
+                          name="share-social-outline"
+                        ></ion-icon
+                      ></a>
+                    </button>
+                  </div>
+                </div>
+                <div class="card-overlay-text">Out of Stock</div>
+              </div>
+            </div>
+          </div>
+
+          <div class="code-container">
+            <p class="para-s">
+              Simply copy the below html to create a vertical card with text
+              overlay
+            </p>
+            <pre>
+                <code class="language-html">
+          &lt;div class="card-overlay"&gt;
+      &lt;div class="card-vertical"&gt;
+        &lt;div class="card-image-container"&gt;
+          &lt;img
+            class="card-image img-responsive"
+            src="../assets/images/product-7.jpeg"
+            alt="woman in red dress"
+          /&gt;
+        &lt;/div&gt;
+        &lt;div class="card-content"&gt;
+          &lt;h2 class="heading-xs"&gt;Floral Red Dress&lt;/h2&gt;
+          &lt;p class="para-s"&gt;
+            &lt;strong&gt;$24.99&lt;/strong&gt; &lt;del&gt;$28.99&lt;/del&gt;
+          &lt;/p&gt;
+          &lt;div class="card-buttons"&gt;
+            &lt;button class="btn btn-primary btn-primary-with-icon"&gt;
+              &lt;ion-icon class="btn-icon" name="cart"&gt;&lt;/ion-icon&gt;
+              Add To Cart
+            &lt;/button&gt;
+            &lt;button class="icon-btn"&gt;
+              &lt;a href="#"
+                &gt;&lt;ion-icon
+                  class="btn-icon"
+                  name="heart-outline"
+                &gt;&lt;/ion-icon
+              &gt;&lt;/a&gt;
+            &lt;/button&gt;
+            &lt;button class="icon-btn"&gt;
+              &lt;a href="#"
+                &gt;&lt;ion-icon
+                  class="btn-icon"
+                  name="share-social-outline"
+                &gt;&lt;/ion-icon
+              &gt;&lt;/a&gt;
+            &lt;/button&gt;
+          &lt;/div&gt;
+        &lt;/div&gt;
+        &lt;div class="card-overlay-text"&gt;Out of Stock&lt;/div&gt;
+      &lt;/div&gt;
+    &lt;/div&gt;
+                </code>
+              </pre>
+          </div>
+
+          <!-- Horizontal Cards -->
+          <h3 class="heading-xs section-margin-sm">Horizontal Card</h3>
+          <div class="para">
+            There are two kinds horizontal cards: simple, and horizontal card
+            with badge
+          </div>
+          <div class="demo-container">
+            <div class="card-horizontal">
+              <div class="left-aligned-image-container">
+                <img
+                  class="card-image img-responsive"
+                  src="../assets/images/product-7.jpeg"
+                  alt="woman in red dress"
+                />
+              </div>
+              <div class="card-content">
+                <div class="heading-xs">Floral Red Dress</div>
+                <div class="para-s">
+                  Red midi dress in chiffon with floral pattern
+                </div>
+                <div class="para-xs">Sold by: kustomfit</div>
+
+                <p class="para-s"><strong>$24.99</strong> <del>$28.99</del></p>
+                <div class="card-buttons">
+                  <button class="btn btn-primary btn-primary-with-icon">
+                    <ion-icon class="btn-icon" name="cart"></ion-icon>
+                    Add To Cart
+                  </button>
+                  <button class="btn btn-secondary">Move to WishList</button>
+                  <button class="icon-btn">
+                    <a href="#"
+                      ><ion-icon
+                        class="btn-icon"
+                        name="share-social-outline"
+                      ></ion-icon
+                    ></a>
+                  </button>
+                </div>
+              </div>
+            </div>
+
+            <!-- Horizontal card with badge -->
+            <div class="card card-horizontal">
+              <div class="left-aligned-image-container">
+                <img
+                  class="card-image img-responsive"
+                  src="../assets/images/product-7.jpeg"
+                  alt="woman in red dress"
+                />
+              </div>
+              <div class="card-content">
+                <div class="heading-xs">Floral Red Dress</div>
+                <div class="para-s">
+                  Red midi dress in chiffon with floral pattern
+                </div>
+                <div class="para-xs">Sold by: kustomfit</div>
+
+                <p class="para-s"><strong>$24.99</strong> <del>$28.99</del></p>
+                <div class="card-buttons">
+                  <button class="btn btn-primary btn-primary-with-icon">
+                    <ion-icon class="btn-icon" name="cart"></ion-icon>
+                    Add To Cart
+                  </button>
+                  <button class="btn btn-secondary">Move to WishList</button>
+                  <button class="icon-btn">
+                    <a href="#"
+                      ><ion-icon
+                        class="btn-icon"
+                        name="share-social-outline"
+                      ></ion-icon
+                    ></a>
+                  </button>
+                </div>
+                <div class="text-badge card-badge">NEW</div>
+              </div>
+            </div>
+          </div>
+
+          <div class="code-container">
+            <p class="para-s">
+              Simply copy the below html to create a horizontal card with badge
+            </p>
+            <pre>
+                <code class="language-html">
+          &lt;div class="card-horizontal"&gt;
+          &lt;div class="left-aligned-image-container"&gt;
+            &lt;img
+              class="card-image img-responsive"
+              src="../assets/images/product-7.jpeg"
+              alt="woman in red dress"
+            /&gt;
+          &lt;/div&gt;
+          &lt;div class="card-content"&gt;
+            &lt;div class="heading-xs"&gt;Floral Red Dress&lt;/div&gt;
+            &lt;div class="para-s"&gt;
+              Red midi dress in chiffon with floral pattern
+            &lt;/div&gt;
+            &lt;div class="para-xs"&gt;Sold by: kustomfit&lt;/div&gt;
+
+            &lt;p class="para-s"&gt;&lt;strong&gt;$24.99&lt;/strong&gt; &lt;del&gt;$28.99&lt;/del&gt;&lt;/p&gt;
+            &lt;div class="card-buttons"&gt;
+              &lt;button class="btn btn-primary btn-primary-with-icon"&gt;
+                &lt;ion-icon class="btn-icon" name="cart"&gt;&lt;/ion-icon&gt;
+                Add To Cart
+              &lt;/button&gt;
+              &lt;button class="btn btn-secondary"&gt;Move to WishList&lt;/button&gt;
+              &lt;button class="icon-btn"&gt;
+                &lt;a href="#"
+                  &gt;&lt;ion-icon
+                    class="btn-icon"
+                    name="share-social-outline"
+                  &gt;&lt;/ion-icon
+                &gt;&lt;/a&gt;
+              &lt;/button&gt;
+            &lt;/div&gt;
+            &lt;div class="text-badge card-badge"&gt;NEW&lt;/div&gt;
+          &lt;/div&gt;
+        &lt;/div&gt;
+      &lt;/div&gt;
+                </code>
+              </pre>
+          </div>
+        </div>
         <div class="component-wrapper"></div>
         <div class="component-wrapper"></div>
         <div class="component-wrapper"></div>

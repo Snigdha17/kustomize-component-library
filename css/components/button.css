@@ -31,6 +31,17 @@
   background-color: var(--demo-color-1);
 }
 
+.btn-primary-with-icon {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  justify-content: end;
+}
+
+.btn-primary-with-icon .btn-icon {
+  color: var(--white);
+}
+
 .btn-secondary {
   color: var(--demo-color-1);
   border: 1px solid var(--demo-color-1);
@@ -96,4 +107,9 @@
   border-radius: 50%;
   cursor: pointer;
   padding: 1.2rem;
+}
+
+.btn-close-icon {
+  height: 2.4rem;
+  width: 2.4rem;
 }

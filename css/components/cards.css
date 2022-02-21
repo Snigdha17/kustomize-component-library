@@ -1,0 +1,88 @@
+.card-vertical {
+  display: flex;
+  flex-direction: column;
+  background-color: var(--off-white);
+  max-width: 35rem;
+  border-radius: 1.5rem;
+  color: var(--text-color);
+  box-shadow: var(--box-shadow-bottom);
+  margin: 1rem 1.5rem;
+  position: relative;
+}
+
+.card-horizontal {
+  width: 80%;
+  display: flex;
+  gap: 1rem;
+  align-items: start;
+  flex-wrap: wrap;
+  background-color: var(--off-white);
+  border-radius: 1.5rem;
+  color: var(--text-color);
+  box-shadow: var(--box-shadow-bottom);
+  margin: 1rem 1.5rem;
+  position: relative;
+}
+
+.card-content {
+  margin: 1rem;
+}
+
+.card-image {
+  object-fit: cover;
+  max-height: 20rem;
+  border-radius: 1.5rem 1.5rem 0 0;
+}
+
+.left-aligned-image-container {
+  flex-basis: 30%;
+}
+/* 
+.left-aligned-image-container .card-image {
+  border-radius: 1.5rem 1.5rem 0 1.5rem;
+} */
+
+.card-badge {
+  position: absolute;
+  top: 2rem;
+  left: 0rem;
+}
+
+.card-overlay {
+  opacity: 50%;
+  z-index: 2;
+  pointer-events: none;
+  width: 100%;
+  /* overflow: hidden; */
+}
+
+.card-overlay-text {
+  padding: 1.2rem 2.4rem;
+  color: var(--dark-gray);
+  background-color: var(--light-gray);
+  border: 0.5rem;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 1.6rem;
+}
+
+.card-buttons {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  margin: 1rem 0;
+  padding: 5px 0;
+  font-size: 2.4rem;
+}
+
+.card-btn-close {
+  position: absolute;
+  top: 1rem;
+  right: 1rem;
+  cursor: pointer;
+  color: var(--dark-gray);
+  border: none;
+  background-color: transparent;
+}
