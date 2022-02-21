@@ -1,0 +1,51 @@
+.unordered-list,
+.ordered-list {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.list-style-bullet {
+  list-style-type: circle;
+}
+
+.list-style-square {
+  list-style-type: square;
+}
+
+.list-style-disc {
+  list-style-type: disc;
+}
+
+.list-style-number {
+  list-style-type: decimal;
+}
+
+.list-style-alphabet {
+  list-style-type: upper-alpha;
+}
+
+.list-style-roman-number {
+  list-style-type: upper-roman;
+}
+
+.list-inline {
+  list-style-type: none;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2rem;
+}
+
+.list-stacked {
+  list-style-type: none;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.list-stacked li {
+  display: flex;
+  gap: 1rem;
+  flex-wrap: wrap;
+  align-items: center;
+}
