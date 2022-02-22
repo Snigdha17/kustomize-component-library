@@ -85,13 +85,16 @@
   position: fixed;
   bottom: 2.5rem;
   right: 2.5rem;
-  padding: 1rem;
+  padding: 1.2rem;
   background-color: var(--demo-color-1);
   border-radius: 50%;
   cursor: pointer;
 }
 
-.btn-floating,
+.btn-floating .btn-icon {
+  color: var(--white);
+}
+
 .btn-floating-demo .btn-icon {
   color: var(--white);
 }
