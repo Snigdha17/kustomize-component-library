@@ -37,10 +37,6 @@
 .left-aligned-image-container {
   flex-basis: 30%;
 }
-/* 
-.left-aligned-image-container .card-image {
-  border-radius: 1.5rem 1.5rem 0 1.5rem;
-} */
 
 .card-badge {
   position: absolute;
@@ -52,8 +48,6 @@
   opacity: 50%;
   z-index: 2;
   pointer-events: none;
-  width: 100%;
-  /* overflow: hidden; */
 }
 
 .card-overlay-text {

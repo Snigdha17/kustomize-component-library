@@ -18,7 +18,7 @@
     <link rel="stylesheet" href="../css/prism.css" />
   </head>
   <body>
-    <div class="grid-container">
+    <div class="main-container">
       <header class="header">
         <button class="nav-button" id="nav-btn" type="button">
           <a class="social-link"
@@ -31,17 +31,17 @@
       </header>
       <nav class="main-nav">
         <div class="main-nav-list">
-          <a class="main-nav-link social-link" href="#"
+          <a class="main-nav-link social-link" href="../index.html"
             ><ion-icon class="social-icon" name="home"></ion-icon>Home</a
           >
-          <a class="main-nav-link" href="#"
+          <a class="main-nav-link" href="documentation.html"
             ><ion-icon
               class="social-icon"
               name="document-text-outline"
             ></ion-icon
             >Documentation</a
           >
-          <a class="main-nav-link section-margin-sm" href="#"
+          <a class="main-nav-link section-margin-sm" href="https://github.com/Snigdha17/kustomize-component-library"
             ><ion-icon class="social-icon" name="logo-github"></ion-icon
             >Source</a
           >
@@ -112,6 +112,261 @@
       </nav>
 
       <div class="container-wrapper">
+        <!-- Alerts -->
+        <div class="component-wrapper mg-bottom-xl" id="alerts-section">
+          <h1 class="heading-xl mg-bottom-xs">Alerts</h1>
+          <h2 class="para mg-bottom-s">
+            Alerts are used to attract user's attention for important
+            information without interrupting the user's flow
+          </h2>
+          <h3 class="heading-xs section-margin-sm">
+            Example of Simple Alert Bar
+          </h3>
+          <div class="demo-container demo-alert">
+            <div class="alert alert-info">
+              Please click on 'I agree' to continue
+            </div>
+            <div class="alert alert-warning">Incorrect Password. Try again</div>
+            <div class="alert alert-error">Login error</div>
+            <div class="alert alert-success">Successfully uploaded</div>
+          </div>
+
+          <div class="code-container">
+            <p class="para-s">
+              Simply copy the below HTML according to your desired style
+            </p>
+            <pre>
+              <code class = "language-html">
+      &lt;div class="alert alert-info"&gt;Please click on 'I agree' to continue &lt;/div&gt;
+
+      &lt;div class="alert alert-warning"&gt;Incorrect Password. Try again&lt;/div&gt;
+    
+      &lt;div class="alert alert-error"&gt;Login error&lt;/div&gt;
+    
+      &lt;div class="alert alert-success"&gt;Successfully uploaded&lt;/div&gt;
+               </code>
+            </pre>
+          </div>
+
+          <h3 class="heading-xs section-margin-sm">
+            Example of Alert Bar with Icon
+          </h3>
+          <div class="demo-container demo-alert">
+            <div class="alert alert-info">
+              <ion-icon
+                name="information-circle-outline"
+                class="alert-icon"
+              ></ion-icon>
+              Please click on 'I agree' to proceed
+            </div>
+            <div class="alert alert-warning">
+              <ion-icon name="warning-outline" class="alert-icon"></ion-icon>
+              Incorrect Password. Try again
+            </div>
+            <div class="alert alert-error">
+              <ion-icon name="bug-outline" class="alert-icon"></ion-icon>
+              Login error
+            </div>
+            <div class="alert alert-success">
+              <ion-icon
+                name="checkmark-circle-outline"
+                class="alert-icon"
+              ></ion-icon>
+              Successfully uploaded
+            </div>
+          </div>
+
+          <div class="code-container">
+            <p class="para-s">
+              Simply copy the below HTML according to your desired style
+            </p>
+            <pre>
+              <code class = "language-html">
+      &lt;div class="demo-container demo-alert"&gt;
+      &lt;div class="alert alert-info"&gt;
+      &lt;ion-icon name="information-circle-outline" class="alert-icon"&gt;&lt;/ion-icon&gt;
+      Please click on 'I agree' to proceed
+      &lt;/div&gt;
+
+      &lt;div class="alert alert-warning"&gt;
+      &lt;ion-icon name="warning-outline" class="alert-icon"&gt;&lt;/ion-icon&gt;&lt;/i&gt;
+      Incorrect Password. Try again
+      &lt;/div&gt;
+
+      &lt;div class="alert alert-error"&gt;
+      &lt;ion-icon name="bug-outline" class="alert-icon"&gt;&lt;/ion-icon&gt;
+      Login error
+      &lt;/div&gt;
+
+      &lt;div class="alert alert-success"&gt;
+      &lt;ion-icon name="checkmark-circle-outline" class="alert-icon"&gt;&lt;/ion-icon&gt;
+      Successfully uploaded
+      &lt;/div&gt;
+
+                </code>
+                </pre>
+          </div>
+
+          <h3 class="heading-xs section-margin-sm">
+            Example of Alert Bar with Icon and Dismiss
+          </h3>
+          <div class="demo-container demo-alert">
+            <div class="alert alert-info">
+              <ion-icon
+                name="information-circle-outline"
+                class="alert-icon"
+              ></ion-icon>
+              <span>Please click on 'I agree' to proceed</span>
+              <button class="close-btn" type="button">
+                <ion-icon
+                  name="close-outline"
+                  class="close-btn-icon"
+                ></ion-icon>
+              </button>
+            </div>
+            <div class="alert alert-warning">
+              <ion-icon name="warning-outline" class="alert-icon"></ion-icon>
+              Incorrect Password. Try again
+              <button class="close-btn" type="button">
+                <ion-icon
+                  name="close-outline"
+                  class="close-btn-icon"
+                ></ion-icon>
+              </button>
+            </div>
+            <div class="alert alert-error">
+              <ion-icon name="bug-outline" class="alert-icon"></ion-icon>
+              Login error
+              <button class="close-btn" type="button">
+                <ion-icon
+                  name="close-outline"
+                  class="close-btn-icon"
+                ></ion-icon>
+              </button>
+            </div>
+            <div class="alert alert-success">
+              <ion-icon
+                name="checkmark-circle-outline"
+                class="alert-icon"
+              ></ion-icon>
+              Successfully uploaded
+              <button class="close-btn" type="button">
+                <ion-icon
+                  name="close-outline"
+                  class="close-btn-icon"
+                ></ion-icon>
+              </button>
+            </div>
+          </div>
+          <div class="code-container">
+            <p class="para-s">
+              Simply copy the below HTML according to your desired style
+            </p>
+            <pre>
+    <code class = "language-html">
+      &lt;div class="alert alert-info"&gt;
+      &lt;ion-icon name="information-circle-outline" class="alert-icon"&gt;&lt;/ion-icon&gt;
+      &lt;span&gt;Please click on 'I agree' to proceed&lt;/span&gt;
+      &lt;button class="close-btn" type="button"&gt;
+      &lt;ion-icon name="close-outline" class="close-btn-icon"&gt;&lt;/ion-icon&gt;
+      &lt;/button&gt;
+      &lt;/div&gt;
+
+
+      &lt;div class="alert alert-warning"&gt;
+      &lt;ion-icon name="warning-outline" class="alert-icon"&gt;&lt;/ion-icon&gt;&lt;/i&gt;
+      Incorrect Password. Try again
+      &lt;button class="close-btn" type="button"&gt;
+      &lt;ion-icon name="close-outline" class="close-btn-icon"&gt;&lt;/ion-icon&gt;
+      &lt;/button&gt;            
+      &lt;/div&gt;
+
+
+      &lt;div class="alert alert-error"&gt;
+      &lt;ion-icon name="bug-outline" class="alert-icon"&gt;&lt;/ion-icon&gt;              
+      Login error
+      &lt;button class="close-btn" type="button"&gt;
+      &lt;ion-icon name="close-outline" class="close-btn-icon"&gt;&lt;/ion-icon&gt;
+      &lt;/button&gt;            
+      &lt;/div&gt;
+
+
+      &lt;div class="alert alert-success"&gt;
+      &lt;ion-icon name="checkmark-circle-outline" class="alert-icon"&gt;&lt;/ion-icon&gt;
+      Successfully uploaded
+      &lt;button class="close-btn" type="button"&gt;
+      &lt;ion-icon name="close-outline" class="close-btn-icon"&gt;&lt;/ion-icon&gt;
+      &lt;/button&gt;            
+      &lt;/div&gt;
+    </code>
+  </pre>
+          </div>
+
+          <h3 class="heading-xs section-margin-sm">
+            Demo of Alert with Close Button
+          </h3>
+          <div class="demo-container demo-alert">
+            <div class="alert-container hide-display">
+              <div class="alert alert-success">
+                <ion-icon
+                  name="checkmark-circle-outline"
+                  class="alert-icon"
+                ></ion-icon>
+                Successfully uploaded
+                <button class="close-btn" id="alert-close-btn" type="button">
+                  <ion-icon
+                    name="close-outline"
+                    class="close-btn-icon"
+                  ></ion-icon>
+                </button>
+              </div>
+            </div>
+            <button class="alert-display-btn" id="alert-display-btn">
+              Demo
+            </button>
+          </div>
+
+          <div class="code-container">
+            <p class="para-s">
+              To create a dismissable alert, simply pick your alert style and
+              wrap it in the alert container like below. Don't forget to include
+              the script!
+            </p>
+            <pre>
+<code class="language-html">
+      &lt;div class = "alert-container hide-display"&gt;
+      &lt;div class="alert alert-success"&gt;
+      &lt;ion-icon name="checkmark-circle-outline" class="alert-icon"&gt;&lt;/ion-icon&gt;
+      Successfully uploaded
+      &lt;button class="close-btn" id="alert-close-btn" type="button"&gt;
+        &lt;ion-icon name="close-outline" class="close-btn-icon"&gt;&lt;/ion-icon&gt;
+      &lt;/button&gt;            
+      &lt;/div&gt;
+      &lt;/div&gt;
+      &lt;button class="alert-display-btn" id = "alert-display-btn"&gt;Demo&lt;/button&gt;
+      &lt;/div&gt;
+</code>
+</pre>
+          </div>
+
+          <div class="code-container">
+            <pre>
+              <code class="language-javascript">
+      const closeButton = document.querySelector("#alert-close-btn");
+      const alertContainer = document.querySelector(".alert-container");
+      const alertDisplayButton = document.querySelector("#alert-display-btn");
+
+      alertDisplayButton.addEventListener("click", () => {
+      alertContainer.classList.remove("hide-display");
+      });
+      closeButton.addEventListener("click", () => {
+      alertContainer.classList.add("hide-display");
+      });
+              </code>
+              </pre>
+          </div>
+        </div>
+
         <!-- Avatar -->
         <div class="component-wrapper mg-bottom-xl" id="avatar-section">
           <h1 class="heading-xl">Avatar</h1>
@@ -415,459 +670,6 @@
           </div>
         </div>
 
-        <div class="component-wrapper"></div>
-
-        <!-- Navigation -->
-        <div class="component-wrapper" id="navbar-section">
-          <h1 class="heading-xl">Navigation</h1>
-          <p class="para mg-bottom-m">
-            The navigation bar represents the map of a website. All important
-            links within a site are easily accessible within one click from the
-            navigation bar.
-          </p>
-          <h3 class="heading-xs">Responsive Navigation</h3>
-          <div class="demo-container demo-navbar">
-            <nav class="navbar">
-              <span
-                ><ion-icon class="nav-logo" name="logo-buffer"></ion-icon
-              ></span>
-              <button class="nav-menu" id="nav-menu">
-                <ion-icon class="hamburger-icon" name="menu-outline"></ion-icon>
-              </button>
-              <ul class="nav-list" id="nav-list">
-                <li><a class="nav-link" href="#">Features</a></li>
-                <li><a class="nav-link" href="#">Testimonials</a></li>
-                <li><a class="nav-link" href="#">Contact Us</a></li>
-              </ul>
-            </nav>
-          </div>
-
-          <div class="code-container">
-            <p class="para-s">
-              This navbar is responsive and adapts to mobile screens seamlessly.
-              Feel free to adjust the screen-size to see the responsive
-              navigation!
-            </p>
-            <pre>
-                <code class="language-html">
-      &lt;nav class="navbar"&gt;
-        &lt;span&gt;&lt;ion-icon class="nav-logo" name="logo-buffer"&gt;&lt;/ion-icon&gt;&lt;/span&gt;
-        &lt;button class="nav-menu" id="nav-menu"&gt;
-          &lt;ion-icon class="hamburger-icon" name="menu-outline"&gt;&lt;/ion-icon&gt;
-        &lt;/button&gt;
-        &lt;ul class="nav-list" id="nav-list"&gt;
-          &lt;li&gt;&lt;a class="nav-link" href="#"&gt;Features&lt;/a&gt;&lt;/li&gt;
-          &lt;li&gt;&lt;a class="nav-link" href="#"&gt;Testimonials&lt;/a&gt;&lt;/li&gt;
-          &lt;li&gt;&lt;a class="nav-link" href="#"&gt;Contact Us&lt;/a&gt;&lt;/li&gt;
-        &lt;/ul&gt;
-      &lt;/nav&gt;
-                </code>
-              </pre>
-          </div>
-
-          <div class="code-container">
-            <p class="para-s">
-              Don't forget to include the attached javascript file.
-            </p>
-            <pre>
-                <code class="language-javascript">
-      const navMenu = document.querySelector("#nav-menu");
-      const navList = document.querySelector("#nav-list");
-      
-      navMenu.addEventListener("click", () => {
-        navList.classList.toggle("display-menu");
-      });
-                </code>
-              </pre>
-          </div>
-        </div>
-        <div class="component-wrapper"></div>
-        <div class="component-wrapper"></div>
-        <!-- Rating -->
-
-        <div class="component-wrapper" id="badge-section">
-          <h1 class="heading-xl">Rating</h1>
-          <h2 class="para mg-bottom-m">
-            Ratings are an interactive way to gather feedback from the user
-            regarding a product or service
-          </h2>
-          <h3 class="heading-xs section-margin-sm">Standard 5-star rating</h3>
-          <div class="demo-container demo-badge">
-            <div class="stars-rating">
-              <a class="rating">⭐</a>
-              <a class="rating">⭐</a>
-              <a class="rating">⭐</a>
-              <a class="rating">⭐</a>
-              <a class="rating">⭐</a>
-            </div>
-          </div>
-
-          <div class="code-container">
-            <p class="para-s">
-              Simply add the below HTML to get a flexible rating system
-            </p>
-            <pre><code class="language-html">
-      &lt;div class="stars-rating"&gt;
-        &lt;a class="rating"&gt;⭐&lt;/a&gt;
-        &lt;a class="rating"&gt;⭐&lt;/a&gt;
-        &lt;a class="rating"&gt;⭐&lt;/a&gt;
-        &lt;a class="rating"&gt;⭐&lt;/a&gt;
-        &lt;a class="rating"&gt;⭐&lt;/a&gt;
-      &lt;/div&gt;
-                </code>
-              </pre>
-          </div>
-
-          <div class="code-container">
-            <p class="para-s">
-              The script below allows you to record the rating the user provided
-            </p>
-            <pre><code class="language-javascript">
-      const ratingStars = document.querySelectorAll(".rating");
-      const rating = document.querySelector(".stars-rating");
-      
-      ratingStars.forEach((star, index) => {
-        star.addEventListener("click", () => {
-          let clickedIndex = index;
-          console.log(`User gave ${clickedIndex + 1} rating`);
-          ratingStars.forEach((otherStar, otherIndex) => {
-            if (otherIndex <= clickedIndex) {
-              otherStar.classList.add("active");
-            }
-          });
-        });
-      });
-                </code>
-              </pre>
-          </div>
-        </div>
-        <div class="component-wrapper"></div>
-
-        <!-- Alerts -->
-        <div class="component-wrapper mg-bottom-xl" id="alerts-section">
-          <h1 class="heading-xl mg-bottom-xs">Alerts</h1>
-          <h2 class="para mg-bottom-s">
-            Alerts are used to attract user's attention for important
-            information without interrupting the user's flow
-          </h2>
-          <h3 class="heading-xs section-margin-sm">
-            Example of Simple Alert Bar
-          </h3>
-          <div class="demo-container demo-alert">
-            <div class="alert alert-info">
-              Please click on 'I agree' to continue
-            </div>
-            <div class="alert alert-warning">Incorrect Password. Try again</div>
-            <div class="alert alert-error">Login error</div>
-            <div class="alert alert-success">Successfully uploaded</div>
-          </div>
-
-          <div class="code-container">
-            <p class="para-s">
-              Simply copy the below HTML according to your desired style
-            </p>
-            <pre>
-              <code class = "language-html">
-      &lt;div class="alert alert-info"&gt;Please click on 'I agree' to continue &lt;/div&gt;
-
-      &lt;div class="alert alert-warning"&gt;Incorrect Password. Try again&lt;/div&gt;
-    
-      &lt;div class="alert alert-error"&gt;Login error&lt;/div&gt;
-    
-      &lt;div class="alert alert-success"&gt;Successfully uploaded&lt;/div&gt;
-               </code>
-            </pre>
-          </div>
-
-          <h3 class="heading-xs section-margin-sm">
-            Example of Alert Bar with Icon
-          </h3>
-          <div class="demo-container demo-alert">
-            <div class="alert alert-info">
-              <ion-icon
-                name="information-circle-outline"
-                class="alert-icon"
-              ></ion-icon>
-              Please click on 'I agree' to proceed
-            </div>
-            <div class="alert alert-warning">
-              <ion-icon name="warning-outline" class="alert-icon"></ion-icon>
-              Incorrect Password. Try again
-            </div>
-            <div class="alert alert-error">
-              <ion-icon name="bug-outline" class="alert-icon"></ion-icon>
-              Login error
-            </div>
-            <div class="alert alert-success">
-              <ion-icon
-                name="checkmark-circle-outline"
-                class="alert-icon"
-              ></ion-icon>
-              Successfully uploaded
-            </div>
-          </div>
-
-          <div class="code-container">
-            <p class="para-s">
-              Simply copy the below HTML according to your desired style
-            </p>
-            <pre>
-              <code class = "language-html">
-      &lt;div class="demo-container demo-alert"&gt;
-      &lt;div class="alert alert-info"&gt;
-      &lt;ion-icon name="information-circle-outline" class="alert-icon"&gt;&lt;/ion-icon&gt;
-      Please click on 'I agree' to proceed
-      &lt;/div&gt;
-
-      &lt;div class="alert alert-warning"&gt;
-      &lt;ion-icon name="warning-outline" class="alert-icon"&gt;&lt;/ion-icon&gt;&lt;/i&gt;
-      Incorrect Password. Try again
-      &lt;/div&gt;
-
-      &lt;div class="alert alert-error"&gt;
-      &lt;ion-icon name="bug-outline" class="alert-icon"&gt;&lt;/ion-icon&gt;
-      Login error
-      &lt;/div&gt;
-
-      &lt;div class="alert alert-success"&gt;
-      &lt;ion-icon name="checkmark-circle-outline" class="alert-icon"&gt;&lt;/ion-icon&gt;
-      Successfully uploaded
-      &lt;/div&gt;
-
-                </code>
-                </pre>
-          </div>
-
-          <h3 class="heading-xs section-margin-sm">
-            Example of Alert Bar with Icon and Dismiss
-          </h3>
-          <div class="demo-container demo-alert">
-            <div class="alert alert-info">
-              <ion-icon
-                name="information-circle-outline"
-                class="alert-icon"
-              ></ion-icon>
-              <span>Please click on 'I agree' to proceed</span>
-              <button class="close-btn" type="button">
-                <ion-icon
-                  name="close-outline"
-                  class="close-btn-icon"
-                ></ion-icon>
-              </button>
-            </div>
-            <div class="alert alert-warning">
-              <ion-icon name="warning-outline" class="alert-icon"></ion-icon>
-              Incorrect Password. Try again
-              <button class="close-btn" type="button">
-                <ion-icon
-                  name="close-outline"
-                  class="close-btn-icon"
-                ></ion-icon>
-              </button>
-            </div>
-            <div class="alert alert-error">
-              <ion-icon name="bug-outline" class="alert-icon"></ion-icon>
-              Login error
-              <button class="close-btn" type="button">
-                <ion-icon
-                  name="close-outline"
-                  class="close-btn-icon"
-                ></ion-icon>
-              </button>
-            </div>
-            <div class="alert alert-success">
-              <ion-icon
-                name="checkmark-circle-outline"
-                class="alert-icon"
-              ></ion-icon>
-              Successfully uploaded
-              <button class="close-btn" type="button">
-                <ion-icon
-                  name="close-outline"
-                  class="close-btn-icon"
-                ></ion-icon>
-              </button>
-            </div>
-          </div>
-          <div class="code-container">
-            <p class="para-s">
-              Simply copy the below HTML according to your desired style
-            </p>
-            <pre>
-    <code class = "language-html">
-      &lt;div class="alert alert-info"&gt;
-      &lt;ion-icon name="information-circle-outline" class="alert-icon"&gt;&lt;/ion-icon&gt;
-      &lt;span&gt;Please click on 'I agree' to proceed&lt;/span&gt;
-      &lt;button class="close-btn" type="button"&gt;
-      &lt;ion-icon name="close-outline" class="close-btn-icon"&gt;&lt;/ion-icon&gt;
-      &lt;/button&gt;
-      &lt;/div&gt;
-
-
-      &lt;div class="alert alert-warning"&gt;
-      &lt;ion-icon name="warning-outline" class="alert-icon"&gt;&lt;/ion-icon&gt;&lt;/i&gt;
-      Incorrect Password. Try again
-      &lt;button class="close-btn" type="button"&gt;
-      &lt;ion-icon name="close-outline" class="close-btn-icon"&gt;&lt;/ion-icon&gt;
-      &lt;/button&gt;            
-      &lt;/div&gt;
-
-
-      &lt;div class="alert alert-error"&gt;
-      &lt;ion-icon name="bug-outline" class="alert-icon"&gt;&lt;/ion-icon&gt;              
-      Login error
-      &lt;button class="close-btn" type="button"&gt;
-      &lt;ion-icon name="close-outline" class="close-btn-icon"&gt;&lt;/ion-icon&gt;
-      &lt;/button&gt;            
-      &lt;/div&gt;
-
-
-      &lt;div class="alert alert-success"&gt;
-      &lt;ion-icon name="checkmark-circle-outline" class="alert-icon"&gt;&lt;/ion-icon&gt;
-      Successfully uploaded
-      &lt;button class="close-btn" type="button"&gt;
-      &lt;ion-icon name="close-outline" class="close-btn-icon"&gt;&lt;/ion-icon&gt;
-      &lt;/button&gt;            
-      &lt;/div&gt;
-    </code>
-  </pre>
-          </div>
-
-          <h3 class="heading-xs section-margin-sm">
-            Demo of Alert with Close Button
-          </h3>
-          <div class="demo-container demo-alert">
-            <div class="alert-container hide-display">
-              <div class="alert alert-success">
-                <ion-icon
-                  name="checkmark-circle-outline"
-                  class="alert-icon"
-                ></ion-icon>
-                Successfully uploaded
-                <button class="close-btn" id="alert-close-btn" type="button">
-                  <ion-icon
-                    name="close-outline"
-                    class="close-btn-icon"
-                  ></ion-icon>
-                </button>
-              </div>
-            </div>
-            <button class="alert-display-btn" id="alert-display-btn">
-              Demo
-            </button>
-          </div>
-
-          <div class="code-container">
-            <p class="para-s">
-              To create a dismissable alert, simply pick your alert style and
-              wrap it in the alert container like below. Don't forget to include
-              the script!
-            </p>
-            <pre>
-<code class="language-html">
-      &lt;div class = "alert-container hide-display"&gt;
-      &lt;div class="alert alert-success"&gt;
-      &lt;ion-icon name="checkmark-circle-outline" class="alert-icon"&gt;&lt;/ion-icon&gt;
-      Successfully uploaded
-      &lt;button class="close-btn" id="alert-close-btn" type="button"&gt;
-        &lt;ion-icon name="close-outline" class="close-btn-icon"&gt;&lt;/ion-icon&gt;
-      &lt;/button&gt;            
-      &lt;/div&gt;
-      &lt;/div&gt;
-      &lt;button class="alert-display-btn" id = "alert-display-btn"&gt;Demo&lt;/button&gt;
-      &lt;/div&gt;
-</code>
-</pre>
-          </div>
-
-          <div class="code-container">
-            <pre>
-              <code class="language-javascript">
-      const closeButton = document.querySelector("#alert-close-btn");
-      const alertContainer = document.querySelector(".alert-container");
-      const alertDisplayButton = document.querySelector("#alert-display-btn");
-
-      alertDisplayButton.addEventListener("click", () => {
-      alertContainer.classList.remove("hide-display");
-      });
-      closeButton.addEventListener("click", () => {
-      alertContainer.classList.add("hide-display");
-      });
-              </code>
-              </pre>
-          </div>
-        </div>
-
-        <!-- Typography -->
-        <div class="component-wrapper mg-bottom-xl" id="typography-section">
-          <h1 class="heading-xl">Typography</h1>
-          <p class="para mg-bottom-m">
-            Typography helps give appropriate emphasis to your website elements
-            and builds the written content on your website. Choose from the
-            below styles to give your website a polished look!
-          </p>
-          <h3 class="heading-xs">Sample Styles</h3>
-          <div class="demo-container demo-typography">
-            <div class="heading-xl">This is an Extra Large Heading</div>
-            <div class="heading-l">This is a Large Heading</div>
-            <div class="heading-m">This is a Medium Heading</div>
-            <div class="heading-s">This is a Small Heading</div>
-            <div class="heading-xs">This is an Extra Small Heading</div>
-            <div class="para">This is a paragraph</div>
-            <div class="para-s">This is a small paragraph</div>
-          </div>
-
-          <div class="code-container">
-            <p class="para-s">
-              Simply copy the below html and choose the style/size per your
-              requirement
-            </p>
-            <pre>
-                  <code class="language-html">
-        &lt;div class="heading-xl"&gt;This is an Extra Large Heading&lt;/div&gt;
-        &lt;div class="heading-l"&gt;This is a Large Heading&lt;/div&gt;
-        &lt;div class="heading-m"&gt;This is a Medium Heading&lt;/div&gt;
-        &lt;div class="heading-s"&gt;This is a Small Heading&lt;/div&gt;
-        &lt;div class="heading-xs"&gt;This is an Extra Small Heading&lt;/div&gt;
-        &lt;div class="para"&gt;This is a paragraph&lt;/div&gt;
-        &lt;div class="para-s"&gt;This is a small paragraph&lt;/div&gt;
-                  </code>
-                </pre>
-          </div>
-
-          <div class="demo-container demo-typography">
-            <div class="heading-s grey-text">This is grey text</div>
-          </div>
-
-          <div class="code-container">
-            <p class="para-s">
-              Simply copy the below html and choose the style/size per your
-              requirement
-            </p>
-            <pre>
-                  <code class="language-html">
-        &lt;div class="heading-s grey-text"&gt;This is grey text&lt;/div&gt;
-                  </code>
-                </pre>
-          </div>
-
-          <div class="demo-container demo-typography">
-            <div class="heading-s centered-text">This is centered text</div>
-          </div>
-
-          <div class="code-container">
-            <p class="para-s">
-              Simply copy the below html and choose the style/size per your
-              requirement
-            </p>
-            <pre>
-                  <code class="language-html">
-        &lt;div class="heading-s centered-text">This is centered text&lt;/div&gt;
-                  </code>
-                </pre>
-          </div>
-        </div>
-
         <!-- Button -->
         <div class="component-wrapper mg-bottom-xl" id="button-section">
           <h1 class="heading-xl">Button</h1>
@@ -972,105 +774,11 @@
             </p>
             <pre>
                 <code class="language-html">
-      &lt;button class="btn btn-floating-demo"&gt;
+      &lt;button class="btn btn-floating"&gt;
         &lt;a href="#"&gt;&lt;ion-icon class="btn-icon" name="arrow-up-outline"&gt;&lt;/ion-icon&gt;&lt;/a&gt;
       &lt;/button&gt;
       </code>
     </pre>
-          </div>
-        </div>
-
-        <!-- Images -->
-        <div class="component-wrapper mg-bottom-xl" id="image-section">
-          <h1 class="heading-xl">Images</h1>
-          <h2 class="para mg-bottom-m">
-            Images are the backbone of any good website. Choose from responsive,
-            round and square styles to add images to your webpages.
-          </h2>
-          <h3 class="heading-xs section-margin-sm">Responsive Image</h3>
-          <div class="demo-container">
-            <div class="responsive-image">
-              <img
-                class="img-responsive"
-                src="https://picsum.photos/id/1082/1400/500"
-                alt="hands on piano"
-              />
-            </div>
-          </div>
-
-          <div class="code-container">
-            <p class="para-s">
-              Simply copy the below html to apply a responsive image which will
-              fill up its parent container
-            </p>
-            <pre>
-                <code class="language-html">
-      &lt;div class="responsive-image"&gt;
-        &lt;img
-          class="img-responsive"
-          src="https://picsum.photos/id/1082/1400/500"
-          alt="hands on piano"
-          /&gt;
-      &lt;/div&gt;
-                </code>
-              </pre>
-          </div>
-
-          <h3 class="heading-xs section-margin-sm">Round Image</h3>
-          <div class="demo-container">
-            <div>
-              <img
-                class="img-responsive img-round"
-                src="https://i.pravatar.cc/150?img=10"
-                alt="smiling woman"
-              />
-            </div>
-          </div>
-
-          <div class="code-container">
-            <p class="para-s">
-              Simply copy the below html to use the round image. For best
-              results, use images with same height and width
-            </p>
-            <pre>
-                <code class="language-html">
-      &lt;div class="responsive-image"&gt;
-      &lt;img
-        class="img-responsive img-round"
-        src="https://i.pravatar.cc/150?img=10"
-        alt="smiling woman"
-        /&gt;
-    &lt;/div&gt;
-                </code>
-              </pre>
-          </div>
-
-          <h3 class="heading-xs section-margin-sm">Square Image</h3>
-          <div class="demo-container demo-image">
-            <div>
-              <img
-                class="img-responsive img-square"
-                src="https://i.pravatar.cc/150?img=10"
-                alt="smiling woman"
-              />
-            </div>
-          </div>
-
-          <div class="code-container">
-            <p class="para-s">
-              Simply copy the below html to use the square image
-            </p>
-            <pre>
-                <code class="language-html">
-      &lt;div class="responsive-image"&gt;
-      &lt;img
-        class="img-responsive img-square"
-        src="https://i.pravatar.cc/150?img=10"
-        alt="smiling woman"
-        /&gt;
-    &lt;/div&gt;
-                </code>
-              </pre>
           </div>
         </div>
 
@@ -1475,246 +1183,6 @@
           </div>
         </div>
 
-        <!-- Inputs -->
-        <div class="component-wrapper mg-bottom-xl" id="inputs-section">
-          <h1 class="heading-xl">Inputs</h1>
-          <p class="para mg-bottom-m">
-            Input Forms are used to gather user details and/or feedback. The
-            below form contains validation checks for incorrect user inputs
-          </p>
-          <h3 class="heading-xs">Responsive Input Form with Validation</h3>
-          <div class="demo-container">
-            <div class="form-container">
-              <div class="form-header">
-                <h2 class="heading-xs">Create Account</h2>
-              </div>
-              <form class="form" id="form">
-                <div class="form-control">
-                  <label>Username</label>
-                  <input type="text" placeholder="Username" id="username" />
-                  <ion-icon
-                    class="form-icon form-icon-success"
-                    name="checkmark-circle"
-                  ></ion-icon>
-                  <ion-icon
-                    class="form-icon form-icon-error"
-                    name="alert-circle"
-                  ></ion-icon>
-                  <p class="form-message">Error message</p>
-                </div>
-
-                <div class="form-control">
-                  <label>Email</label>
-                  <input type="email" placeholder="Email" id="email" />
-                  <ion-icon
-                    class="form-icon form-icon-success"
-                    name="checkmark-circle"
-                  ></ion-icon>
-                  <ion-icon
-                    class="form-icon form-icon-error"
-                    name="alert-circle-outline"
-                  ></ion-icon>
-                  <p class="form-message">Error message</p>
-                </div>
-
-                <div class="form-control">
-                  <label>Password</label>
-                  <input type="password" placeholder="Password" id="password" />
-                  <ion-icon
-                    class="form-icon form-icon-success"
-                    name="checkmark-circle"
-                  ></ion-icon>
-                  <ion-icon
-                    class="form-icon form-icon-error"
-                    name="alert-circle-outline"
-                  ></ion-icon>
-                  <p class="form-message">Error message</p>
-                </div>
-
-                <div class="form-control">
-                  <label>Confirm Password</label>
-                  <input
-                    type="password"
-                    placeholder="Confirm password"
-                    id="password2"
-                  />
-                  <ion-icon
-                    class="form-icon form-icon-success"
-                    name="checkmark-circle"
-                  ></ion-icon>
-                  <ion-icon
-                    class="form-icon form-icon-error"
-                    name="alert-circle-outline"
-                  ></ion-icon>
-                  <p class="form-message">Error message</p>
-                </div>
-
-                <button class="form-button">Submit</button>
-              </form>
-            </div>
-          </div>
-          <div class="code-container">
-            <p class="para-s">
-              Simply Copy and below HTML code and don't forget to include the
-              inputs script which is part of the library source code
-            </p>
-            <pre>
-              <code class="language-html">
-      &lt;div class="form-container"&gt;
-      &lt;div class="form-header"&gt;
-        &lt;h2 class="heading-xs"&gt;Create Account&lt;/h2&gt;
-      &lt;/div&gt;
-      &lt;form class="form" id="form"&gt;
-        &lt;div class="form-control"&gt;
-          &lt;label&gt;Username&lt;/label&gt;
-          &lt;input type="text" placeholder="Username" id="username" /&gt;
-          &lt;ion-icon
-            class="form-icon form-icon-success"
-            name="checkmark-circle"
-          &gt;&lt;/ion-icon&gt;
-          &lt;ion-icon
-            class="form-icon form-icon-error"
-            name="alert-circle"
-          &gt;&lt;/ion-icon&gt;
-          &lt;p class="form-message"&gt;Error message&lt;/p&gt;
-        &lt;/div&gt;
-
-        &lt;div class="form-control"&gt;
-          &lt;label&gt;Email&lt;/label&gt;
-          &lt;input type="email" placeholder="Email" id="email" /&gt;
-          &lt;ion-icon
-            class="form-icon form-icon-success"
-            name="checkmark-circle"
-          &gt;&lt;/ion-icon&gt;
-          &lt;ion-icon
-            class="form-icon form-icon-error"
-            name="alert-circle-outline"
-          &gt;&lt;/ion-icon&gt;
-          &lt;p class="form-message"&gt;Error message&lt;/p&gt;
-        &lt;/div&gt;
-
-        &lt;div class="form-control"&gt;
-          &lt;label&gt;Password&lt;/label&gt;
-          &lt;input type="password" placeholder="Password" id="password" /&gt;
-          &lt;ion-icon
-            class="form-icon form-icon-success"
-            name="checkmark-circle"
-          &gt;&lt;/ion-icon&gt;
-          &lt;ion-icon
-            class="form-icon form-icon-error"
-            name="alert-circle-outline"
-          &gt;&lt;/ion-icon&gt;
-          &lt;p class="form-message"&gt;Error message&lt;/p&gt;
-        &lt;/div&gt;
-
-        &lt;div class="form-control"&gt;
-          &lt;label&gt;Confirm Password&lt;/label&gt;
-          &lt;input
-            type="password"
-            placeholder="Confirm password"
-            id="password2"
-          /&gt;
-          &lt;ion-icon
-            class="form-icon form-icon-success"
-            name="checkmark-circle"
-          &gt;&lt;/ion-icon&gt;
-          &lt;ion-icon
-            class="form-icon form-icon-error"
-            name="alert-circle-outline"
-          &gt;&lt;/ion-icon&gt;
-          &lt;p class="form-message"&gt;Error message&lt;/p&gt;
-        &lt;/div&gt;
-
-        &lt;button class="form-button"&gt;Submit&lt;/button&gt;
-      &lt;/form&gt;
-    &lt;/div&gt;
-                </code>
-              </pre>
-          </div>
-        </div>
-
-        <!-- Modal -->
-        <div class="component-wrapper mg-bottom-xl" id="modal-section">
-          <h1 class="heading-xl">Modal</h1>
-          <p class="para mg-bottom-m">
-            A modal prompts your user to take an action before anything else can
-            be done. It disables the rest of the screen, and the call to action
-            pops out.
-          </p>
-          <h3 class="heading-xs section-margin-sm">Clean, Minimal Modal</h3>
-          <div class="demo-container">
-            <div class="modal">
-              <h1 class="heading-m">Modal</h1>
-              <p class="para">
-                Simple Modal which pops out of the page to attract the user's
-                attention. Replace it with your content.
-              </p>
-              <button class="hide-modal">Close</button>
-            </div>
-          </div>
-
-          <div class="demo-container demo-modal">
-            <h1 class="heading-s">Demo</h1>
-            <button class="display-modal" id="display-modal-btn">
-              View Modal
-            </button>
-            <div class="modal-container" id="modal-container">
-              <div class="modal">
-                <h1 class="heading-m">Modal</h1>
-                <p class="para">
-                  Simple Modal which pops out of the page to attract the user's
-                  attention. Replace it with your content.
-                </p>
-                <button class="hide-modal" id="close-modal-btn">Close</button>
-              </div>
-            </div>
-          </div>
-
-          <div class="code-container">
-            <p class="para-s">
-              Simple copy paste the below HTML and Javascript and you will have
-              a clean modal in no time!
-            </p>
-            <pre>
-                <code class="language-html">
-      &lt;div class="demo-container demo-modal"&gt;
-        &lt;h1 class="heading-s"&gt;Demo&lt;/h1&gt;
-        &lt;button class="display-modal" id="display-modal-btn"&gt;
-          View Modal
-        &lt;/button&gt;
-        &lt;div class="modal-container" id="modal-container"&gt;
-          &lt;div class="modal"&gt;
-          &lt;h1 class="heading-m"&gt;Modal&lt;/h1&gt;
-          &lt;p class="para"&gt;
-            Simple Modal which pops out of the page to attract the user's
-            attention. Replace it with your content.
-          &lt;/p&gt;
-          &lt;button class="hide-modal" id="close-modal-btn"&gt;Close&lt;/button&gt;
-        &lt;/div&gt;
-        &lt;/div&gt;
-    &lt;/div&gt;
-                </code>
-              </pre>
-          </div>
-
-          <div class="code-container">
-            <pre>
-                <code class="language-javascript">
-      const displayModalButton = document.querySelector("#display-modal-btn");
-      const hideModalButton = document.querySelector("#close-modal-btn");
-      const modalContainer = document.querySelector("#modal-container");
-      
-      displayModalButton.addEventListener("click", () => {
-        modalContainer.classList.add("show");
-      });
-      
-      hideModalButton.addEventListener("click", () => {
-        modalContainer.classList.remove("show");
-            </code>
-              </pre>
-          </div>
-        </div>
-
         <!-- Grid -->
         <div class="component-wrapper mg-bottom-xl" id="grid-section">
           <h1 class="heading-xl">Grid</h1>
@@ -1875,6 +1343,750 @@
       &lt;/div&gt;
                 </code>
               </pre>
+          </div>
+        </div>
+
+        <!-- Images -->
+        <div class="component-wrapper mg-bottom-xl" id="image-section">
+          <h1 class="heading-xl">Images</h1>
+          <h2 class="para mg-bottom-m">
+            Images are the backbone of any good website. Choose from responsive,
+            round and square styles to add images to your webpages.
+          </h2>
+          <h3 class="heading-xs section-margin-sm">Responsive Image</h3>
+          <div class="demo-container">
+            <div class="responsive-image">
+              <img
+                class="img-responsive"
+                src="https://picsum.photos/id/1082/1400/500"
+                alt="hands on piano"
+              />
+            </div>
+          </div>
+
+          <div class="code-container">
+            <p class="para-s">
+              Simply copy the below html to apply a responsive image which will
+              fill up its parent container
+            </p>
+            <pre>
+                <code class="language-html">
+      &lt;div class="responsive-image"&gt;
+        &lt;img
+          class="img-responsive"
+          src="https://picsum.photos/id/1082/1400/500"
+          alt="hands on piano"
+          /&gt;
+      &lt;/div&gt;
+                </code>
+              </pre>
+          </div>
+
+          <h3 class="heading-xs section-margin-sm">Round Image</h3>
+          <div class="demo-container">
+            <div>
+              <img
+                class="img-responsive img-round"
+                src="https://i.pravatar.cc/150?img=10"
+                alt="smiling woman"
+              />
+            </div>
+          </div>
+
+          <div class="code-container">
+            <p class="para-s">
+              Simply copy the below html to use the round image. For best
+              results, use images with same height and width
+            </p>
+            <pre>
+                <code class="language-html">
+      &lt;div class="responsive-image"&gt;
+      &lt;img
+        class="img-responsive img-round"
+        src="https://i.pravatar.cc/150?img=10"
+        alt="smiling woman"
+        /&gt;
+    &lt;/div&gt;
+                </code>
+              </pre>
+          </div>
+
+          <h3 class="heading-xs section-margin-sm">Square Image</h3>
+          <div class="demo-container demo-image">
+            <div>
+              <img
+                class="img-responsive img-square"
+                src="https://i.pravatar.cc/150?img=10"
+                alt="smiling woman"
+              />
+            </div>
+          </div>
+
+          <div class="code-container">
+            <p class="para-s">
+              Simply copy the below html to use the square image
+            </p>
+            <pre>
+                <code class="language-html">
+      &lt;div class="responsive-image"&gt;
+      &lt;img
+        class="img-responsive img-square"
+        src="https://i.pravatar.cc/150?img=10"
+        alt="smiling woman"
+        /&gt;
+    &lt;/div&gt;
+                </code>
+              </pre>
+          </div>
+        </div>
+
+        <!-- Inputs -->
+        <div class="component-wrapper mg-bottom-xl" id="inputs-section">
+          <h1 class="heading-xl">Inputs</h1>
+          <p class="para mg-bottom-m">
+            Input Forms are used to gather user details and/or feedback. The
+            below form contains validation checks for incorrect user inputs
+          </p>
+          <h3 class="heading-xs">Responsive Input Form with Validation</h3>
+          <div class="demo-container">
+            <div class="form-container">
+              <div class="form-header">
+                <h2 class="heading-xs">Create Account</h2>
+              </div>
+              <form class="form" id="form">
+                <div class="form-control">
+                  <label>Username</label>
+                  <input type="text" placeholder="Username" id="username" />
+                  <ion-icon
+                    class="form-icon form-icon-success"
+                    name="checkmark-circle"
+                  ></ion-icon>
+                  <ion-icon
+                    class="form-icon form-icon-error"
+                    name="alert-circle"
+                  ></ion-icon>
+                  <p class="form-message">Error message</p>
+                </div>
+
+                <div class="form-control">
+                  <label>Email</label>
+                  <input type="email" placeholder="Email" id="email" />
+                  <ion-icon
+                    class="form-icon form-icon-success"
+                    name="checkmark-circle"
+                  ></ion-icon>
+                  <ion-icon
+                    class="form-icon form-icon-error"
+                    name="alert-circle-outline"
+                  ></ion-icon>
+                  <p class="form-message">Error message</p>
+                </div>
+
+                <div class="form-control">
+                  <label>Password</label>
+                  <input type="password" placeholder="Password" id="password" />
+                  <ion-icon
+                    class="form-icon form-icon-success"
+                    name="checkmark-circle"
+                  ></ion-icon>
+                  <ion-icon
+                    class="form-icon form-icon-error"
+                    name="alert-circle-outline"
+                  ></ion-icon>
+                  <p class="form-message">Error message</p>
+                </div>
+
+                <div class="form-control">
+                  <label>Confirm Password</label>
+                  <input
+                    type="password"
+                    placeholder="Confirm password"
+                    id="password2"
+                  />
+                  <ion-icon
+                    class="form-icon form-icon-success"
+                    name="checkmark-circle"
+                  ></ion-icon>
+                  <ion-icon
+                    class="form-icon form-icon-error"
+                    name="alert-circle-outline"
+                  ></ion-icon>
+                  <p class="form-message">Error message</p>
+                </div>
+
+                <button class="form-button">Submit</button>
+              </form>
+            </div>
+          </div>
+          <div class="code-container">
+            <p class="para-s">
+              Simply Copy and below HTML code and don't forget to include the
+              inputs script which is part of the library source code
+            </p>
+            <pre>
+              <code class="language-html">
+      &lt;div class="form-container"&gt;
+      &lt;div class="form-header"&gt;
+        &lt;h2 class="heading-xs"&gt;Create Account&lt;/h2&gt;
+      &lt;/div&gt;
+      &lt;form class="form" id="form"&gt;
+        &lt;div class="form-control"&gt;
+          &lt;label&gt;Username&lt;/label&gt;
+          &lt;input type="text" placeholder="Username" id="username" /&gt;
+          &lt;ion-icon
+            class="form-icon form-icon-success"
+            name="checkmark-circle"
+          &gt;&lt;/ion-icon&gt;
+          &lt;ion-icon
+            class="form-icon form-icon-error"
+            name="alert-circle"
+          &gt;&lt;/ion-icon&gt;
+          &lt;p class="form-message"&gt;Error message&lt;/p&gt;
+        &lt;/div&gt;
+
+        &lt;div class="form-control"&gt;
+          &lt;label&gt;Email&lt;/label&gt;
+          &lt;input type="email" placeholder="Email" id="email" /&gt;
+          &lt;ion-icon
+            class="form-icon form-icon-success"
+            name="checkmark-circle"
+          &gt;&lt;/ion-icon&gt;
+          &lt;ion-icon
+            class="form-icon form-icon-error"
+            name="alert-circle-outline"
+          &gt;&lt;/ion-icon&gt;
+          &lt;p class="form-message"&gt;Error message&lt;/p&gt;
+        &lt;/div&gt;
+
+        &lt;div class="form-control"&gt;
+          &lt;label&gt;Password&lt;/label&gt;
+          &lt;input type="password" placeholder="Password" id="password" /&gt;
+          &lt;ion-icon
+            class="form-icon form-icon-success"
+            name="checkmark-circle"
+          &gt;&lt;/ion-icon&gt;
+          &lt;ion-icon
+            class="form-icon form-icon-error"
+            name="alert-circle-outline"
+          &gt;&lt;/ion-icon&gt;
+          &lt;p class="form-message"&gt;Error message&lt;/p&gt;
+        &lt;/div&gt;
+
+        &lt;div class="form-control"&gt;
+          &lt;label&gt;Confirm Password&lt;/label&gt;
+          &lt;input
+            type="password"
+            placeholder="Confirm password"
+            id="password2"
+          /&gt;
+          &lt;ion-icon
+            class="form-icon form-icon-success"
+            name="checkmark-circle"
+          &gt;&lt;/ion-icon&gt;
+          &lt;ion-icon
+            class="form-icon form-icon-error"
+            name="alert-circle-outline"
+          &gt;&lt;/ion-icon&gt;
+          &lt;p class="form-message"&gt;Error message&lt;/p&gt;
+        &lt;/div&gt;
+
+        &lt;button class="form-button"&gt;Submit&lt;/button&gt;
+      &lt;/form&gt;
+    &lt;/div&gt;
+                </code>
+              </pre>
+          </div>
+        </div>
+
+        <!-- Lists -->
+        <div class="component-wrapper mg-bottom-xl" id="lists-section">
+          <h1 class="heading-xl mg-bottom-xs">Lists</h1>
+          <div class="para mg-bottom-s">
+            Lists help display related information together, ordered or
+            unordered
+          </div>
+          <h3 class="heading-xs section-margin-sm">Unordered List styles</h3>
+          <div class="demo-container demo-lists">
+            <div class="demo-list">
+              <ul class="unordered-list list-style-bullet">
+                <li>Todo Item-1</li>
+                <li>Todo Item-2</li>
+                <li>Todo Item-3</li>
+              </ul>
+            </div>
+
+            <div class="demo-list list-style-square">
+              <ul class="unordered-list list-style-square">
+                <li>Todo Item-1</li>
+                <li>Todo Item-2</li>
+                <li>Todo Item-3</li>
+              </ul>
+            </div>
+
+            <div class="demo-list list-style-disc">
+              <ul class="unordered-list list-style-disc">
+                <li>Todo Item-1</li>
+                <li>Todo Item-2</li>
+                <li>Todo Item-3</li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="code-container">
+            <p class="para-s">
+              Simply copy the below HTML according to your desired list style
+            </p>
+            <pre>
+              <code class = "language-html">
+        &lt;div class="demo-list"&gt;
+        &lt;ul class="unordered-list list-style-bullet"&gt;
+          &lt;li&gt;Todo Item-1&lt;/li&gt;
+          &lt;li&gt;Todo Item-2&lt;/li&gt;
+          &lt;li&gt;Todo Item-3&lt;/li&gt;
+        &lt;/ul&gt;
+      &lt;/div&gt;
+
+      &lt;div class="demo-list list-style-square"&gt;
+        &lt;ul class="unordered-list list-style-square"&gt;
+          &lt;li&gt;Todo Item-1&lt;/li&gt;
+          &lt;li&gt;Todo Item-2&lt;/li&gt;
+          &lt;li&gt;Todo Item-3&lt;/li&gt;
+        &lt;/ul&gt;
+      &lt;/div&gt;
+
+      &lt;div class="demo-list list-style-disc"&gt;
+        &lt;ul class="unordered-list list-style-disc"&gt;
+          &lt;li&gt;Todo Item-1&lt;/li&gt;
+          &lt;li&gt;Todo Item-2&lt;/li&gt;
+          &lt;li&gt;Todo Item-3&lt;/li&gt;
+        &lt;/ul&gt;
+      &lt;/div&gt;
+              </code>
+            </pre>
+          </div>
+
+          <h3 class="heading-xs section-margin-sm">Ordered List styles</h3>
+          <div class="demo-container">
+            <div class="demo-list">
+              <ol class="ordered-list list-style-alphabet">
+                <li>First, mix all the dry ingredients</li>
+                <li>Then, add the wet ingredients</li>
+                <li>Finally, bake the cake</li>
+              </ol>
+            </div>
+
+            <div class="demo-list">
+              <ol class="ordered-list list-style-number">
+                <li>First, mix all the dry ingredients</li>
+                <li>Then, add the wet ingredients</li>
+                <li>Finally, bake the cake</li>
+              </ol>
+            </div>
+
+            <div class="demo-list list-style-roman-number">
+              <ol class="ordered-list list-style-roman-number">
+                <li>First, mix all the dry ingredients</li>
+                <li>Then, add the wet ingredients</li>
+                <li>Finally, bake the cake</li>
+              </ol>
+            </div>
+          </div>
+
+          <div class="code-container">
+            <p class="para-s">
+              Simply copy the below HTML according to your desired ordered list
+              style
+            </p>
+            <pre>
+              <code class = "language-html">
+      &lt;div class="demo-list"&gt;
+      &lt;ol class="ordered-list list-style-alphabet"&gt;
+        &lt;li&gt;First, mix all the dry ingredients&lt;/li&gt;
+        &lt;li&gt;Then, add the wet ingredients&lt;/li&gt;
+        &lt;li&gt;Finally, bake the cake&lt;/li&gt;
+      &lt;/ol&gt;
+    &lt;/div&gt;
+
+    &lt;div class="demo-list"&gt;
+      &lt;ol class="ordered-list list-style-number"&gt;
+        &lt;li&gt;First, mix all the dry ingredients&lt;/li&gt;
+        &lt;li&gt;Then, add the wet ingredients&lt;/li&gt;
+        &lt;li&gt;Finally, bake the cake&lt;/li&gt;
+      &lt;/ol&gt;
+    &lt;/div&gt;
+
+    &lt;div class="demo-list list-style-roman-number"&gt;
+      &lt;ol class="ordered-list list-style-roman-number"&gt;
+        &lt;li&gt;First, mix all the dry ingredients&lt;/li&gt;
+        &lt;li&gt;Then, add the wet ingredients&lt;/li&gt;
+        &lt;li&gt;Finally, bake the cake&lt;/li&gt;
+      &lt;/ol&gt;
+    &lt;/div&gt;
+              </code>
+            </pre>
+          </div>
+
+          <h3 class="heading-xs section-margin-sm">Inline List styles</h3>
+          <div class="demo-container">
+            <div class="demo-list">
+              <ul class="list-inline">
+                <li>Home</li>
+                <li>Login</li>
+                <li>Contact</li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="code-container">
+            <p class="para-s">Simply copy the below HTML to get inline list</p>
+            <pre>
+              <code class = "language-html">
+      &lt;div class="demo-list"&gt;
+      &lt;ul class="list-inline"&gt;
+        &lt;li&gt;Home&lt;/li&gt;
+        &lt;li&gt;Login&lt;/li&gt;
+        &lt;li&gt;Contact&lt;/li&gt;
+      &lt;/ul&gt;
+    &lt;/div&gt;
+              </code>
+            </pre>
+          </div>
+
+          <h3 class="heading-xs section-margin-sm">Stacked Lists</h3>
+          <div class="demo-container">
+            <div class="demo-list">
+              <ul class="list-stacked">
+                <li>
+                  <div class="avatar-s">
+                    <img
+                      class="img-responsive avatar-square"
+                      src="https://i.pravatar.cc/150?img=47"
+                      alt="smiling woman"
+                    />
+                  </div>
+                  <div>Read this article by Susan Doe</div>
+                </li>
+                <li>
+                  <div class="avatar-s">
+                    <img
+                      class="img-responsive avatar-square"
+                      src="https://i.pravatar.cc/150?img=47"
+                      alt="smiling woman"
+                    />
+                  </div>
+                  <div>Read this article by Susan Doe</div>
+                </li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="code-container">
+            <p class="para-s">
+              Simply copy the below HTML if you like the stacked list style
+            </p>
+            <pre>
+              <code class = "language-html">
+      &lt;div class="demo-list"&gt;
+      &lt;ul class="list-stacked"&gt;
+        &lt;li&gt;
+          &lt;div class="avatar-s"&gt;
+            &lt;img
+              class="img-responsive avatar-square"
+              src="https://i.pravatar.cc/150?img=47"
+              alt="smiling woman"
+            /&gt;
+          &lt;/div&gt;
+          &lt;div&gt;Read this article by Susan Doe&lt;/div&gt;
+        &lt;/li&gt;
+        &lt;li&gt;
+          &lt;div class="avatar-s"&gt;
+            &lt;img
+              class="img-responsive avatar-square"
+              src="https://i.pravatar.cc/150?img=47"
+              alt="smiling woman"
+            /&gt;
+          &lt;/div&gt;
+          &lt;div&gt;Read this article by Susan Doe&lt;/div&gt;
+        &lt;/li&gt;
+      &lt;/ul&gt;
+    &lt;/div&gt;
+              </code>
+            </pre>
+          </div>
+        </div>
+
+        <!-- Modal -->
+        <div class="component-wrapper mg-bottom-xl" id="modal-section">
+          <h1 class="heading-xl">Modal</h1>
+          <p class="para mg-bottom-m">
+            A modal prompts your user to take an action before anything else can
+            be done. It disables the rest of the screen, and the call to action
+            pops out.
+          </p>
+          <h3 class="heading-xs section-margin-sm">Clean, Minimal Modal</h3>
+          <div class="demo-container">
+            <div class="modal">
+              <h1 class="heading-m">Modal</h1>
+              <p class="para">
+                Simple Modal which pops out of the page to attract the user's
+                attention. Replace it with your content.
+              </p>
+              <button class="hide-modal">Close</button>
+            </div>
+          </div>
+
+          <div class="demo-container demo-modal">
+            <h1 class="heading-s">Demo</h1>
+            <button class="display-modal" id="display-modal-btn">
+              View Modal
+            </button>
+            <div class="modal-container" id="modal-container">
+              <div class="modal">
+                <h1 class="heading-m">Modal</h1>
+                <p class="para">
+                  Simple Modal which pops out of the page to attract the user's
+                  attention. Replace it with your content.
+                </p>
+                <button class="hide-modal" id="close-modal-btn">Close</button>
+              </div>
+            </div>
+          </div>
+
+          <div class="code-container">
+            <p class="para-s">
+              Simple copy paste the below HTML and Javascript and you will have
+              a clean modal in no time!
+            </p>
+            <pre>
+                <code class="language-html">
+      &lt;div class="demo-container demo-modal"&gt;
+        &lt;h1 class="heading-s"&gt;Demo&lt;/h1&gt;
+        &lt;button class="display-modal" id="display-modal-btn"&gt;
+          View Modal
+        &lt;/button&gt;
+        &lt;div class="modal-container" id="modal-container"&gt;
+          &lt;div class="modal"&gt;
+          &lt;h1 class="heading-m"&gt;Modal&lt;/h1&gt;
+          &lt;p class="para"&gt;
+            Simple Modal which pops out of the page to attract the user's
+            attention. Replace it with your content.
+          &lt;/p&gt;
+          &lt;button class="hide-modal" id="close-modal-btn"&gt;Close&lt;/button&gt;
+        &lt;/div&gt;
+        &lt;/div&gt;
+    &lt;/div&gt;
+                </code>
+              </pre>
+          </div>
+
+          <div class="code-container">
+            <pre>
+                <code class="language-javascript">
+      const displayModalButton = document.querySelector("#display-modal-btn");
+      const hideModalButton = document.querySelector("#close-modal-btn");
+      const modalContainer = document.querySelector("#modal-container");
+      
+      displayModalButton.addEventListener("click", () => {
+        modalContainer.classList.add("show");
+      });
+      
+      hideModalButton.addEventListener("click", () => {
+        modalContainer.classList.remove("show");
+            </code>
+              </pre>
+          </div>
+        </div>
+
+        <!-- Navigation -->
+        <div class="component-wrapper mg-bottom-xl" id="navbar-section">
+          <h1 class="heading-xl">Navigation</h1>
+          <p class="para mg-bottom-m">
+            The navigation bar represents the map of a website. All important
+            links within a site are easily accessible within one click from the
+            navigation bar.
+          </p>
+          <h3 class="heading-xs">Responsive Navigation</h3>
+          <div class="demo-container demo-navbar">
+            <nav class="navbar">
+              <span
+                ><ion-icon class="nav-logo" name="logo-buffer"></ion-icon
+              ></span>
+              <button class="nav-menu" id="nav-menu">
+                <ion-icon class="hamburger-icon" name="menu-outline"></ion-icon>
+              </button>
+              <ul class="nav-list" id="nav-list">
+                <li><a class="nav-link" href="#">Features</a></li>
+                <li><a class="nav-link" href="#">Testimonials</a></li>
+                <li><a class="nav-link" href="#">Contact Us</a></li>
+              </ul>
+            </nav>
+          </div>
+
+          <div class="code-container">
+            <p class="para-s">
+              This navbar is responsive and adapts to mobile screens seamlessly.
+              Feel free to adjust the screen-size to see the responsive
+              navigation!
+            </p>
+            <pre>
+                <code class="language-html">
+      &lt;nav class="navbar"&gt;
+        &lt;span&gt;&lt;ion-icon class="nav-logo" name="logo-buffer"&gt;&lt;/ion-icon&gt;&lt;/span&gt;
+        &lt;button class="nav-menu" id="nav-menu"&gt;
+          &lt;ion-icon class="hamburger-icon" name="menu-outline"&gt;&lt;/ion-icon&gt;
+        &lt;/button&gt;
+        &lt;ul class="nav-list" id="nav-list"&gt;
+          &lt;li&gt;&lt;a class="nav-link" href="#"&gt;Features&lt;/a&gt;&lt;/li&gt;
+          &lt;li&gt;&lt;a class="nav-link" href="#"&gt;Testimonials&lt;/a&gt;&lt;/li&gt;
+          &lt;li&gt;&lt;a class="nav-link" href="#"&gt;Contact Us&lt;/a&gt;&lt;/li&gt;
+        &lt;/ul&gt;
+      &lt;/nav&gt;
+                </code>
+              </pre>
+          </div>
+
+          <div class="code-container">
+            <p class="para-s">
+              Don't forget to include the attached javascript file.
+            </p>
+            <pre>
+                <code class="language-javascript">
+      const navMenu = document.querySelector("#nav-menu");
+      const navList = document.querySelector("#nav-list");
+      
+      navMenu.addEventListener("click", () => {
+        navList.classList.toggle("display-menu");
+      });
+                </code>
+              </pre>
+          </div>
+        </div>
+
+        <!-- Rating -->
+        <div class="component-wrapper mg-bottom-xl" id="badge-section">
+          <h1 class="heading-xl">Rating</h1>
+          <h2 class="para mg-bottom-m">
+            Ratings are an interactive way to gather feedback from the user
+            regarding a product or service
+          </h2>
+          <h3 class="heading-xs section-margin-sm">Standard 5-star rating</h3>
+          <div class="demo-container demo-badge">
+            <div class="stars-rating">
+              <a class="rating">⭐</a>
+              <a class="rating">⭐</a>
+              <a class="rating">⭐</a>
+              <a class="rating">⭐</a>
+              <a class="rating">⭐</a>
+            </div>
+          </div>
+
+          <div class="code-container">
+            <p class="para-s">
+              Simply add the below HTML to get a flexible rating system
+            </p>
+            <pre><code class="language-html">
+      &lt;div class="stars-rating"&gt;
+        &lt;a class="rating"&gt;⭐&lt;/a&gt;
+        &lt;a class="rating"&gt;⭐&lt;/a&gt;
+        &lt;a class="rating"&gt;⭐&lt;/a&gt;
+        &lt;a class="rating"&gt;⭐&lt;/a&gt;
+        &lt;a class="rating"&gt;⭐&lt;/a&gt;
+      &lt;/div&gt;
+                </code>
+              </pre>
+          </div>
+
+          <div class="code-container">
+            <p class="para-s">
+              The script below allows you to record the rating the user provided
+            </p>
+            <pre><code class="language-javascript">
+      const ratingStars = document.querySelectorAll(".rating");
+      const rating = document.querySelector(".stars-rating");
+      
+      ratingStars.forEach((star, index) => {
+        star.addEventListener("click", () => {
+          let clickedIndex = index;
+          console.log(`User gave ${clickedIndex + 1} rating`);
+          ratingStars.forEach((otherStar, otherIndex) => {
+            if (otherIndex <= clickedIndex) {
+              otherStar.classList.add("active");
+            }
+          });
+        });
+      });
+                </code>
+              </pre>
+          </div>
+        </div>
+
+        <!-- Typography -->
+        <div class="component-wrapper mg-bottom-xl" id="typography-section">
+          <h1 class="heading-xl">Typography</h1>
+          <p class="para mg-bottom-m">
+            Typography helps give appropriate emphasis to your website elements
+            and builds the written content on your website. Choose from the
+            below styles to give your website a polished look!
+          </p>
+          <h3 class="heading-xs">Sample Styles</h3>
+          <div class="demo-container demo-typography">
+            <div class="heading-xl">This is an Extra Large Heading</div>
+            <div class="heading-l">This is a Large Heading</div>
+            <div class="heading-m">This is a Medium Heading</div>
+            <div class="heading-s">This is a Small Heading</div>
+            <div class="heading-xs">This is an Extra Small Heading</div>
+            <div class="para">This is a paragraph</div>
+            <div class="para-s">This is a small paragraph</div>
+          </div>
+
+          <div class="code-container">
+            <p class="para-s">
+              Simply copy the below html and choose the style/size per your
+              requirement
+            </p>
+            <pre>
+                  <code class="language-html">
+        &lt;div class="heading-xl"&gt;This is an Extra Large Heading&lt;/div&gt;
+        &lt;div class="heading-l"&gt;This is a Large Heading&lt;/div&gt;
+        &lt;div class="heading-m"&gt;This is a Medium Heading&lt;/div&gt;
+        &lt;div class="heading-s"&gt;This is a Small Heading&lt;/div&gt;
+        &lt;div class="heading-xs"&gt;This is an Extra Small Heading&lt;/div&gt;
+        &lt;div class="para"&gt;This is a paragraph&lt;/div&gt;
+        &lt;div class="para-s"&gt;This is a small paragraph&lt;/div&gt;
+                  </code>
+                </pre>
+          </div>
+
+          <div class="demo-container demo-typography">
+            <div class="heading-s grey-text">This is grey text</div>
+          </div>
+
+          <div class="code-container">
+            <p class="para-s">
+              Simply copy the below html and choose the style/size per your
+              requirement
+            </p>
+            <pre>
+                  <code class="language-html">
+        &lt;div class="heading-s grey-text"&gt;This is grey text&lt;/div&gt;
+                  </code>
+                </pre>
+          </div>
+
+          <div class="demo-container demo-typography">
+            <div class="heading-s centered-text">This is centered text</div>
+          </div>
+
+          <div class="code-container">
+            <p class="para-s">
+              Simply copy the below html and choose the style/size per your
+              requirement
+            </p>
+            <pre>
+                  <code class="language-html">
+        &lt;div class="heading-s centered-text">This is centered text&lt;/div&gt;
+                  </code>
+                </pre>
           </div>
         </div>
 
@@ -2125,224 +2337,13 @@
         </pre>
           </div>
         </div>
-
-        <!-- Lists -->
-        <div class="component-wrapper mg-bottom-xl" id="lists-section">
-          <h1 class="heading-xl mg-bottom-xs">Lists</h1>
-          <div class="para mg-bottom-s">
-            Lists help display related information together, ordered or
-            unordered
-          </div>
-          <h3 class="heading-xs section-margin-sm">Unordered List styles</h3>
-          <div class="demo-container demo-lists">
-            <div class="demo-list">
-              <ul class="unordered-list list-style-bullet">
-                <li>Todo Item-1</li>
-                <li>Todo Item-2</li>
-                <li>Todo Item-3</li>
-              </ul>
-            </div>
-
-            <div class="demo-list list-style-square">
-              <ul class="unordered-list list-style-square">
-                <li>Todo Item-1</li>
-                <li>Todo Item-2</li>
-                <li>Todo Item-3</li>
-              </ul>
-            </div>
-
-            <div class="demo-list list-style-disc">
-              <ul class="unordered-list list-style-disc">
-                <li>Todo Item-1</li>
-                <li>Todo Item-2</li>
-                <li>Todo Item-3</li>
-              </ul>
-            </div>
-          </div>
-
-          <div class="code-container">
-            <p class="para-s">
-              Simply copy the below HTML according to your desired list style
-            </p>
-            <pre>
-              <code class = "language-html">
-        &lt;div class="demo-list"&gt;
-        &lt;ul class="unordered-list list-style-bullet"&gt;
-          &lt;li&gt;Todo Item-1&lt;/li&gt;
-          &lt;li&gt;Todo Item-2&lt;/li&gt;
-          &lt;li&gt;Todo Item-3&lt;/li&gt;
-        &lt;/ul&gt;
-      &lt;/div&gt;
-
-      &lt;div class="demo-list list-style-square"&gt;
-        &lt;ul class="unordered-list list-style-square"&gt;
-          &lt;li&gt;Todo Item-1&lt;/li&gt;
-          &lt;li&gt;Todo Item-2&lt;/li&gt;
-          &lt;li&gt;Todo Item-3&lt;/li&gt;
-        &lt;/ul&gt;
-      &lt;/div&gt;
-
-      &lt;div class="demo-list list-style-disc"&gt;
-        &lt;ul class="unordered-list list-style-disc"&gt;
-          &lt;li&gt;Todo Item-1&lt;/li&gt;
-          &lt;li&gt;Todo Item-2&lt;/li&gt;
-          &lt;li&gt;Todo Item-3&lt;/li&gt;
-        &lt;/ul&gt;
-      &lt;/div&gt;
-              </code>
-            </pre>
-          </div>
-
-          <h3 class="heading-xs section-margin-sm">Ordered List styles</h3>
-          <div class="demo-container">
-            <div class="demo-list">
-              <ol class="ordered-list list-style-alphabet">
-                <li>First, mix all the dry ingredients</li>
-                <li>Then, add the wet ingredients</li>
-                <li>Finally, bake the cake</li>
-              </ol>
-            </div>
-
-            <div class="demo-list">
-              <ol class="ordered-list list-style-number">
-                <li>First, mix all the dry ingredients</li>
-                <li>Then, add the wet ingredients</li>
-                <li>Finally, bake the cake</li>
-              </ol>
-            </div>
-
-            <div class="demo-list list-style-roman-number">
-              <ol class="ordered-list list-style-roman-number">
-                <li>First, mix all the dry ingredients</li>
-                <li>Then, add the wet ingredients</li>
-                <li>Finally, bake the cake</li>
-              </ol>
-            </div>
-          </div>
-
-          <div class="code-container">
-            <p class="para-s">
-              Simply copy the below HTML according to your desired ordered list
-              style
-            </p>
-            <pre>
-              <code class = "language-html">
-      &lt;div class="demo-list"&gt;
-      &lt;ol class="ordered-list list-style-alphabet"&gt;
-        &lt;li&gt;First, mix all the dry ingredients&lt;/li&gt;
-        &lt;li&gt;Then, add the wet ingredients&lt;/li&gt;
-        &lt;li&gt;Finally, bake the cake&lt;/li&gt;
-      &lt;/ol&gt;
-    &lt;/div&gt;
-
-    &lt;div class="demo-list"&gt;
-      &lt;ol class="ordered-list list-style-number"&gt;
-        &lt;li&gt;First, mix all the dry ingredients&lt;/li&gt;
-        &lt;li&gt;Then, add the wet ingredients&lt;/li&gt;
-        &lt;li&gt;Finally, bake the cake&lt;/li&gt;
-      &lt;/ol&gt;
-    &lt;/div&gt;
-
-    &lt;div class="demo-list list-style-roman-number"&gt;
-      &lt;ol class="ordered-list list-style-roman-number"&gt;
-        &lt;li&gt;First, mix all the dry ingredients&lt;/li&gt;
-        &lt;li&gt;Then, add the wet ingredients&lt;/li&gt;
-        &lt;li&gt;Finally, bake the cake&lt;/li&gt;
-      &lt;/ol&gt;
-    &lt;/div&gt;
-              </code>
-            </pre>
-          </div>
-
-          <h3 class="heading-xs section-margin-sm">Inline List styles</h3>
-          <div class="demo-container">
-            <div class="demo-list">
-              <ul class="list-inline">
-                <li>Home</li>
-                <li>Login</li>
-                <li>Contact</li>
-              </ul>
-            </div>
-          </div>
-
-          <div class="code-container">
-            <p class="para-s">Simply copy the below HTML to get inline list</p>
-            <pre>
-              <code class = "language-html">
-      &lt;div class="demo-list"&gt;
-      &lt;ul class="list-inline"&gt;
-        &lt;li&gt;Home&lt;/li&gt;
-        &lt;li&gt;Login&lt;/li&gt;
-        &lt;li&gt;Contact&lt;/li&gt;
-      &lt;/ul&gt;
-    &lt;/div&gt;
-              </code>
-            </pre>
-          </div>
-
-          <h3 class="heading-xs section-margin-sm">Stacked Lists</h3>
-          <div class="demo-container">
-            <div class="demo-list">
-              <ul class="list-stacked">
-                <li>
-                  <div class="avatar-s">
-                    <img
-                      class="img-responsive avatar-square"
-                      src="https://i.pravatar.cc/150?img=47"
-                      alt="smiling woman"
-                    />
-                  </div>
-                  <div>Read this article by Susan Doe</div>
-                </li>
-                <li>
-                  <div class="avatar-s">
-                    <img
-                      class="img-responsive avatar-square"
-                      src="https://i.pravatar.cc/150?img=47"
-                      alt="smiling woman"
-                    />
-                  </div>
-                  <div>Read this article by Susan Doe</div>
-                </li>
-              </ul>
-            </div>
-          </div>
-
-          <div class="code-container">
-            <p class="para-s">
-              Simply copy the below HTML if you like the stacked list style
-            </p>
-            <pre>
-              <code class = "language-html">
-      &lt;div class="demo-list"&gt;
-      &lt;ul class="list-stacked"&gt;
-        &lt;li&gt;
-          &lt;div class="avatar-s"&gt;
-            &lt;img
-              class="img-responsive avatar-square"
-              src="https://i.pravatar.cc/150?img=47"
-              alt="smiling woman"
-            /&gt;
-          &lt;/div&gt;
-          &lt;div&gt;Read this article by Susan Doe&lt;/div&gt;
-        &lt;/li&gt;
-        &lt;li&gt;
-          &lt;div class="avatar-s"&gt;
-            &lt;img
-              class="img-responsive avatar-square"
-              src="https://i.pravatar.cc/150?img=47"
-              alt="smiling woman"
-            /&gt;
-          &lt;/div&gt;
-          &lt;div&gt;Read this article by Susan Doe&lt;/div&gt;
-        &lt;/li&gt;
-      &lt;/ul&gt;
-    &lt;/div&gt;
-              </code>
-            </pre>
-          </div>
-        </div>
       </div>
+
+      <button class="btn btn-floating">
+        <a href="#"
+          ><ion-icon class="btn-icon" name="arrow-up-outline"></ion-icon
+        ></a>
+      </button>
     </div>
 
     <footer class="footer">
@@ -2351,17 +2352,19 @@
       </p>
       <ul class="social-icons section-margin-sm">
         <li>
-          <a class="social-link" href="#"
+          <a class="social-link" href="https://github.com/Snigdha17"
             ><ion-icon name="logo-github" class="social-icon"></ion-icon
           ></a>
         </li>
         <li>
-          <a class="social-link" href="#"
+          <a
+            class="social-link"
+            href="https://www.linkedin.com/in/snigdhakamal/"
             ><ion-icon name="logo-linkedin" class="social-icon"></ion-icon
           ></a>
         </li>
         <li>
-          <a class="social-link" href="#"
+          <a class="social-link" href="https://twitter.com/snkamal1794"
             ><ion-icon name="logo-twitter" class="social-icon"></ion-icon
           ></a>
         </li>
@@ -2372,11 +2375,11 @@
   <script src="../assets/scripts/main-navbar.js"></script>
   <script src="../assets/scripts/components/navbar.js"></script>
   <script src="../assets/scripts/prism.js"></script>
-  <script src="../assets/scripts/rating.js"></script>
-  <script src="../assets/scripts/alerts.js"></script>
-  <script src="../assets/scripts/modal.js"></script>
-  <script src="../assets/scripts/inputs.js"></script>
-  <script src="../assets/scripts/toast.js"></script>
+  <script src="../assets/scripts/components/rating.js"></script>
+  <script src="../assets/scripts/components/alerts.js"></script>
+  <script src="../assets/scripts/components/modal.js"></script>
+  <script src="../assets/scripts/components/inputs.js"></script>
+  <script src="../assets/scripts/components/toast.js"></script>
   <script
     type="module"
     src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"

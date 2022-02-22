@@ -20,8 +20,9 @@
   justify-content: space-between;
   align-items: center;
   flex-wrap: wrap;
-  height: 9.6rem;
+  height: 12rem;
   padding: 0 4.8rem;
+  margin-bottom: 4.8rem;
 }
 
 .hero-img {
